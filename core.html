@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>智能营销平台</title>
+		<!---<<<<   normal.css统一浏览器默认值   >>>>-->
+		<link href="lib/css/normal.css" rel="stylesheet" type="text/css" />
+		<!---<<<<   字体图标  >>>>-->
+		<link href="lib/font/iconfont.css" rel="stylesheet" type="text/css" />
+		<!---<<<<   动画库   >>>>-->
+		<link href="lib/css/animate.min.css" rel="stylesheet" type="text/css" />
+		<!---<<<<   左侧边栏悬停tips提示css   >>>>-->
+		<link href="lib/css/tipso.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/core.css" />
+	</head>
+
+	<body>
+		<!---<<<<   导航栏    >>>>-->
+		<div class="header">
+			<!---<<<<   logo    >>>>-->
+			<div class="logo">
+				<!---<<<<   移动logo    >>>>-->
+				<a class="img-logo">
+					<i class="iconfont icon-chinamobile"></i>
+				</a>
+				<!---<<<<   一体化平台logo    >>>>-->
+				<a class="img-home-logo">
+					<i class="iconfont icon-zhinenghuayingxiaopingtai"></i>
+				</a>
+			</div>
+
+			<!---<<<<   功能列表-快速新建    >>>>-->
+			<div class="btn-group header_items fast-new-built">
+				<!---<<<<   功能列表-快速新建-按钮    >>>>-->
+				<button data-toggle="dropdown" class="header_items-title" type="button">
+            			<i class="iconfont icon-add"></i>
+            			快速新建
+            		</button>
+				<!---<<<<   功能列表-快速新建-列表    >>>>-->
+				<ul role="menu" class="dropdown-menu">
+					<li>
+						<a href="#">新建活动</a>
+					</li>
+					<li>
+						<a href="#">新建客户群</a>
+					</li>
+					<li>
+						<a href="#">新建渠道</a>
+					</li>
+				</ul>
+			</div>
+
+			<!---<<<<   功能列表-待我处理    >>>>-->
+			<div class="btn-group header_items wait-me-task">
+				<!---<<<<   功能列表-待我处理-按钮    >>>>-->
+				<button data-toggle="dropdown" class="header_items-title tips" type="button">
+            			<i class="iconfont icon-arrowdropdown"></i>
+            			待我处理
+            			<span class="btn-notice-num">3</span>
+            		</button>
+				<!---<<<<   功能列表-待我处理-列表    >>>>-->
+				<ul role="menu" class="dropdown-menu">
+					<!---<<<<   功能列表-待我处理-列表项    >>>>-->
+					<li>
+						<!---<<<<   功能列表-待我处理-链接    >>>>-->
+						<a href="/">
+							<!---<<<<   功能列表-待我处理-待处理类型   >>>>-->
+							<span class="wait-task-type activity">活动</span>
+							<!---<<<<   功能列表-待我处理-待处理信息内容    >>>>-->
+							<div class="wait-task-items">
+								<!---<<<<   功能列表-待我处理-待处理信息名称    >>>>-->
+								<span class="wait-task-name">张三申请乐享100活动资金</span>
+								<!---<<<<   功能列表-待我处理-待处理信息时间    >>>>-->
+								<span class="wait-task-time">2016-06-17</span>
+							</div>
+							<!---<<<<   功能列表-待我处理-假按钮（整行可点击）    >>>>-->
+							<span class="task-soon">立即处理</span>
+						</a>
+					</li>
+					<!---<<<<   功能列表-待我处理-列表项    >>>>-->
+					<li>
+						<!---<<<<   功能列表-待我处理-链接    >>>>-->
+						<a href="/">
+							<!---<<<<   功能列表-待我处理-待处理类型   >>>>-->
+							<span class="wait-task-type warning">预警</span>
+							<!---<<<<   功能列表-待我处理-待处理信息内容    >>>>-->
+							<div class="wait-task-items">
+								<!---<<<<   功能列表-待我处理-待处理信息名称    >>>>-->
+								<span class="wait-task-name">活动【6.18半价购Iphone 6S】实物资源不足10%</span>
+								<!---<<<<   功能列表-待我处理-待处理信息时间    >>>>-->
+								<span class="wait-task-time">2016-06-18</span>
+							</div>
+							<!---<<<<   功能列表-待我处理-假按钮（整行可点击）    >>>>-->
+							<span class="task-soon">立即处理</span>
+						</a>
+					</li>
+					<!---<<<<   功能列表-待我处理-列表项    >>>>-->
+					<li>
+						<!---<<<<   功能列表-待我处理-链接    >>>>-->
+						<a href="/">
+							<!---<<<<   功能列表-待我处理-待处理类型   >>>>-->
+							<span class="wait-task-type warning">预警</span>
+							<!---<<<<   功能列表-待我处理-待处理信息内容    >>>>-->
+							<div class="wait-task-items">
+								<!---<<<<   功能列表-待我处理-待处理信息名称    >>>>-->
+								<span class="wait-task-name">活动【6.18半价购Iphone 6S】营销成本已用完</span>
+								<!---<<<<   功能列表-待我处理-待处理信息时间    >>>>-->
+								<span class="wait-task-time">2016-06-19</span>
+							</div>
+							<!---<<<<   功能列表-待我处理-假按钮（整行可点击）    >>>>-->
+							<span class="task-soon">立即处理</span>
+						</a>
+					</li>
+
+					<li>
+						<a class="read-more">查看更多</a>
+					</li>
+				</ul>
+			</div>
+
+			<!---<<<<   功能列表-我的收藏    >>>>-->
+			<div class="header_items my-collect">
+				<!---<<<<   功能列表-我的收藏-按钮    >>>>-->
+				<button class="header_items-title">我的收藏</button>
+				<ul class="collect-items">
+					<div class="collect-activity">
+						<span class="title">活动收藏</span>
+						<div class="collect-items-content">
+							<a class="collect-activity-a"><span class="collect-icon">活</span><span class="collect-name">乐享100营销活动</span></a>
+							<a class="collect-activity-a"><span class="collect-icon">活</span><span class="collect-name">乐享100营销活动</span></a>
+							<a class="collect-activity-a"><span class="collect-icon">活</span><span class="collect-name">乐享100营销活动</span></a>
+							<a class="collect-activity-a"><span class="collect-icon">活</span><span class="collect-name">乐享100营销活动</span></a>
+						</div>
+						<a class="read-more">查看更多</a>
+					</div>
+					<div class="collect-function">
+						<span class="title">功能收藏</span>
+						<div class="collect-items-content">
+							<a class="collect-function-a"><span class="collect-icon">功</span><span class="collect-name">新增角色</span></a>
+							<a class="collect-function-a"><span class="collect-icon">功</span><span class="collect-name">活动对比</span></a>
+							<a class="collect-function-a"><span class="collect-icon">功</span><span class="collect-name">添加用户</span></a>
+						</div>
+						<a class="read-more">查看更多</a>
+					</div>
+				</ul>
+			</div>
+
+			<!---<<<<   功能列表-我的信息    >>>>-->
+			<div class="header_items my-message">
+				<!---<<<<   功能列表-我的信息-按钮    >>>>-->
+				<button class="header_items-title tips">
+					我的信息
+				<span class="btn-notice-num">1</span>
+				</button>
+			</div>
+
+			<!---<<<<   功能列表-搜索    >>>>-->
+			<div class="header_items header_search">
+				<!---<<<<   功能列表-搜索-搜索框    >>>>-->
+				<input placeholder="搜索关键字" value="" required="" type="text" />
+				<!---<<<<   功能列表-搜索-icon    >>>>-->
+				<button><i class="iconfont icon-search"></i></button>
+			</div>
+
+			<!---<<<<   功能列表-用户个人设置    >>>>-->
+			<div class="btn-group header_items user-profile">
+				<!---<<<<   功能列表-用户个人设置-账号名称    >>>>-->
+				<button data-toggle="dropdown" class="header_items-title" type="button">
+            			wangtl***com<i class="iconfont icon-arrowdropdown"></i>
+            		</button>
+				<!---<<<<   功能列表-用户个人设置-列表    >>>>-->
+				<ul role="menu" class="dropdown-menu">
+					<!---<<<<   功能列表-用户个人设置-链接   >>>>-->
+					<li>
+						<a>个人设置</a>
+					</li>
+					<!---<<<<   功能列表-用户个人设置-退出登录    >>>>-->
+					<li>
+						<a>退出</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!---<<<<   主体区域   >>>>-->
+		<div class="main">
+			<!---<<<<   左侧边栏   >>>>-->
+			<div class="viewFramework-sidebar">
+				<!---<<<<  左侧边栏收起按钮    >>>>-->
+				<a class="sidebar-fold">
+					<span class="icon-sidebar-fold"></span>
+				</a>
+				<!---<<<<   一级菜单列表   >>>>-->
+				<ul class="primary-nav">
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li id="index-fold-2" class="primary-nav-items active">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-index" title="首页"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">首页</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l2">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-wdyx" title="我的营销"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">我的营销</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l3">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-yxys" title="营销要素"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">营销要素</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l4">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-yxch" title="营销策划"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">营销策划</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l5">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-zxkz" title="执行控制"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">执行控制</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l6">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-yxfx" title="营销分析"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">营销分析</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l7">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-zsk" title="知识库"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">知识库</span>
+						</a>
+					</li>
+
+					<!---<<<<   一级菜单列表项   >>>>-->
+					<li class="primary-nav-items l8">
+						<!---<<<<   一级菜单链接跳转   >>>>-->
+						<a class="nav-items-content">
+							<!---<<<<   一级菜单左侧icon   >>>>-->
+							<div class="nav-icon">
+								<!---<<<<   一级菜单收起时悬停提示title值   >>>>-->
+								<span class="icon-xthtgl" title="系统后台管理"></span>
+							</div>
+							<!---<<<<   一级菜单名称   >>>>-->
+							<span class="nav-title">系统后台管理</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!---<<<<   二级左侧边栏   >>>>-->
+			<div class="viewFramework-sidebar2">
+				<div class="primary2">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">我的营销工作台</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="sponsor-activity.html">发起的活动</li>
+				</div>
+
+				<div class="primary3">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">营销要素</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="target-customer-base.html">目标客户群</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="channel-operation-prepare.html">渠道运营位</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="marketing-moment.html">营销时刻</li>
+				</div>
+
+				<div class="primary4">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">暂无</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+				</div>
+
+				<div class="primary5">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">暂无</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li>自定义</li>
+				</div>
+
+				<div class="primary6">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">营销效果跟踪评估</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="activity-contrast.html">活动对比分析</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="target-control.html">指标项管理</li>
+				</div>
+
+				<div class="primary7">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">营销知识库</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="marketing-ranking.html">营销排名管理</li>
+				</div>
+
+				<div class="primary8">
+					<!---<<<<   二级左侧边栏标题   >>>>-->
+					<span class="viewFramework-sidebar2-title">系统后台管理</span>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="organization-framework-supervise.html">组织架构管理</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="role-access-control.html">角色权限管理</li>
+					<!---<<<<   二级左侧边栏列表项   >>>>-->
+					<li title="new-access-Control.html">新增要素权限控制</li>
+				</div>
+			</div>
+
+			<div class="iframe-wapper">
+				<iframe class="iframepage" src="target-customer-base.html" marginwidth="0" marginheight="0" frameborder="0" scrolling="no">
+				
+			</iframe>
+			</div>
+		</div>
+
+		<!---<<<<  jQuery库    >>>>-->
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<!---<<<<  左侧边栏提示插件    >>>>-->
+		<script type="text/javascript" src="lib/js/tipso.min.js"></script>
+		<script type="text/javascript" src="js/current.js"></script>
+		<!---<<<<  固定js    >>>>-->
+		<script type="text/javascript" src="js/core.js"></script>
+	</body>
+
+</html>

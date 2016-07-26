@@ -1,0 +1,147 @@
+@charset "utf-8";
+.tabs_sidebar {
+	top: 48px;
+}
+
+.tabs_main {
+	margin-top: 10px;
+}
+
+/* 表标题最后一列 */
+.tabs_body thead th.last-child {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* 树形菜单搜索 */
+.tree--search {
+	float: left;
+	width: 155px;
+	height: 40px;
+	border: 1px solid #E1E6EB;
+	border-left: none;
+	border-top: none;
+}
+
+.tree--search input {
+	width: 119px;
+	float: left;
+	height: 39px;
+	background-color: #FFF;
+	padding: 0 10px;
+	color: #9DA2B6;
+	line-height: 39px;
+}
+
+.tree--search input:focus {
+	color: #333;
+}
+
+.tree--search button {
+	float: left;
+	height: 39px;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;	
+}
+
+/* 更多操作按钮 */
+.tree--search + button {
+	float: left;
+	width: 33px;
+	height: 40px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background-color: #F8F8F8;
+}
+
+/* 选择框 */
+.tabs_nav-div-items,
+.SpanSelect {
+	float: left;
+}
+
+.tabs_nav-div-items {
+	margin-right: 20px;
+}
+
+.SpanSelect {
+	margin-right: 15px;
+}
+
+.tabs_nav-div-items.last-child {
+	margin-right: 0;
+}
+
+.tabs_nav-div-items button {
+	margin-right: 10px;
+}
+
+.tabs_nav-div-items button.last-child {
+	margin-right: 0;
+}
+
+.tabs_nav-div-items span {
+	display: block;
+	width: 85px;
+	float: left;
+	line-height: 32px;
+	padding-right: 15px;
+	text-align: right;
+}
+
+.tabs_nav-div-items input {
+	width: 220px;
+	height: 32px;
+	border: 1px solid #E1E6EB;
+	background-color: #F8F8F8;
+	padding: 0 10px;
+	line-height: 32px;
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1495px) {
+.tabs_nav-div-items input {
+	width: 150px;
+}
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1495px) {
+.select-btn {
+	width: 200px;
+}
+
+.select-btn p {
+    width: 153px;
+}
+
+.SpanSelect {
+	width: 285px;
+}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1300px) {
+.tabs_nav-div-items.last-child {
+	margin: 20px 0;
+}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1248px) {
+.select-btn {
+	width: 200px;
+}
+
+.select-btn p {
+    width: 153px;
+}
+
+.SpanSelect {
+	width: 285px;
+}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1180px) {
+.tabs_nav-div-items input {
+	width: 180px;
+}
+}

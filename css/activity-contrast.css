@@ -1,0 +1,285 @@
+@charset "utf-8";
+body {
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	font-size: 12px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	color: #333;
+}
+/*  main右侧外层   */
+.viewFramework-index {
+	width: auto;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0;
+	overflow: hidden;
+	background: #FFF;
+}
+
+.viewFramework-index-body {
+	position: absolute;
+	width: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;	
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 0 15px;
+}
+/*  页面标题CSS  */
+.viewFramework-index-title {
+    height: 62px;
+    display: block;
+    padding: 28px 0px 20px;
+    border-bottom: 1px solid #E1E6EB;
+    font-size: 14px;
+    color: #22282E;
+    line-height: 14px;
+}
+
+/*  页面标题左侧竖线   */
+.viewFramework-index-title:before {
+	content: '';
+	width: 2px;
+	height: 14px;
+	display: block;
+	float: left;
+	background-color: #24AC7E;
+	margin-right: 10px;
+}
+
+.TextBtn-import {
+	width: 75px;
+	background-color: #FFf;
+	height: 32px;
+	border: 1px solid #E1E6EB;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.TextBtn-import {
+	background-color: #24AC7E;
+	color: #FFF;
+	border-color: #24AC7E;
+}
+
+.TextBtn-import:hover {
+	background-color: #1FA075;
+	border-color: #1FA075;
+}
+
+/* 保存按钮 */
+.save-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.table {
+	width: 100%;
+	margin-top: 15px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #E1E6EB;
+	color: #333;
+}
+
+thead,
+thead tr,
+thead tr th {
+	height: 74px;
+}
+
+thead {
+	border-bottom: 1px solid #E1E6EB;
+}
+
+thead tr th {
+	position: relative;
+	border-right: 1px solid #E1E6EB;
+}
+
+thead tr th:first-child {
+	width: 168px;
+}
+
+thead tr th:first-child img {
+	width: 168px;
+	height: 74px;
+}
+
+thead tr th .top-color {
+	width: 100%;
+	height: 8px;
+	float: left;
+	background-color: #E1E6EB;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+}
+
+thead tr th a {
+	display: block;
+	width: 100%;
+	background-color: #FFF;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	line-height: 80px;
+	font-size: 12px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+thead tr th a i {
+	margin-right: 5px;
+	color: #24AC7E;
+}
+
+thead tr th a:hover {
+	background-color: #FAFAFA;
+}
+
+thead tr th + th.choosed a {
+	font-size: 14px;
+	background-color: #3F6DA5;
+	color: #FFF;
+	font-weight: 400;
+}
+
+thead tr th + th + th.choosed a {
+	background-color: #FF8A60;
+}
+
+thead tr th + th + th + th.choosed a {
+	background-color: #63CBAC;
+}
+
+thead tr th + th + th + th + th.choosed a {
+	background-color: #9177BC;
+}
+
+thead tr th + th.choosed .top-color {
+	background: transparent url(../img/black10%.png) repeat;
+}
+
+tbody tr td {
+	border-right: 1px solid #E1E6EB;
+	text-align: center;
+}
+
+tbody tr {
+	border-bottom:  1px solid #E1E6EB;
+}
+
+tbody .primary-tr {
+	background-color: #F6F7F9;
+	cursor: pointer;
+}
+
+tbody .primary-tr:hover {
+	background-color: #F5F5F5;
+}
+
+tbody .primary-tr td {
+	height: 38px;
+}
+
+tbody td {
+	font-weight: 300;
+}
+
+tbody .primary-tr td:first-child {
+	text-align: left;
+	font-size: 14px;
+}
+
+tbody .primary-tr td:first-child i {
+	float: left;
+	margin-left: 10px;
+	color: #24AC7E;
+	margin-right: 15px;
+}
+
+tbody .second-tr {
+	display: none;
+}
+
+tbody .second-tr td {
+	height: 30px;
+}
+
+tbody .second-tr td:first-child {
+	padding-left: 40px;
+	text-align: left;
+	width: 168px;
+}
+
+tbody .second-tr:hover {
+	background-color: #FAFAFA;
+}
+
+tbody tr td:first-child + td,
+tbody tr td:first-child + td +td,
+tbody tr td:first-child + td + td + td,
+tbody tr td:first-child + td + td + td + td {
+	width: 22%;
+	max-width: 22%;
+}
+
+.hr {
+	width: 198px;
+	height: 65px;
+	background-image: url(../img/contrast-table.png);
+    position: relative;/*让里面的两个子容器绝对定位*/
+   	margin-top: 7px;
+}
+
+.left-text {
+	color: #A0A6AF;
+	text-align: left;
+	position: absolute;
+	width: 100%;
+	padding-left: 15px;
+	bottom: 11px;
+}
+
+.right-text {
+	color: #A0A6AF;
+	position: absolute;
+	text-align: right;
+	width: 100%;
+	padding-right: 15px;
+	top: 11px;
+}
+
+tbody tr.primary-tr td:first-child i {
+	float: left;
+	margin-right: 10px;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	-ms-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	transition: transform 0.3s;
+}
+
+tbody tr.primary-tr.open td:first-child i {
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotate3d(0, 0, 1, 90deg);
+	-ms-transform: rotate3d(0, 0, 1, 90deg);
+	transform: rotate3d(0, 0, 1, 90deg);
+	transition: transform 0.3s;
+} 

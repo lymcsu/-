@@ -1,0 +1,353 @@
+@charset "utf-8";
+.tabs_box {
+	padding-top: 62px;
+}
+/* tabs div外层 */
+.tabs-wapper {
+	display: block;
+}
+
+.tabs_sidebar {
+    width: 190px;
+    border: 1px solid #E1E6EB;
+    background-color: #F1F4F7;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+    height: 100%;
+}
+
+.tabs_body {
+    width: 100%;
+    height: 100%;
+    padding-left: 205px;
+}
+
+.tabs_main {
+	overflow: hidden;
+float: left;
+width: 100%;
+	margin-top: 0px; /* 删除 */
+}
+
+.tabs_nav {
+	width: 100%;
+	float: left;
+	height: 104px;
+}
+
+/* 表修改 */
+.tabs_body table thead tr th {
+    padding: 0 15px;
+}
+
+.tabs_body tr td,
+.tabs_body tr th {
+	text-align: left;
+	width: auto;
+}
+
+.tabs_body thead th.operation {
+	padding-right: 15px;
+	text-align: right;
+}
+
+.tabs_body tbody tr .operation .state-btn:before {
+	content: '开始';
+}
+
+.tabs_body tbody tr.running .operation .state-btn:before {
+	content: '暂停';
+}
+
+.tabs_body tbody tr.no-subscription .operation .subscription-btn:before {
+	content: '订阅';
+}
+
+.tabs_body tbody tr.subscription .operation .subscription-btn:before {
+	content: '取消订阅';
+}
+
+.tabs_body table tbody tr .current-state {
+    padding: 0 15px;
+    width: auto;
+}
+
+.tabs_body table tbody tr.no-subscription .subscription-state:before {
+	content: '未订阅';
+}
+
+.tabs_body table tbody tr.subscription .subscription-state:before {
+	content: '已订阅';
+}
+
+.tabs_body tbody tr .current-state div {
+	float: left;
+	margin: 0;
+}
+
+/* tab 功能栏 */
+.tabs_nav-top,
+.tabs_nav-bottom {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.tabs_nav-li-items {
+	float: left;
+}
+
+.tabs_nav-li-items.last-child {
+	margin-left: 20px;
+}
+
+.tabs_nav-li-items.last-child button {
+	width: 75px;
+	background-color: #FFf;
+	height: 32px;
+	border: 1px solid #E1E6EB;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.tabs_nav-li-items.last-child button i {
+	font-size: 12px;
+	color: #24AC7E;
+	margin-right: 6px;
+}
+
+.tabs_nav-li-items.last-child button:hover {
+	background-color: #24AC7E;
+	color: #FFF;
+	border-color: #24AC7E;
+}
+
+.tabs_nav-li-items.last-child button:hover i {
+	color: #FFF;
+}
+
+/*  左侧边栏添加删除分类按钮  */
+
+li button.add,
+li button.delete {
+	width: 50%;
+	height: 32px;
+	float: left;
+	background-color: #FAFAFA;
+	border: 1px solid #E1E6EB;
+	border-left: none;
+	color: #293038;
+}
+
+li button.delete {
+	border-right: none;
+}
+
+li button.add i,
+li button.delete i {
+	font-size: 12px;
+	color: #24AC7E;
+	margin-right: 6px;
+}
+
+li button.add:hover,
+li button.delete:hover {
+	background-color: #FEFEFE;
+}
+
+.tabs_nav-top .SpanSelect {
+	z-index: 9;
+}
+
+
+.tabs_nav-top input {
+	width: 260px;
+	height: 32px;
+	float: left;
+	background-color: #FAFAFA;
+	padding-left: 10px;
+	border: 1px solid #E1E6EB;
+	line-height: 32px;
+}
+
+.tabs_nav span {
+	display: block;
+	width: 85px;
+	float: left;
+	line-height: 32px;
+	padding-right: 15px;
+	text-align: right;
+}
+
+.tabs_nav .iconTextBtn-import {
+	margin-left: 20px;
+}
+
+thead tr {
+	height: 35px;
+}
+
+.right-alert-content-main .tabs_sidebar {
+	left: 20px;
+	top: 20px;
+}
+
+.right-alert-content-main-form {
+	position: absolute;
+	top: 20px;
+	left: 285px;
+	right: 0;
+	bottom: 0;
+}
+
+.right-alert-content-main li.right-alert-content-main-form-items {
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 376px;
+}
+
+.right-alert-content-main li.right-alert-content-main-form-items input,
+.right-alert-content-main li.right-alert-content-main-form-items textarea {
+	width: 325px;
+	height: 32px;
+	line-height: 32px;
+	background: transparent url(0) no-repeat !important;
+	border: 1px solid #E1E6EB;
+	color: #9DA2B6;
+	padding: 0 10px;
+	position: relative;
+	z-index: 9;
+}
+
+.right-alert-content-main li.right-alert-content-main-form-items textarea {
+	width: 325px;
+	max-width: 325px;
+	min-width: 325px;
+	min-height: 32px;
+	height: 64px;
+	font-size: 12px;
+	overflow: hidden;
+	width: 324px;
+}
+
+.right-alert-content-main li.right-alert-content-main-form-items input:focus,
+.right-alert-content-main li.right-alert-content-main-form-items textarea:focus {
+	color: #333;
+	border-color: #24AC7E;
+}
+
+.right-alert-content-main li.right-alert-content-main-form-items .TextBtn-import {
+	margin-right: 10px;
+}
+
+.right-alert-content-main li.right-alert-content-main-form-items button {
+	float: left;
+}
+
+.form-span {
+	display: block;
+	float: left;
+	color: #999999;
+	line-height: 32px;
+}
+
+.tabs_body tbody td.operation {
+    width: 180px;
+}
+
+.my-define-moment input {
+	width: 80%;
+	height: 32px;
+	float: left;
+	line-height: 32px;
+	color: #9DA2B6;
+	border: 1px solid #E1E6EB;
+	background-color: #FFF;
+	padding: 0 10px;
+}
+
+.my-define-moment input:focus {
+	color: #333;
+}
+
+.my-define-moment button {
+	float: left;
+	border-radius: 0;
+	width: 20%;
+	height: 32px;
+	border-left: none;
+}
+
+.input-moment-name {
+	width: 100%;
+	padding: 5px;
+	height: 40px;
+	float: left;
+	background-color: #E1E6EB;
+}
+
+.set-up-moment {
+	display: none;
+}
+
+.right-alert_head {
+	height: 130px;
+}
+
+.right-alert_content {
+	padding-top: 130px;
+	margin-top: -130px;
+}
+
+.right-alert-content-main {
+	padding: 20px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.right-alert-content-main .tabs_sidebar .my-define-moment .tree-third-items.active + ul {
+	display: block !important;
+}
+
+.right-alert-content-main .tabs_sidebar .my-define-moment .tree-third-items.active + ul li span {
+	color: #293038;
+	padding-left: 40px;
+}
+
+.right-alert-content-main .tabs_sidebar .my-define-moment .tree-third-items.active + ul li {
+	height: 24px;
+	line-height: 24px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.right-alert-content-main .tabs_sidebar .my-define-moment .tree-third-items.active + ul li:hover {
+	background-color: #FAFBFC;
+}
+
+
+.input-parent-div,
+.textarea-parent-div {
+	position: relative;
+	width: 325px;
+	float: left;
+	margin-left: 15px;
+	background: #FAFAFA;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1368px) {
+	.tabs_nav-li-items input,
+	.tabs_nav-li-items .select-btn {
+		width: 200px;
+	}
+	
+	.tabs_nav-li-items .SpanSelect {
+		width: 285px;
+	}
+	
+	.tabs_nav-li-items .select-btn p {
+		width: 153px;
+	}
+}

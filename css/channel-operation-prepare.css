@@ -1,0 +1,274 @@
+@charset "utf-8";
+.right-alert-main {
+	overflow: visible;
+}
+
+.viewFramework-index-body {
+	overflow: hidden;
+	height: auto;
+}
+
+button.add-channel {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.right-alert_head {
+    height: 130px;
+}
+
+/*  渠道外层div   */
+.channel-body {
+	width: 100%;
+	height: 100%;
+	padding-top: 77px;
+}
+
+/*  电子渠道、实体渠道外层   */
+.electron-channel,
+.entity-channel {
+	float: left;
+	width: 100%;
+	padding-left: 50px;
+}
+
+/*  渠道左侧标题   */
+.channel-title {
+	width: 50px;
+	height: 204px;
+	border-radius: 4px;
+	background-color: #F3F5F7;
+	color: #22282E;
+	text-align: center;
+	writing-mode: lr-tb;
+	padding: 57px 17px;
+	color: #FFF;
+	position: absolute;
+	left: 15px;
+}
+
+.electron-channel .channel-title {
+	background-color: #9177BC;
+}
+
+.entity-channel .channel-title {
+	background-color: #62B5DF;
+}
+
+/*  渠道列表   */
+.channel-items {
+	width: 200px;
+	height: 204px;
+	border: 1px solid #E1E6EB;
+	float: left;
+	margin: 0 0 15px 15px;
+	cursor: pointer;
+	background-color: #F3F5F7;
+	position: relative;
+}
+
+/*  第一个渠道列表左边距   */
+.electron-channel .channel-items:first-child,
+.entity-channel .channel-items:first-child {
+	margin-left: 10px;
+}
+
+/*  渠道logo   */
+.logo {
+	width: 45px;
+	height: 45px;
+	margin: 25px 77px 30px;
+}
+
+.logo img {
+	width: 45px;
+	height: 45px;
+}
+
+/*  渠道名称、简介   */
+.channel-name,
+.channel-introduction,
+.channel-bottom-span {
+	width: 100%;
+	display: block;
+	font-size: 14px;
+	color: #22282E;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.channel-introduction,
+.channel-bottom-span {
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+.channel-bottom-span {
+	color: #22282E;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 25px;
+	background-color: #E3E8ED;
+}
+
+.channel-bottom-span p {
+	display: inline;
+}
+
+.channel-manage-div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../img/black15%.png) repeat;
+	display: none;
+}
+
+.manage-btn {
+	width: 92px;
+	height: 34px;
+	padding: 0 20px;
+	line-height: 30px;
+	background-color: #24AC7E;
+	border-radius: 4px;
+	color: #FFF;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: 50%;
+	margin-left: -46px;
+}
+
+.manage-btn:hover {
+	background-color: #1FA075;
+}
+
+.channel-items:hover .channel-manage-div {
+	display: block;
+}
+
+.right-alert {
+	display: block;
+	margin-right: 0;
+}
+
+.right-alert-content-main {
+	padding: 30px 30px 0px 54px;
+}
+
+.form-items {
+	width: 100%;
+}
+
+.form-items li {
+	padding-right: 30px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.form-items li .form-left,
+.form-items li .form-right {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.form-items li .form-left {
+	width: 140px;
+	padding-right: 15px;
+	text-align: right;
+	color: #999;
+}
+
+.form-items li .form-right {
+	width: 325px;
+	position: relative;
+	background-color: #FAFAFA;
+}
+
+.form-items li .form-right input {
+	width: 100%;
+	height: 32px;
+	border: 1px solid #E1E6EB;
+	padding: 0 10px;
+	outline: none;
+	font-size: 12px;
+	line-height: 32px;
+	position: relative;
+	z-index: 9;
+	color: #9DA2B6;
+	background: transparent url(0) no-repeat !important;
+}
+
+.form-items li.nth2 .form-right input {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	height: auto;
+	line-height: 0;
+	margin: 7px 0;
+	color: #999;
+}
+
+.form-items li.nth2 .form-right {
+	background-color: #FFFFFF;
+}
+
+/* 右弹窗表单  */
+
+.form-btn {
+	width: 495px;
+}
+
+.form-btn div {
+	width: 165px;
+	float: right;
+}
+
+.form-btn button:first-child {
+	margin-right: 15px;
+}
+
+.form-btn button {
+	float: left;
+}
+
+.SpanSelect,
+.select-btn,
+.select-menu {
+	width: 325px;
+}
+
+.select-menu {
+	z-index: 9999999999;
+}
+
+.select-menu li {
+	width: 100%;
+	padding: 0 15px;
+	margin-bottom: 0;
+}
+
+.select-btn p {
+	color: #9DA2B6;
+}
+
+.form-left span {
+	width: 100%;
+	height: 32px;
+	float: left;
+	display: block;
+}
+
+.form-left span i {
+	font-size: 10px;
+	color: #E44E4E;
+	margin-right: 10px;
+	line-height: 32px;
+}

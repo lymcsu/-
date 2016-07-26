@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="lib/css/normal.css" />
+		<link rel="stylesheet" href="lib/font/iconfont.css" />
+		<link rel="stylesheet" href="css/table.css" />
+		<link rel="stylesheet" href="css/current.css" />
+		<link rel="stylesheet" href="css/ui.css" />
+		<link rel="stylesheet" href="css/role-access-control.css" />
+	</head>
+
+	<body>
+		<!---<<<<  右侧背景    >>>>-->
+		<div class="viewFramework-index">
+			<!---<<<<  内容区域外层    >>>>-->
+			<div class="viewFramework-index-body">
+				<!---<<<<  标题    >>>>-->
+				<span class="viewFramework-index-title">角色权限控制</span>
+				<div class="viewFramework-index-tabs">
+					<!---<<<<  tabs按钮    >>>>-->
+					<ul class="tabs_menu">
+						<li class="current js-tabs-btn1"><a>角色权限管理</a></li>
+						<li class="js-tabs-btn2"><a>用户权限管理</a></li>
+					</ul>
+
+					<!---<<<<  tabs按钮下划线    >>>>-->
+					<hr />
+
+					<!---<<<<  tabs div    >>>>-->
+					<div class="tabs_box">
+						<!---<<<<  tabs div 外层    >>>>-->
+						<div class="tabs-wapper js-tabs-div1 open">
+							<div class="tabs_nav">
+								<div class="Select-input">
+									<div id="store-selector" class="select-input-select-btn">
+										<div class="select-input-select-btn_icon"><i class="iconfont icon-expandmore"></i></div>
+										<ul class="Select-items">
+											<li class="choosed">系统管理员</li>
+											<li>自定义1</li>
+											<li>自定义2</li>
+											<li>自定义3</li>
+											<li>自定义4</li>
+										</ul>
+									</div>
+									<input class="roleText" type="text" />
+									<button class="select-input-search-btn">
+										<div><i class="iconfont icon-search"></i></div>
+									</button>
+								</div>
+
+								<button class="iconTextBtn"><i class="iconfont icon-add"></i>添加角色</button>
+							</div>
+
+							<!---<<<<  tabs div 主体   >>>>-->
+							<div class="tabs_body">
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+								<!---<<<<  角色列表   >>>>-->
+								<div class="role-items">
+									<!---<<<<  角色顶部   >>>>-->
+									<div class="role-items-top">
+										<!---<<<<  角色顶部左侧   >>>>-->
+										<div class="role-items-top-left">
+											<span class="role-items-top-name">超级管理员</span>
+										</div>
+										<!---<<<<  角色顶部快捷操作按钮   >>>>-->
+										<button class="iconBtn"><i class="iconfont icon-morevert"></i></button>
+										<div class="shortcut-operations">
+											<li>删除</li>
+											<li>自定义</li>
+											<li>自定义</li>
+										</div>
+									</div>
+									<!---<<<<  角色中间   >>>>-->
+									<div class="role-items-main">
+										<li>
+											<span class="role-items-main-title">角色名称：</span>
+											<span class="role-items-main-value">超级管理员</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建时间：</span>
+											<span class="role-items-main-value">2014-03-12</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">创建人：</span>
+											<span class="role-items-main-value">admin</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">用户数：</span>
+											<span class="role-items-main-value user-nmb">56</span>
+										</li>
+
+										<li>
+											<span class="role-items-main-title">状态：</span>
+											<span class="role-items-main-value">正常</span>
+										</li>
+
+										<li class="last-child">
+											<span class="role-items-main-title">角色说明：</span>
+											<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+										</li>
+									</div>
+									<!---<<<<  角色底部   >>>>-->
+									<div class="role-items-bottom">
+										<div class="js--alert-btn"><span>查看详情</span></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="tabs-wapper js-tabs-div2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<  弹窗  >>>>-->
+		<div class="right-alert">
+			<div class="right-alert-closebg">
+				<div class="right-alert-boxShadow"></div>
+			</div>
+			<!---<<<<  弹窗正文区域   >>>>-->
+			<div class="right-alert-main">
+				<!---<<<<  头部    >>>>-->
+				<div class="right-alert_head">
+					<!---<<<<   标题  >>>>-->
+					<span class="right-alert_head_title">超级管理员</span>
+					<!---<<<<  tab   >>>>-->
+					<div class="right-alert-tabs-nav">
+						<ul class="right-alert-tabs_menu">
+							<li class="current"><a>用户管理</a></li>
+							<li class="nth2"><a>功能权限</a></li>
+							<li class="last-child"><a>数据权限</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!---<<<<   内容区域  >>>>-->
+				<div class="right-alert_content">
+					<!---<<<<  tab div 1   >>>>-->
+					<div class="right-alert-content-main current js--tab1">
+						<!---<<<<   角色信息  >>>>-->
+						<div class="role-information">
+							<!---<<<<  顶部   >>>>-->
+							<div class="role-information-top">
+								<span class="role-items-top-name">超级管理员</span>
+								<button class="iconTextBtn add-user"><i class="iconfont icon-add"></i>添加账户</button>
+							</div>
+							<!---<<<<  底部   >>>>-->
+							<div class="role-information-bottom">
+								<li>
+									<span class="role-items-main-title">角色名称：</span>
+									<span class="role-items-main-value">超级管理员</span>
+								</li>
+
+								<li>
+									<span class="role-items-main-title">创建时间：</span>
+									<span class="role-items-main-value">2014-03-12</span>
+								</li>
+
+								<li>
+									<span class="role-items-main-title">创建人：</span>
+									<span class="role-items-main-value">admin</span>
+								</li>
+
+								<li>
+									<span class="role-items-main-title">用户数：</span>
+									<span class="role-items-main-value user-nmb">56</span>
+								</li>
+
+								<li>
+									<span class="role-items-main-title">状态：</span>
+									<span class="role-items-main-value">正常</span>
+								</li>
+
+								<li class="last-child">
+									<span class="role-items-main-title">角色说明：</span>
+									<span class="role-items-main-value">具有超级管理员权限的系统管理员</span>
+								</li>
+							</div>
+						</div>
+						<!---<<<<   用户信息  >>>>-->
+						<div class="user-manage">
+							<table>
+								<thead>
+									<th>
+										<div class="checked-box all-checked-btn"><i class="iconfont"></i></div>
+									</th>
+									<th>人员编码/姓名</th>
+									<th>部门</th>
+									<th>手机号</th>
+									<th>状态</th>
+									<th class="operation last-child">操作</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr>
+										<td width="10">
+											<div class="checked-box"><i class="iconfont"></i></div>
+										</td>
+										<td>[004]张晓云</td>
+										<td>深圳分公司</td>
+										<td>13248984812</td>
+										<td>正常</td>
+										<td class="operation last-child">
+											<button>查看</button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+								</tbody>
+
+								<tfoot>
+									<tr>
+										<td width="10">
+											<div class="checked-box all-checked-btn"><i class="iconfont"></i></div>
+										</td>
+										<!---<<<<  批量操作   >>>>-->
+										<td colspan="7">
+											<div class="dropdown-body">
+												<button class="dropdown-btn">批量操作<div><i class="iconfont icon-expandmore"></i></div></button>
+												<ul class="dropdown-menu">
+													<li><a>自定义</a></li>
+													<li><a>自定义</a></li>
+													<li><a>自定义</a></li>
+													<li><a>自定义</a></li>
+												</ul>
+											</div>
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					
+					<!---<<<<  tab div2   >>>>-->
+					<div class="right-alert-content-main js--tab2">
+						<!---<<<<  左侧   >>>>-->
+						<div class="tab2--sidebar">
+							<ul class="tree">
+								<li><span class="tree-primary-items first-child">权限名称</span></li>
+								<li><span class="tree-primary-items js-primary-btn">XX主权限<a class="add">添加</a></span></span>
+									<ul>
+										<li><span class="tree-secondary-items">XXX子权限<a class="add">添加</a></span></span>
+										</li>
+										<li><span class="tree-secondary-items">XX子权限<a class="add">添加</a></span></span>
+										</li>
+										<li><span class="tree-secondary-items">XX子权限<a class="add">添加</a></span></span>
+										</li>
+									</ul>
+								</li>
+
+								<li><span class="tree-primary-items js-primary-btn">XX主权限<a class="add">添加</a></span></span>
+									<ul>
+										<li><span class="tree-secondary-items">XXX子权限<a class="add">添加</a></span></span>
+										</li>
+										<li><span class="tree-secondary-items">XX子权限<a class="add">添加</a></span></span>
+										</li>
+										<li><span class="tree-secondary-items">XX子权限<a class="add">添加</a></span></span>
+										</li>
+									</ul>
+								</li>
+
+								<li><span class="tree-primary-items js-primary-btn">XXXX主权限<a class="add">添加</a></span></span>
+									<ul>
+										<li><span class="tree-secondary-items">XXX子权限<a class="add">添加</a></span></span>
+										</li>
+										<li><span class="tree-secondary-items">XX子权限<a class="add">添加</a></span></span>
+										</li>
+										<li><span class="tree-secondary-items">XX子权限<a class="add">添加</a></span></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!---<<<<  右侧   >>>>-->
+						<div class="right-box">
+							<!---<<<<  标题及按钮   >>>>-->
+							<div class="right-box-title">当前权限<button class="TextBtn-import">保存</button><button class="TextBtn">清空</button></div>
+							<!---<<<<  权限显示区域   >>>>-->
+							<div class="right-box-main"></div>
+						</div>
+					</div>
+
+					<!---<<<<  tab div3   >>>>-->
+					<div class="right-alert-content-main js--tab3"></div>
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<  添加用户弹窗   >>>>-->
+		<div class="main-alert">
+			<!---<<<<  关闭背景   >>>>-->
+			<div class="main-alert-closeBg"></div>
+			<!---<<<<   内容区域  >>>>-->
+			<div class="main-alert-content">
+				<!---<<<<  标题   >>>>-->
+				<div class="main-alert-content-top">添加用户账户<i class="iconfont icon-close"></i></div>
+				<!---<<<<  正文   >>>>-->
+				<div class="main-alert-content-main">
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>名称:</span>
+						<input type="text" />
+					</div>
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>部门:</span>
+						<input type="text" />
+					</div>
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>手机号:</span>
+						<input type="text" />
+					</div>
+					<!---<<<<  按钮   >>>>-->
+					<div class="form-items">
+						<div class="btn-div">
+							<button class="TextBtn cancel">取消</button>
+							<button class="TextBtn-import ok">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="lib/js/tabs.js"></script>
+		<script type="text/javascript" src="js/current.js"></script>
+		<script type="text/javascript" src="js/rol-access-control.js"></script>
+	</body>
+
+</html>

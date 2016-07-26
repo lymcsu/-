@@ -1,0 +1,157 @@
+@charset "utf-8";
+/*  tabmenu下划线   */
+.viewFramework-index-tabs hr {
+    border: none;
+    height: 1px;
+    background-color: #E1E6EB;
+    margin-top: -1px;
+}
+
+.nav {
+	margin: 15px 0;
+}
+
+.nav .SpanInput,
+.nav .SpanSelect,
+.nav button {
+	float: left;
+}
+
+.nav button {
+	margin-left: 15px;
+}
+
+.nav .select-btn {
+	margin-left: 0;
+}
+
+.nav .TextBtn {
+	width: 100px;
+}
+
+/*    tab      */
+.viewFramework-index-tabs {
+    margin-top: 15px;
+    display: none;
+}
+
+/*   tab对应div       */
+.tabs_box {
+	top: 112px;
+	overflow-y: auto;
+}
+
+/*   tab功能栏    */
+.tabs_nav {
+    height: 35px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.tabs_nav-left {
+	float: left;
+}
+
+.tabs_nav-right {
+	float: right;
+}
+
+/*   二级tab     */
+.tabs_menu2 {
+	width: 133px;
+	border: none;
+}
+
+.tabs_menu2 li {
+	width: 50%;
+	border: 1px solid #E1E6EB;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+	height: 32px;
+	line-height: 32px;
+}
+
+.tabs_menu2 li:first-child {
+	border-radius: 4px 0 0 4px;
+	border-right: none;
+}
+
+/*   tab div 区域    */
+.tabs_body {
+	float: left;
+	overflow-y: auto;
+	position: relative;
+	height: 100%;
+}
+
+.tabs_body-wapper,
+.tabs_body-wapper2 {
+	width: 350px;
+	height: 100%;
+	float: left;
+	border: 1px solid #E1E6EB;
+	position: relative;
+	display: none;
+}
+
+.tabs_body-wapper.open,
+.tabs_body-wapper2.open {
+	display: block;
+}
+
+/*   一二级菜单   */
+.primary-items,
+.second-items {
+	width: 100%;
+	height: 45px;
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #E1E6EB;
+	float: left;
+}
+
+.second-items {
+	background-color: #FFF;
+	display: none;
+}
+
+.primary-items span {
+	float: left;
+	margin: 14px 15px;
+}
+
+/* 开关 */
+.switches {
+	float: right;
+	margin: 13px 15px;
+}
+
+/*  多选按钮    */
+.checkbox-items {
+	height: 14px;
+	line-height: 14px;
+	float: left;
+	border-right: 1px solid #E1E6EB;
+	margin-top: 16px;
+}
+
+.checked-box,
+.checked-box i:before,
+.checkbox-items span {
+	float: left;
+}
+
+.checked-box i {
+	height: 12px;
+}
+
+.checked-box i:before {
+	line-height: 12px !important;
+}
+
+.checked-box {
+	margin: 0px 10px 0px 12px;
+}
+
+.checkbox-items span {
+	margin-right: 15px;
+}

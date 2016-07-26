@@ -1,0 +1,222 @@
+@charset "utf-8";
+html,
+body {
+	height: 100%;
+}
+/* 保存按钮 */
+.save-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+/* 顶部权限控制 */
+.top-access-control {
+	height: 92px;
+	border-bottom: 1px solid #E1E6EB;
+}
+
+/* 顶部列表项 */
+.top-items {
+	width: 100%;
+	height: 20px;
+	margin-top: 20px;
+}
+
+/* 左侧标题 */
+.left-title {
+	display: block;
+	width: 108px;
+	text-align: right;
+	float: left;
+	line-height: 20px;
+	color: #999;
+}
+
+.top-items:first-child div {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 55px;
+	cursor: pointer;
+}
+
+.top-items:first-child div:first-child {
+	margin-left: 25px;
+}
+
+.top-items:first-child div i,
+.switches-items span {
+	float: left;	
+}
+
+.top-items:first-child div span,
+.switches-items span {
+	font-size: 14px;
+	color: #22282E;
+}
+
+.top-items:first-child div i {
+	margin-right: 10px;
+}
+
+.top-items:first-child div i:before,
+.tree-secondary-items:before {
+	content: "\e624";
+	color: #B0BACA;
+}
+
+.top-items:first-child div.checked i:before,
+.tree-secondary-items.checked:before {
+	content: "\e623";
+	color: #24AC7E;
+} 
+
+/* 开关 */
+.switches {
+	float: left;
+}
+/* 开关列表 */
+.switches-items {
+	float: left;
+	margin-left: 30px;
+}
+
+.switches-items:first-child {
+	margin-left: 25px;
+}
+/* 开关标题 */
+.switches-items span {
+	display: block;
+	margin-right: 10px;
+	line-height: 20px;
+	cursor: default;
+}
+/* 底部权限控制 */
+.bottom-access-control {
+	float: left;
+	margin-top: 15px;
+	min-height: 100%;
+}
+
+/* 底部权限控制外框 */
+.bottom-access-control-left,
+.bottom-access-control-right {
+	width: 420px;
+	min-height: 100%;
+	border: 1px solid #E1E6EB;
+	background-color: #F3F5F7;
+	margin-right: 15px;
+	float: left;
+	overflow-y: auto;
+}
+
+/* 底部权限控制左右显示权限div */
+.left-show-access-control,
+.right-show-access-control {
+	width: 100%;
+	min-height: 145px;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+/* 树形菜单标题 */
+.tree-title,
+.tab-btn {
+	display: block;
+	width: 100%;
+	height: 35px;
+	border: 1px solid #E1E6EB;
+	border-left: none;
+	border-right: none;
+	background-color: #FAFAFA;
+	line-height: 17px;
+	color: #9DA2B6;
+	padding: 9px 10px;
+}
+
+.tree-secondary-items:before {
+	margin-right: 5px;
+}
+
+.tab-btn {
+	width: 100%;
+	height: 32px;
+	padding: 0;
+}
+
+.tab-btn li {
+	width: 50%;
+	float: left;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.tab-btn li:hover {
+	background-color: #EFEFEF;
+}
+
+.tab-btn li div {
+	overflow: hidden;
+	width: 50px;
+	margin: 0 auto;
+}
+
+.tab-btn li:first-child {
+	border-right: 1px solid #E1E6EB;
+}
+
+.tab-btn li i {
+	margin-right: 10px;
+	color: #24AC7E;
+}
+
+.tab-btn li i,
+.tab-btn li span {
+	float: left;
+	line-height: 30px;
+}
+
+/* tab div */
+.user,
+.role {
+	display: none;
+}
+
+.user.active,
+.role.active {
+	display: block;
+}
+
+.tab-tree-btn-role.active,
+.tab-tree-btn-user.active {
+	background-color: #24AC7E;
+	color: #FFF;
+}
+
+.tab-btn li.active:hover {
+	background-color: #1FA075;
+}
+
+.tab-tree-btn-role.active i,
+.tab-tree-btn-user.active i {
+	color: #FFF;
+}
+
+.tree-primary-items:after {
+    float: left;
+    margin-right: 10px;
+}
+
+.tree-secondary-items {
+	padding-left: 45px;
+}
+
+a.add {
+	color: #24AC7E;
+	float: right;
+}
+
+a.add:hover {
+	color: #1FA075;
+	text-decoration: underline;
+}

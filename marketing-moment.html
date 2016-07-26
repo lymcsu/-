@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>一体化营销平台-我的营销</title>
+		<link rel="stylesheet" href="lib/css/normal.css" />
+		<link rel="stylesheet" href="lib/font/iconfont.css" />
+		<link rel="stylesheet" href="lib/css/animate.min.css" />
+		<link rel="stylesheet" href="css/ui.css" />
+		<link rel="stylesheet" href="css/current.css" />
+		<link rel="stylesheet" href="css/table.css" />
+		<link rel="stylesheet" href="css/marketing-moment.css" />
+	</head>
+
+	<body>
+		<!---<<<<  内容区域外层    >>>>-->
+		<div class="viewFramework-index-body">
+			<!---<<<<  标题    >>>>-->
+			<span class="viewFramework-index-title">营销时刻准备</span>
+			<!---<<<<  tabs div    >>>>-->
+			<div class="tabs_box">
+				<!---<<<<  tabs div 外层    >>>>-->
+				<div class="tabs-wapper">
+					<!---<<<<  tabs div 左侧边栏    >>>>-->
+					<div class="tabs_sidebar">
+						<ul class="tree">
+							<li><span class="tree-primary-items open">全部</span>
+								<ul class="open">
+									<li><span class="tree-secondary-items open">Superkind（二级）</span>
+										<ul class="open">
+											<li><span class="tree-third-items active">自定义</span></li>
+											<li><span class="tree-third-items">自定义</span></li>
+											<li><span class="tree-third-items">自定义</span></li>
+										</ul>
+									</li>
+									<li><span class="tree-secondary-items">我的定义时刻</span>
+										<ul>
+											<li><span class="tree-third-items">自定义</span></li>
+											<li><span class="tree-third-items">自定义</span></li>
+											<li><span class="tree-third-items">自定义</span></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<!---<<<<  tabs div 主体   >>>>-->
+					<div class="tabs_body">
+						<div class="tabs_nav">
+							<!---<<<<  顶部功能栏   >>>>-->
+							<div class="tabs_nav-top">
+								<!---<<<<  输入框   >>>>-->
+								<li class="tabs_nav-li-items"><span>说明：</span><input type="text" /></li>
+								<!---<<<<  输入框   >>>>-->
+								<li class="tabs_nav-li-items"><span>编码：</span><input type="text" /></li>
+								<!---<<<<  选择框   >>>>-->
+								<li class="tabs_nav-li-items">
+									<div id="SpanSelect1" class="SpanSelect">
+										<span>来源：</span>
+										<button class="select-btn">
+												<p></p>
+												<div><i class="iconfont icon-expandmore"></i></div>
+											</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</li>
+								<!---<<<<  查询按钮   >>>>-->
+								<li class="tabs_nav-li-items"><button class="iconTextBtn-import"><i class="iconfont icon-search"></i>查询</button></li>
+							</div>
+
+							<!---<<<<   底部功能栏   >>>>-->
+							<div class="tabs_nav-bottom">
+								<!---<<<<  选择框   >>>>-->
+								<li class="tabs_nav-li-items">
+									<div id="SpanSelect2" class="SpanSelect">
+										<span>状态：</span>
+										<button class="select-btn">
+												<p></p>
+												<div><i class="iconfont icon-expandmore"></i></div>
+											</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</li>
+								<!---<<<<  选择框   >>>>-->
+								<li class="tabs_nav-li-items">
+									<div id="SpanSelect3" class="SpanSelect">
+										<span>订阅状态：</span>
+										<button class="select-btn">
+												<p></p>
+												<div><i class="iconfont icon-expandmore"></i></div>
+											</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</li>
+								<!---<<<<  选择框   >>>>-->
+								<li class="tabs_nav-li-items">
+									<div id="SpanSelect4" class="SpanSelect">
+										<span>时效性：</span>
+										<button class="select-btn">
+												<p></p>
+												<div><i class="iconfont icon-expandmore"></i></div>
+											</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</li>
+								<!---<<<<  新增按钮，点击右弹窗   >>>>-->
+								<li class="tabs_nav-li-items last-child"><button><i class="iconfont icon-add"></i>新增</button></li>
+							</div>
+						</div>
+
+						<!---<<<<  表格   >>>>-->
+						<div class="tabs_main">
+							<table>
+								<thead>
+									<th>关键时刻名称</th>
+									<th>描述</th>
+									<th>类型</th>
+									<th>来源</th>
+									<th>时效性</th>
+									<th>编码</th>
+									<th>订阅状态</th>
+									<th>当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<tbody>
+									<tr class="running subscription">
+										<td class="name"><a>用户更换套餐</a></td>
+										<td>贵州规则测试</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>27826</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（自助终端）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="suspend no-subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（外呼）</td>
+										<td>测试C</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="suspend no-subscription">
+										<td class="name"><a>宽带停机</a></td>
+										<td>宽带停机（外呼）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00703</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>用户更换套餐</a></td>
+										<td>贵州规则测试</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>27826</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（自助终端）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（外呼）</td>
+										<td>测试C</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="suspend no-subscription">
+										<td class="name"><a>宽带停机</a></td>
+										<td>宽带停机（外呼）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00703</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（自助终端）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（外呼）</td>
+										<td>测试C</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="suspend no-subscription">
+										<td class="name"><a>宽带停机</a></td>
+										<td>宽带停机（外呼）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00703</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（自助终端）</td>
+										<td>测试A</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+									<tr class="running subscription">
+										<td class="name"><a>4G自动加油包（10元100M）</a></td>
+										<td>订购加油包（外呼）</td>
+										<td>测试C</td>
+										<td>经分</td>
+										<td>暂无</td>
+										<td>Pr_a_00800</td>
+										<td class="subscription-state"></td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn"></button>
+											<button class="subscription-btn"></button>
+											<button class="last-child">删除</button>
+										</td>
+									</tr>
+
+								</tbody>
+
+								<tfoot>
+									<tr>
+										<td colspan="9">
+											<div class="page-box pull-right">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!---<<<<   右弹窗   >>>>-->
+		<div class="right-alert">
+			<div class="right-alert-closeBg">
+				<div class="right-alert-boxShadow"></div>
+			</div>
+			<div class="right-alert-main">
+				<div class="right-alert_head">
+					<button class="right-alert-closeBtn">
+						<i class="iconfont icon-close"></i>
+					</button>
+					<span class="right-alert_head_title">新增时刻</span>
+				</div>
+
+				<div class="right-alert_content">
+					<div class="right-alert-content-main current">
+						<!---<<<<  左侧边栏   >>>>-->
+						<div class="tabs_sidebar">
+							<ul class="tree">
+								<li><span class="tree-primary-items open">全部</span>
+									<ul class="open">
+										<li><span class="tree-secondary-items">Superkind（二级）</span>
+											<ul>
+												<li><span class="tree-third-items">自定义</span></li>
+												<li><span class="tree-third-items">自定义</span></li>
+												<li><span class="tree-third-items">自定义</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-secondary-items open">我的定义时刻</span>
+											<ul class="my-define-moment open">
+												<li><span class="tree-third-items active">自定义</span>
+													<ul></ul>
+												</li>
+												<li><span class="tree-third-items">自定义</span>
+													<ul></ul>
+												</li>
+												<li><span class="tree-third-items">自定义</span>
+													<ul></ul>
+												</li>
+												<!---<<<<  默认隐藏，输入文字确定添加分类   >>>>-->
+												<li class="tree-empty set-up-moment">
+													<div class="input-moment-name">
+														<input type="text" placeholder="输入分类名称" />
+														<button id="js-add-li" class="TextBtn">确定</button>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<!---<<<<  时刻按钮，新增删除分类   >>>>-->
+										<li>
+											<button class="add"><i class="iconfont icon-add"></i>新增分类</button>
+											<button class="delete"><i class="iconfont icon-delete"></i>删除分类</button>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<!---<<<<  右侧表格   >>>>-->
+						<div class="right-alert-content-main-form">
+							<li class="right-alert-content-main-form-items">
+								<span class="form-span">名称：</span>
+								<div class="input-parent-div">
+									<span class="placeholder">例如：100运营</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li class="right-alert-content-main-form-items">
+								<span class="form-span">描述：</span>
+								<div class="textarea-parent-div">
+									<span class="placeholder">添加描述</span>
+									<textarea type="text"></textarea>
+								</div>
+							</li>
+							<li class="right-alert-content-main-form-items">
+								<div class="pull-right">
+									<button class="TextBtn-import">确定</button>
+									<button class="TextBtn">取消</button>
+								</div>
+							</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<!---<<<<  分页js   >>>>-->
+		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
+		<!---<<<<  通用js   >>>>-->
+		<script type="text/javascript" src="js/current.js"></script>
+		<script type="text/javascript" src="js/tree-nav.js"></script>
+		<!---<<<<  营销时刻js   >>>>-->
+		<script type="text/javascript" src="js/marketing-moment.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,751 @@
+@charset "utf-8";
+.customer-base-btn {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+}
+
+.customer-base-btn button {
+	width: auto;
+	padding: 0 15px;
+	float: left;
+	margin-left: 10px;
+	background-color: #FAFAFA;
+}
+
+.customer-base-btn button:hover {
+	background-color: #FFF;
+	color: #333;
+	border-color: #E1E6EB;
+}
+
+.customer-base-btn button:hover i {
+	color: #24AC7E;
+}
+
+
+/*  左侧边栏  */
+
+.tabs_sidebar {
+	width: 190px;
+	border: 1px solid #E1E6EB;
+	background-color: #F1F4F7;
+	overflow-y: auto;
+	overflow-x: hidden;
+	float: left;
+	height: 100%;
+}
+
+.tree li.li-search {
+	padding: 7px;
+}
+
+#inventory-customer-base ul,
+#rule-customer-base ul {
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+/*  正文部分  */
+
+.tabs_body {
+	width: 100%;
+	height: 100%;
+	padding-left: 205px;
+}
+
+#inventory-customer-base-div,
+#rule-customer-base-div {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#inventory-customer-base-div.open,
+#rule-customer-base-div.open {
+	display: block;
+}
+
+.customer-base-div-top {
+	border-bottom: 1px solid #E1E6EB;
+	position: relative;
+	width: 100%;
+	float: left;
+	padding-bottom: 35px;
+	background-color: #FFF;
+}
+
+.customer-base-div-top li {
+	width: 100%;
+	float: left;
+}
+
+.customer-base-div-top button.iconTextBtn-import {
+	width: auto;
+	padding: 0 15px;
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+}
+
+.customer-base-div-top li span {
+	line-height: 32px;
+}
+
+.customer-base-div-top li span:first-child {
+	width: 80px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+	color: #999999;
+}
+
+.customer-base-div-top li.last-child span.last-child {
+	width: 300px;
+	display: block;
+	float: left;
+	min-height: 32px;
+}
+
+/*  功能栏  */
+.tabs_nav {
+	width: 100%;
+	height: 32px;
+	float: left;
+}
+
+.tabs_nav-left {
+	float: left;
+	position: relative;
+	background-color: #FAFAFA;
+}
+
+.tabs_nav-left input {
+	width: 235px;
+	height: 32px;
+	float: left;
+	padding-left: 10px;
+	border: 1px solid #E1E6EB;
+	line-height: 30px;
+	position: relative;
+	z-index: 9;
+	background: transparent url(0) no-repeat !important;
+}
+
+.tabs_nav-right {
+	float: right;
+}
+
+.chart-head .delete-btn,
+.tabs_nav-left button {
+	background-color: #FAFAFA;
+}
+
+
+/*  功能栏右侧按钮  */
+
+.tabs_nav-right button {
+	margin-right: 10px;
+}
+
+.tabs_nav-right button.last-child {
+	margin-right: 0;
+}
+
+.chart-head .delete-btn:hover {
+	background-color: #24AC7E;
+	color: #FFF;
+}
+
+.chart-head .delete-btn:hover i {
+	color: inherit;
+}
+
+.tabs_body thead th.last-child {
+	text-align: center;
+	padding-right: 8px;
+	width: 180px;
+}
+
+.tabs_main {
+	overflow: hidden;
+	margin-top: 15px;
+	float: left;
+	width: 100%;
+}
+
+
+/*  左侧边栏添加删除分类按钮  */
+
+li button.add,
+li button.delete {
+	width: 50%;
+	height: 32px;
+	float: left;
+	background-color: #FAFAFA;
+	border: 1px solid #E1E6EB;
+	border-left: none;
+	color: #293038;
+}
+
+li button.delete {
+	border-right: none;
+}
+
+li button.add i,
+li button.delete i {
+	font-size: 12px;
+	color: #24AC7E;
+	margin-right: 6px;
+}
+
+li button.add:hover,
+li button.delete:hover {
+	background-color: #FEFEFE;
+}
+
+.page-box p.page-tips {
+	right: 0px;
+}
+
+
+/*  表格css  */
+
+.tabs_body table tbody tr td:first-child {
+	width: 10px;
+}
+
+.tabs_body table tr .name {
+	padding-left: 60px !important;
+}
+
+
+/*  右弹窗css  */
+
+.right-alert-content-main {
+	padding: 30px 55px;
+}
+
+
+/*  导入清单客户群css  */
+
+.import-clientBase {
+	width: 100%;
+	height: 100%;
+	padding: 12px 20px 0px 38px;
+}
+
+.import-clientBase-left {
+	width: 446px;
+	border-right: 1px solid #E1E6EB;
+	float: left;
+}
+
+.import-clientBase-left li {
+	padding-right: 30px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.import-clientBase-left li .form-left,
+.import-clientBase-left li .form-right {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.import-clientBase-left li .form-left {
+	width: 90px;
+	padding-right: 15px;
+}
+
+.import-clientBase-left li .form-left {
+	text-align: right;
+	color: #999;
+}
+
+.import-clientBase-left li .form-right {
+	width: 325px;
+	position: relative;
+	background-color: #FAFAFA;
+}
+
+.import-clientBase-left li .form-right input,
+.import-clientBase-left li .form-right textarea {
+	width: 100%;
+	height: 32px;
+	border: 1px solid #E1E6EB;
+	padding: 0 10px;
+	outline: none;
+	font-size: 12px;
+	line-height: 32px;
+	position: relative;
+	z-index: 9;
+	color: #9DA2B6;
+	background: transparent url(0) no-repeat !important;
+}
+
+.import-clientBase-left li.nth2 .form-right input {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	height: auto;
+	line-height: 0;
+	margin: 7px 0;
+	color: #999;
+}
+
+.import-clientBase-left li.nth2 .form-right {
+	background-color: #FFFFFF;
+}
+
+.import-clientBase-left li.nth3,
+.import-clientBase-left li.nth3 .form-right {
+	height: 64px;
+}
+
+
+.import-clientBase-left li .form-right textarea {
+	max-width: 100%;
+	height: 64px;
+}
+
+.import-clientBase-right {
+	width: 331px;
+	height: 100%;
+	float: left;
+	padding-left: 40px;
+}
+
+.import-clientBase-right span {
+	width: 100%;
+	display: block;
+	line-height: 24px;
+	color: #9DA2B6;
+	padding-right: 20px;
+}
+
+.import-clientBase-right span a {
+	color: #24AC7E;
+	cursor: pointer;
+}
+
+.import-clientBase-right span a:hover {
+	text-decoration: underline;
+}
+
+/*  条件显示区域  */
+.tabs_body-left {
+	width: 100%;
+	height: 100%;
+	padding-left: 205px;
+}
+
+/*  条件显示区域 功能栏右侧按钮  */
+.tabs_body-left-chart {
+	padding-top: 42px;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*  条件显示区域头部  */
+
+.chart-head {
+	width: 100%;
+	height: 64px;
+	border: 1px solid #E1E6EB;
+	float: left;
+	background-color: #FFF;
+	z-index: 9;
+	position: relative;
+}
+
+
+/*  条件显示区域删除按钮  */
+
+.chart-head .delete-btn {
+	margin: 16px 20px;
+}
+
+
+/*  条件弹窗  */
+
+.tree_choose-alrte-div {
+	position: absolute;
+	z-index: 9999999999999999;
+	background: url(../img/black80%.png) repeat;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	width: 400px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.tree_choose-alrte-div_head {
+	width: 100%;
+	height: 40px;
+	background-color: #24AC7E;
+	position: relative;
+	font-size: 14px;
+	line-height: 40px;
+	padding-left: 25px;
+}
+
+
+
+/* 关闭按钮  */
+
+.tree_choose-alrte-div_close-btn {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.tree_choose-alrte-div_body {
+	padding: 30px 30px;
+	float: left;
+	width: 100%;
+}
+
+.tree_choose-alrte-div_close-btn:hover {
+	color: #1A7254;
+}
+
+
+/* 确认按钮  */
+
+.ok-btn {
+	float: left;
+	margin-top: 10px;
+}
+
+.ok-btn a {
+	display: block;
+	background-color: #24AC7E;
+	color: #FFF;
+	border-radius: 4px;
+	line-height: 32px;
+	width: 75px;
+	height: 32px;
+	margin: 0 auto 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ok-btn a:hover {
+	background-color: #1FA075;
+}
+
+.chart-body {
+	width: 100%;
+	background-image: url(../img/chart-bgImg.png);
+	background-repeat: repeat;
+	border: 1px solid #E1E6EB;
+	border-top: none;
+	padding: 89px 25px 25px;
+	float: left;
+	height: 100%;
+	margin-top: -64px;
+	overflow-y: auto;
+}
+
+#rule-customer-base-div .chart-body {
+	margin-top: -164px;
+	padding-top: 189px;
+}
+
+/* 树形菜单四级标题tipso  */
+
+.js-tabs-div2 .tipso_bubble {
+	display: block !important;
+}
+
+
+/* 右弹窗表单  */
+
+.form-btn {
+	width: 100%;
+}
+
+.form-btn div {
+	width: 165px;
+	float: right;
+}
+
+.form-btn button:first-child {
+	margin-right: 15px;
+}
+
+.form-btn button {
+	float: left;
+}
+
+
+/* 条件弹窗输入框  */
+
+.tree_choose-alrte-div_body input {
+	margin: 0 70px;
+	height: 30px;
+	border: 1px solid #E1E4E7;
+	color: #333;
+	width: 200px;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+#import-inventory-customer-base .right-alert_head,
+#new-rule-customer-base .right-alert_head {
+	height: 130px;
+}
+
+#import-inventory-customer-base .right-alert-content-main,
+#new-rule-customer-base .right-alert-content-main {
+	padding: 20px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.tipso_bubble {
+	display: block !important;
+	z-index: 9999999999;
+}
+
+#import-inventory-customer-base .right-alert_content,
+#new-rule-customer-base .right-alert_content {
+	padding-top: 130px;
+	margin-top: -130px;
+}
+
+#city li.col-1-3 p {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	line-height: 12px;
+}
+
+#city li.col-1-3 div.checked-box {
+	float: left;
+}
+
+.tree_choose-alrte-div_body .col-1-2,
+.tree_choose-alrte-div_body .col-1-3,
+.tree_choose-alrte-div_body .col-full {
+	float: left;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.tree_choose-alrte-div_body .col-1-2:hover {
+	color: #24AC7E;
+}
+
+.tree_choose-alrte-div_body .col-1-2 span,
+.tree_choose-alrte-div_body .col-full span {
+	color: #FFF;
+	line-height: 15px;
+}
+
+.tree_choose-alrte-div_body .col-1-2 span:before,
+.tree_choose-alrte-div_body .col-full span:before {
+	content: '\e624';
+	font-family: iconfont;
+	margin-right: 5px;
+	float: left;
+}
+
+.tree_choose-alrte-div_body .col-1-2.checked span:before,
+.tree_choose-alrte-div_body .col-full.checked span:before {
+	content: '\e623';
+	color: #24AC7E;
+}
+
+.selet-choose-dete {
+	float: left;
+}
+
+.selet-choose-dete .SpanSelect {
+	width: 107px;
+	float: left;
+	margin-right: 15px;
+}
+
+.selet-choose-dete .select-btn {
+	width: 107px;
+	padding-left: 0;
+}
+
+.selet-choose-dete .SpanSelect p {
+	width: 65px;
+	color: #9DA2B6;
+	padding-left: 15px;
+}
+
+.selet-choose-dete .select-menu {
+    width: 107px;
+    top: 32px;
+    right: 0;
+}
+
+.start-date {
+	float: left;
+	height: 33px;
+	width: 218px;
+}
+
+/*  右侧tab对应div 搜索、日期input   */
+.start-date input {
+	margin: 0;
+}
+
+.start-date .placeholder {
+	width: 100px;
+	top: 0;
+	left: 33px;
+}
+
+.date_selector {
+	width: 218px;
+}
+
+/*  开始、结束日期 input   */
+.start-date input {
+	width: 100%;
+	height: 33px;
+	padding-left: 43px;
+	border-right: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.selet-choose-dete.div2 input {
+	width: 96px;
+	height: 33px;
+	margin: 0;
+	float: left;
+}
+
+.SpanSelect.select2 {
+	margin-right: 0;
+	margin-left: 15px;
+}
+
+.selet-choose-dete.div2 {
+	display: none;
+}
+
+.condition-content2 {
+	background-color: #62B5DF;
+}
+
+.condition-content2 + .condition-content2 {
+	background-color: #FFB840;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #f26091;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #63CBAC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #9177BC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FF8A60;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #62B5DF;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FFB840;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #f26091;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #63CBAC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #9177BC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FF8A60;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #62B5DF;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FFB840;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #f26091;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #63CBAC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #9177BC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FF8A60;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #62B5DF;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FFB840;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #f26091;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #63CBAC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #9177BC;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FF8A60;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #62B5DF;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #FFB840;
+}
+
+.condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 + .condition-content2 {
+	background-color: #f26091;
+}

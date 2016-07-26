@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="lib/css/normal.css" />
+		<link rel="stylesheet" href="css/ui.css" />
+		<link rel="stylesheet" href="css/current.css" />
+		<link rel="stylesheet" href="css/table.css" />
+		<link rel="stylesheet" href="css/details.css" />
+	</head>
+
+	<body>
+		<!---<<<<  内容区域外层    >>>>-->
+		<div class="viewFramework-index-body">
+			<!---<<<<  标题    >>>>-->
+			<span class="viewFramework-index-title">待我处理</span>
+			<!---<<<<  tabs div 主体   >>>>-->
+			<div class="tabs_body">
+				<table>
+					<!---<<<<  表格头部   >>>>-->
+					<thead>
+						<th class="name">标题内容</th>
+						<th>类型</th>
+						<th class="operation">操作</th>
+					</thead>
+					<!---<<<<  表格正文   >>>>-->
+					<tbody>
+						<tr>
+							<td class="name">
+								<a>乐享100运营位</a>
+							</td>
+							<td>营销活动</td>
+							<!--    操作     -->
+							<td class="operation">
+								<button class="state-btn">暂停</button>
+								<button class="clear-after">查看</button>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="name">
+								<a>乐享100运营位</a>
+							</td>
+							<td>营销活动</td>
+							<!--    操作     -->
+							<td class="operation">
+								<button class="state-btn">暂停</button>
+								<button class="clear-after">查看</button>
+							</td>
+						</tr>
+					</tbody>
+
+					<!---<<<<  表格底部   >>>>-->
+					<tfoot>
+						<tr>
+
+							<td colspan="7">
+
+								<div class="pull-right page-box">
+									<div class="pagination-info">共有20条，每页显示10条</div>
+									<ul class="pagination">
+
+									</ul>
+									<div class="pagination-goto">
+										<input type="text" class="ipt form-control gotoPageNo">
+										<button type="button" class="btn btn-default goBtn">GO</button>
+										<input type="hidden" class="totalCount" name="totalCount" />
+									</div>
+									<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js" ></script>
+		<script type="text/javascript" src="js/current.js" ></script>
+		<script type="text/javascript" src="js/details.js" ></script>
+	</body>
+
+</html>

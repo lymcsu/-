@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* 正文部分 */
+.viewFramework-index-tabs {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+	padding: 0 15px;
+	top: 77px;
+}
+
+/* tab 按钮下滑线  */
+.viewFramework-index-tabs hr {
+	border: none;
+	height: 1px;
+	background-color: #E1E6EB;
+	margin-top: -1px;
+}
+
+/* tab功能栏 */
+.tabs_nav {
+	margin: 15px 0;
+	height: 32px;
+}
+
+/* 带选择的输入框 */
+.Select-input {
+	float: left;
+}
+
+/* 下拉菜单 */
+.Select-items {
+	position: absolute;
+	width: 260px;
+	background-color: #FFF;
+	top: 30px;
+	border: 1px solid #E1E6EB;
+	display: none;
+}
+
+/* 下拉列表 */
+.Select-items li {
+	height: 30px;
+	border-top: 1px solid #eaedf1;
+	text-align: left;
+	padding: 0 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #9DA2B6;
+	cursor: pointer;
+}
+
+.Select-items li:hover {
+	background-color: #f7f7f7;
+	color: #333;
+}
+
+.Select-items li.choosed {
+	color: #24AC7E;
+}
+
+.select-input-select-btn_icon {
+	cursor: pointer;
+}
+
+.select-input-select-btn_icon.open + .Select-items {
+	display: block;
+}
+
+/* icon 旋转 */
+.select-input-select-btn_icon i {
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	-ms-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	transition: transform 0.3s;
+}
+
+.select-input-select-btn_icon.open i {
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotate3d(0, 0, 1, 180deg);
+	-ms-transform: rotate3d(0, 0, 1, 180deg);
+	transform: rotate3d(0, 0, 1, 180deg);
+	transition: transform 0.3s;
+}
+
+/* tab功能栏 按钮 */
+.tabs_nav .iconTextBtn {
+	float: left;
+	margin-left: 15px;
+	width: 90px;
+}
+
+/* tab body */
+.tabs_body {
+	width: 100%;
+	float: left;
+	position: relative;
+	overflow-y: auto;
+}
+
+.tabs_box,
+.tabs-wapper {
+	overflow-y: auto;
+}
+
+/* 角色列表 */
+.role-items {
+	width: 253px;
+	height: 323px;
+	border: 1px solid #E1E6EB;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+/* 角色列表头部 */
+.role-items-top {
+	height: 45px;
+}
+
+/* 角色列表头部左侧 */
+.role-items-top-left {
+	width: 206px;
+	height: 45px;
+	float: left;
+	border-right: 1px solid #E1E6EB;
+	background-color: #F8F8F8;
+}
+
+/* 角色列表1-5颜色 */
+.tabs_body .role-items:first-child .role-items-top {
+	background-color: #FF8A60;
+}
+
+.tabs_body .role-items:first-child +.role-items .role-items-top {
+	background-color: #9177BC;
+}
+
+.tabs_body .role-items:first-child +.role-items +.role-items .role-items-top {
+	background-color: #62B5DF;
+}
+
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items .role-items-top {
+	background-color: #63CBAC;
+}
+
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items +.role-items .role-items-top {
+	background-color: #ADD67D;
+}
+
+.tabs_body .role-items:first-child .role-items-top .role-items-top-left,
+.tabs_body .role-items:first-child +.role-items .role-items-top .role-items-top-left,
+.tabs_body .role-items:first-child +.role-items +.role-items .role-items-top .role-items-top-left,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items .role-items-top .role-items-top-left,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items +.role-items .role-items-top .role-items-top-left {
+	background-color: transparent;
+	border-right: none;
+}
+
+.role-items-top-name {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 45px;
+}
+
+.role-items-top-name:before {
+	content: "\e618";
+	font-family: iconfont;
+	margin: 0 10px 0 15px;
+	color: #24AC7E;
+	font-size: 20px;
+	float: left;
+}
+
+.tabs_body .role-items:first-child .role-items-top .role-items-top-name,
+.tabs_body .role-items:first-child +.role-items .role-items-top .role-items-top-name,
+.tabs_body .role-items:first-child +.role-items +.role-items .role-items-top .role-items-top-name,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items .role-items-top .role-items-top-name,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items +.role-items .role-items-top .role-items-top-name {
+	color: #FFF;
+}
+
+.tabs_body .role-items:first-child .role-items-top .role-items-top-name:before,
+.tabs_body .role-items:first-child +.role-items .role-items-top .role-items-top-name:before,
+.tabs_body .role-items:first-child +.role-items +.role-items .role-items-top .role-items-top-name:before,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items .role-items-top .role-items-top-name:before,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items +.role-items .role-items-top .role-items-top-name:before {
+	color: #FFF;
+}
+
+.role-items-top .iconBtn {
+	border: none;
+	float: left;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #FAFAFA;
+}
+
+.role-items-top .iconBtn:hover {
+	background-color: #FCFCFC;
+}
+
+.tabs_body .role-items:first-child .role-items-top .iconBtn,
+.tabs_body .role-items:first-child +.role-items .role-items-top .iconBtn,
+.tabs_body .role-items:first-child +.role-items +.role-items .role-items-top .iconBtn,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items .role-items-top .iconBtn,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items +.role-items .role-items-top .iconBtn {
+	color: #FFF;
+	background: url(../img/black15%.png) repeat;
+}
+
+.tabs_body .role-items:first-child .role-items-top .iconBtn:hover,
+.tabs_body .role-items:first-child +.role-items .role-items-top .iconBtn:hover,
+.tabs_body .role-items:first-child +.role-items +.role-items .role-items-top .iconBtn:hover,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items .role-items-top .iconBtn:hover,
+.tabs_body .role-items:first-child +.role-items +.role-items +.role-items +.role-items .role-items-top .iconBtn:hover {
+	background: url(../img/black25%.png) repeat;
+}
+
+/* 角色列表中间 */
+.role-items-main {
+	width: 100%;
+	height: 244px;
+	float: left;
+	border: 1px solid #E1E6EB;
+	border-left: none;
+	border-right: none;
+}
+
+.role-items-main li {
+	width: 100%;
+	height: 17px;
+	margin-top: 15px;
+	float: left;
+	line-height: 17px;
+}
+
+.role-items-main li.last-child {
+	height: 51px;
+}
+
+.role-items-main li.last-child .role-items-main-value {
+	width: 146px;
+	height: 51px;
+}
+
+.role-items-main-title {
+	width: 75px;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	text-align: right;
+	color: #999;
+}
+
+.role-items-main-value {
+	display: block;
+	float: left;
+	color: #22282E;
+}
+
+/* 角色列表底部 */
+.role-items-bottom {
+	float: left;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	background-color: #F8F8F8;
+	cursor: pointer;
+}
+
+.role-items-bottom:hover {
+	background-color: #FCFCFC;
+}
+
+.role-items-bottom div {
+	width: 100%;
+}
+
+.role-items-bottom span:before {
+	content: "\e630";
+	font-family: iconfont;
+	margin-right: 10px;
+	margin-left: 90px;
+	color: #24AC7E;
+	font-size: 20px;
+	float: left;
+}
+
+/* 用户数颜色 */
+.user-nmb {
+	color: #24AC7E;
+}
+
+/* 快捷操作 */
+.shortcut-operations {
+	width: 45px;
+	position: absolute;
+	right: 0;
+	top:45px;
+	text-align: center;
+	display: none;
+}
+
+.shortcut-operations li {
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #E1E6EB;
+	border-right: none;
+	border-top: none;
+	background: #FFF;
+}
+
+.shortcut-operations li:hover {
+	background-color: #f7f7f7;
+	color: #333;
+	cursor: pointer;
+}
+
+.role-items-top-left + .iconBtn.current + .shortcut-operations {
+	display: block;
+}
+
+/* 角色信息 */
+.role-information {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #E1E6EB;
+}
+
+/* 角色信息头部 */
+.role-information-top {
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #E1E6EB;
+}
+/* 角色信息头部按钮 */
+.role-information-top button {
+	float: right;
+	margin-right: 15px;
+	margin-top: 6px;
+	width: 90px;
+}
+
+.role-information-bottom li {
+	margin-top: 15px;
+	float: left;
+}
+
+.role-information-bottom li.last-child {
+	width: 100%;
+	height: 54px;
+}
+
+.role-information-bottom li.last-child .role-items-main-value {
+	width: 700px;
+	height: 54px;
+}
+
+/* 表修改 */
+table thead .last-child {
+	text-align: right;
+	padding-right: 15px !important;
+}
+
+table tbody .operation {
+	text-align: right;
+	padding-right: 15px !important;
+}
+
+tbody td {
+	text-align: center;
+}
+
+table tbody .operation .last-child:after {
+	display: none;
+}
+
+.right-alert-content-main {
+	overflow: auto !important;
+	overflow-y: auto !important;
+}
+
+/* 侧边栏 */
+.tab2--sidebar {
+	width: 253px;
+	overflow: hidden;
+	border: 1px solid #E1E6EB;
+	float: left;
+	min-height: 500px;
+	background-color: #F3F5F7;
+}
+
+.tab2--sidebar .role-items {
+	height: 290px;
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid #E1E6EB;
+}
+
+.tab2--sidebar .role-items-top-left {
+	width: 100%;
+	border-right: none;
+}
+
+.tab2--sidebar .tree {
+	float: left;
+}
+
+.tab2--sidebar li .first-child {
+	background-color: #F8F8F8;
+	color: #9DA2B6;
+}
+
+.tab2--sidebar .tree-primary-items:after {
+	float: left;
+	margin-right: 10px;
+}
+
+.tab2--sidebar .tree-primary-items.first-child:after {
+	display: none;
+}
+
+.tab2--sidebar .tree-secondary-items {
+	padding-left: 45px;
+	color: #293038;
+}
+
+.tab2--sidebar .add {
+	float: right;
+	color: #24AC7E;
+}
+
+.tab2--sidebar .add:hover {
+	text-decoration: underline;
+}
+
+.tab2--sidebar .tree-secondary-items:before {
+	content: "\e624";
+	color: #B0BACA;
+	margin-right: 10px;
+}
+
+.tab2--sidebar .tree-secondary-items.checked:before {
+	content: "\e623";
+	color: #24AC7E;
+} 

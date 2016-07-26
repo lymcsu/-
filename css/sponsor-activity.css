@@ -1,0 +1,213 @@
+@charset "utf-8";
+.js-tabs-div1 table tbody tr td.operation {
+	width: 170px;
+}
+
+.js-tabs-div2 table tbody tr td.operation {
+	width: 160px;
+}
+
+.js-tabs-div3 table tbody tr td.operation {
+	width: 170px;
+}
+
+.js-tabs-div4 table tbody tr td.operation {
+	width: 100px;
+}
+
+.js-tabs-div5 table tbody tr td.operation {
+	width: 60px;
+}
+
+.js-tabs-div6 table tbody tr td.operation {
+	width: 277px;
+}
+
+/*  右侧tab对应div 功能栏   */
+.tabs_nav {
+	height: 35px;
+	margin-bottom: 15px;
+}
+
+.right-alert-content-main tbody tr td {
+	padding: 8px;
+	text-align: center;
+}
+
+.text-div {
+	position: absolute;
+	z-index: 9999999999999999;
+	background: url(../img/black80%.png) repeat;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-left: -235px;
+	width: 470px;
+	margin-bottom: 0;
+	height: 457px;
+	margin-top: -228px;
+	display: none;
+}
+
+
+.tree_choose-alrte-div_head {
+	width: 100%;
+	height: 40px;
+	background-color: #24AC7E;
+	position: relative;
+	font-size: 14px;
+	line-height: 40px;
+	padding-left: 25px;
+}
+
+/* 关闭按钮  */
+.tree_choose-alrte-div_close-btn{
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.tree_choose-alrte-div_body {
+	padding: 30px 30px;
+	float: left;
+	width: 100%;
+}
+
+.tree_choose-alrte-div_close-btn:hover {
+	color: #1A7254;
+}
+
+
+/* 确认按钮  */
+
+.ok-btn {
+	float: left;
+	margin-top: 10px;
+}
+
+.ok-btn a {
+	display: block;
+	background-color: #24AC7E;
+	color: #FFF;
+	border-radius: 4px;
+	line-height: 32px;
+	width: 75px;
+	height: 32px;
+	margin: 0 auto 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ok-btn a:hover {
+	background-color: #1FA075;
+}
+
+.choose-customer-base,
+.choose-phone-number {
+	width: 190px;
+	float: left;
+}
+
+.choose-customer-base ul,
+.choose-phone-number ul {
+	height: 300px;
+	overflow-y: auto;
+}
+
+.choose-phone-number {
+	width: 190px;
+	margin-left: 30px;
+}
+
+.choose-customer-base li,
+.choose-phone-number li {
+	width: 100%;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	border-bottom: 1px solid #E1E6EB;
+	padding: 0 15px;
+	cursor: pointer;
+	background-color: #FFF;
+	color: #9DA2B6;
+}
+
+.choose-customer-base li:hover,
+.choose-phone-number li:hover {
+	background-color: #F8F8F8;
+}
+
+.choose-phone-number li.checked,
+.choose-customer-base li.checked {
+	background-color: #F8F8F8;
+}
+
+.choose-customer-base li.checked {
+	background-color: #24AC7E;
+	color: #FFF;
+}
+
+.choose-customer-base li span,
+.choose-phone-number li span {
+	color: inherit;
+}
+
+.choose-phone-number li div {
+	float: left;
+	margin: 9px 10px 9px 0;
+}
+
+.right-alert {
+	display: block;
+	margin-right: 0;
+}
+
+/*.right-alert-content-main.nth1 .operation-btn {
+	float: right;
+}*/
+
+/*.right-alert-content-main.nth1 ul {
+	float: left;
+}*/
+
+.right-alert-content-main .btn-div {
+	width: 100%;
+	height: 32px;
+	margin-left: 0;
+	margin-bottom: 15px;
+}
+
+.right-alert-content-main .btn-div button {
+	float: right;
+}
+
+.right-alert-content-main .btn-div button.cancel {
+	margin-right: 15px;
+}
+
+.right-alert-content-main.nth1 ul li {
+	width: 400px;
+	float: left;
+	display: inline-block;
+}
+
+.right-alert-content-main.nth1 ul li .form-items,
+.right-alert-content-main.nth1 ul li .form-items .SpanSelect {
+	width: 400px;
+}
+
+.right-alert-content-main.nth1 ul li .form-items span {
+	width: 130px;
+	padding-right: 0;
+}
+
+.right-alert-content-main.nth1 ul li .form-items input,
+.right-alert-content-main.nth1 ul li .form-items .select-btn {
+	width: 250px;
+}
+
+.right-alert-content-main.nth1 ul li .form-items .select-btn p {
+	width: 203px;
+}

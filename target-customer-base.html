@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>一体化营销平台-目标客户群准备</title>
+		<link rel="stylesheet" href="lib/css/normal.css" />
+		<link rel="stylesheet" href="lib/font/iconfont.css" />
+		<link rel="stylesheet" href="lib/css/date_input.css" />
+		<link rel="stylesheet" href="css/ui.css" />
+		<link rel="stylesheet" href="css/current.css" />
+		<link rel="stylesheet" href="lib/css/tipso.min.css" />
+		<link rel="stylesheet" href="css/table.css" />
+		<link rel="stylesheet" href="css/traget-customer-base.css" />
+	</head>
+
+	<body>
+
+		<!---<<<<  内容区域外层    >>>>-->
+		<div class="viewFramework-index-body">
+			<!---<<<<  标题    >>>>-->
+			<span class="viewFramework-index-title">目标客户群准备</span>
+			<div class="customer-base-btn">
+				<button id="newRuleCustomerBase" class="iconTextBtn">
+					<i class="iconfont icon-add"></i>新增规则客户群
+				</button>
+
+				<button id="importInventoryCustomerBase" class="iconTextBtn">
+					<i class="iconfont icon-shape"></i>导入清单客户群
+				</button>
+
+				<button class="iconTextBtn">
+					<i class="iconfont icon-21"></i>导出客户群
+				</button>
+			</div>
+
+			<div class="viewFramework-main">
+				<!---<<<<  tabs div 左侧边栏    >>>>-->
+				<div class="tabs_sidebar">
+					<ul class="tree">
+						<li><span class="tree-primary-items open">我的客户群</span>
+							<ul class="open">
+								<li class="li-search">
+									<div class="tree-secondary-items_search">
+										<span class="placeholder">输入客户群名称</span>
+										<input type="text" autocomplete="off" />
+										<button><i class="iconfont icon-search"></i></button>
+									</div>
+								</li>
+								<li id="inventory-customer-base"><span class="tree-secondary-items open">我的清单客户群</span>
+									<ul class="open">
+										<li><span class="tree-third-items active">一号清单客户群</span></li>
+										<li><span class="tree-third-items">二号清单客户群</span></li>
+										<li><span class="tree-third-items">三号清单客户群</span></li>
+										<li><span class="tree-third-items">四号清单客户群</span></li>
+										<li><span class="tree-third-items">五号清单客户群</span></li>
+										<li><span class="tree-third-items">六号清单客户群</span></li>
+										<li><span class="tree-third-items">七号清单客户群</span></li>
+									</ul>
+								</li>
+								<li id="rule-customer-base"><span class="tree-secondary-items">我的规则客户群</span>
+									<ul>
+										<li><span class="tree-third-items">一号规则客户群</span></li>
+										<li><span class="tree-third-items">二号规则客户群</span></li>
+										<li><span class="tree-third-items">三号规则客户群</span></li>
+										<li><span class="tree-third-items">四号规则客户群</span></li>
+										<li><span class="tree-third-items">五号规则客户群</span></li>
+										<li><span class="tree-third-items">六号规则客户群</span></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="tabs_body">
+					<!---<<<<  tabs按钮    >>>>-->
+					<ul class="tabs_menu">
+						<li class="js-tabs-btn1 current">
+							<a>客户群基础信息</a>
+						</li>
+						<li class="js-tabs-btn2">
+							<a>客户群号码管理</a>
+						</li>
+					</ul>
+
+					<!---<<<<  tabs按钮下划线    >>>>-->
+					<hr class="tabs_menu-hr" />
+
+					<div class="tabs_box">
+						<div class="tabs-wapper js-tabs-div1 open">
+							<div id="inventory-customer-base-div">
+								<ul class="customer-base-div-top">
+									<li><span>客户群名称：</span><span>一号清单客户群</span></li>
+									<li><span>类别：</span><span>自定义</span></li>
+									<li><span>失效时间：</span><span>2016年07月24日</span></li>
+									<li class="last-child"><span>描述：</span><span class="last-child">一号清单客户群是用来xxxxx</span></li>
+									<button class="iconTextBtn-import"><i class="iconfont icon-settingsapplications"></i>管理客户群</button>
+								</ul>
+							</div>
+							<div id="rule-customer-base-div" class="open">
+								<ul class="customer-base-div-top">
+									<li><span>客户群名称：</span><span>一号规则客户群</span></li>
+									<li><span>类别：</span><span>自定义</span></li>
+									<li><span>失效时间：</span><span>2016年07月24日</span></li>
+									<li class="last-child"><span>描述：</span><span class="last-child">一号规则客户群是用来xxxxx</span></li>
+									<button class="iconTextBtn-import"><i class="iconfont icon-settingsapplications"></i>管理客户群</button>
+								</ul>
+								<div class="chart-body">
+									
+								</div>
+							</div>
+						</div>
+						<div class="tabs-wapper js-tabs-div2">
+							<div class="tabs_nav">
+								<!---<<<<  搜索功能   >>>>-->
+								<div class="tabs_search">
+									<span class="placeholder">请输入手机号码</span>
+									<input class="search-phoneNum" type="text" autocomplete="off" />
+									<button><i class="iconfont icon-search"></i></button>
+								</div>
+
+								<!---<<<<  右侧功能   >>>>-->
+								<div class="tabs_nav-right">
+									<button class="iconTextBtn"><i class="iconfont icon-add"></i>新增</button>
+									<button class="iconTextBtn last-child"><i class="iconfont icon-delete"></i>删除</button>
+								</div>
+							</div>
+							<!---<<<<  表格   >>>>-->
+							<div class="tabs_main">
+								<table>
+									<thead>
+										<th>
+											<div class="checked-box all-checked-btn"><i class="iconfont"></i></div>
+										</th>
+										<th>号码</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="checked-box"><i class="iconfont"></i></div>
+											</td>
+											<td>13782378238</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2">
+												<div class="pull-right page-box">
+													<div class="pagination-info">共有20条，每页显示10条</div>
+													<ul class="pagination">
+
+													</ul>
+													<div class="pagination-goto">
+														<input type="text" class="ipt form-control gotoPageNo">
+														<button type="button" class="btn btn-default goBtn">GO</button>
+														<input type="hidden" class="totalCount" name="totalCount" />
+													</div>
+													<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+												</div>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<   右弹窗   >>>>-->
+		<div id="new-rule-customer-base" class="right-alert">
+			<div class="right-alert-closeBg">
+				<div class="right-alert-boxShadow"></div>
+			</div>
+			<div class="right-alert-main">
+				<div class="right-alert_head">
+					<button class="right-alert-closeBtn">
+						<i class="iconfont icon-close"></i>
+					</button>
+					<span class="right-alert_head_title">新增规则客户群</span>
+				</div>
+
+				<div class="right-alert_content">
+					<div class="right-alert-content-main current">
+						<!---<<<<  tabs div 左侧边栏    >>>>-->
+						<div class="tabs_sidebar">
+							<ul class="tree">
+								<!---<<<<  一级标签   >>>>-->
+								<li><span class="tree-primary-items">营销标签</span>
+									<ul>
+										<!---<<<<  二级标签   >>>>-->
+										<li><span class="tree-secondary-items">业务营销类</span>
+											<ul>
+												<!---<<<<  三级标签点击弹框确认后添加html结构至右侧div中   >>>>-->
+												<li><span class="tree-third-items active js-alert-liuliangyunying no-chirld">流量运营</span></li>
+												<li><span class="tree-third-items no-chirld ruwangshijian">其他数据业务</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-secondary-items">用户偏好类</span>
+											<ul>
+												<li><span class="tree-third-items no-chirld">促销偏好</span></li>
+												<li><span class="tree-third-items no-chirld">渠道偏好</span></li>
+												<li><span class="tree-third-items no-chirld">终端偏好</span></li>
+												<li><span class="tree-third-items no-chirld">资费偏好</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-secondary-items">用户特征类</span>
+											<ul>
+												<li><span class="tree-third-items no-chirld">用户分群</span></li>
+												<li><span class="tree-third-items no-chirld">用户捆绑</span></li>
+												<li><span class="tree-third-items no-chirld">用户异动</span></li>
+											</ul>
+										</li>
+										<li><span class="tree-secondary-items">重要客户保有</span>
+											<ul>
+												<li><span class="tree-third-items no-chirld">中高端客户保有</span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><span class="tree-primary-items">属性偏好</span>
+									<ul>
+										<li>
+											<div class="tree-secondary-items_search">
+												<input placeholder="请输入属性名称" />
+												<button><i class="iconfont icon-search"></i></button>
+											</div>
+										</li>
+										<li><span class="tree-secondary-items">基础属性</span>
+											<ul>
+												<li><span class="tree-third-items have-chirld">自然属性</span>
+													<ul>
+														<!---<<<<  点击弹窗输入姓名确定后添加html结构至右侧div   >>>>-->
+														<li><span title="姓名" class="name-btn">姓名</span></li>
+														<li><span title="号码">号码</span></li>
+														<li><span title="性别">性别</span></li>
+														<li><span title="年龄">年龄</span></li>
+														<li><span title="归属地市" class="city-btn">归属地市</span></li>
+														<li><span title="归属区县">归属区县</span></li>
+														<li><span title="归属片区">归属片区</span></li>
+														<li><span title="姓名[日]">姓名[日]</span></li>
+														<li><span title="号码[日]">号码[日]</span></li>
+														<li><span title="性别[日]">性别[日]</span></li>
+														<li><span title="年龄[日]">年龄[日]</span></li>
+														<li><span title="归属地市[日]">归属地市[日]</span></li>
+														<li><span title="归属区县[日]">归属区县[日]</span></li>
+													</ul>
+												</li>
+												<li><span class="tree-third-items have-chirld">账号属性</span>
+													<ul>
+														<li><span title="网龄">网龄</span></li>
+														<li><span title="品牌">品牌</span></li>
+														<li><span title="用户级别">用户级别</span></li>
+														<li><span title="VIP标识">VIP标识</span></li>
+														<li><span title="集团成员标识">集团成员标识</span></li>
+														<li><span title="VPMN用户标识">VPMN用户标识</span></li>
+														<li><span title="客户可兑换积分">客户可兑换积分</span></li>
+														<li><span title="网龄[日]">网龄[日]</span></li>
+														<li><span title="品牌[日]">品牌[日]</span></li>
+														<li><span title="用户级别[日]">用户级别[日]</span></li>
+														<li><span title="VIP标识[日]">VIP标识[日]</span></li>
+														<li><span title="集团成员标识[日]">集团成员标识[日]</span></li>
+														<li><span title="VPMN用户标识[日]">VPMN用户标识[日]</span></li>
+														<li><span title="客户可兑换积分[日]">客户可兑换积分[日]</span></li>
+													</ul>
+												</li>
+												<li><span class="tree-third-items have-chirld">套餐属性</span>
+													<ul>
+														<li><span title="月租费">月租费</span></li>
+														<li><span title="月租费[日]">月租费[日]</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><span class="tree-secondary-items">电信属性</span>
+											<ul>
+												<li><span class="tree-third-items have-chirld">话音</span>
+													<ul>
+														<li><span title="上月本地通话费">上月本地通话费</span></li>
+														<li><span title="上月长途费">上月长途费</span></li>
+														<li><span title="上月省内长途费">上月省内长途费</span></li>
+														<li><span title="上月省内长途通话">上月省内长途通话</span></li>
+														<li><span title="上月国际长途费">上月国际长途费</span></li>
+														<li><span title="上月漫游费">上月漫游费</span></li>
+														<li><span title="上月本地主叫通话时长">上月本地主叫通话时长</span></li>
+														<li><span title="上月本地被叫通话时长">上月本地被叫通话时长</span></li>
+														<li><span title="上月省际长途通话时长">上月省际长途通话时长</span></li>
+														<li><span title="上月省内漫游通话时长">上月省内漫游通话时长</span></li>
+														<li><span title="上月省际漫游通话时长">上月省际漫游通话时长</span></li>
+														<li><span title="上月国际漫游通话时长">上月国际漫游通话时长</span></li>
+														<li><span title="上月长途费[日]">上月长途费[日]</span></li>
+														<li><span title="上月省内长途费[日]">上月省内长途费[日]</span></li>
+														<li><span title="上月省际长途通话费[日]">上月省际长途通话费[日]</span></li>
+														<li><span title="上月国际长途费[日]">上月国际长途费[日]</span></li>
+														<li><span title="上月漫游费[日]">上月漫游费[日]</span></li>
+														<li><span title="上月本地主叫通话时长[日]">上月本地主叫通话时长[日]</span></li>
+														<li><span title="上月本地被叫通话时长[日]">上月本地被叫通话时长[日]</span></li>
+														<li><span title="上月省际长途通话时长[日]">上月省际长途通话时长[日]</span></li>
+														<li><span title="上月省内漫游通话时长[日]">上月省内漫游通话时长[日]</span></li>
+														<li><span title="上月省际漫游通话时长[日]">上月省际漫游通话时长[日]</span></li>
+														<li><span title="上月国际漫游通话时长[日]">上月国际漫游通话时长[日]</span></li>
+													</ul>
+												</li>
+												<li><span class="tree-third-items have-chirld">上网行为</span>
+													<ul>
+														<li><span title="最近连续3月平均ARPU">最近连续3月平均ARPU</span></li>
+														<li><span title="上月ARPU">上月ARPU</span></li>
+														<li><span title="上月数据业务费">上月数据业务费</span></li>
+														<li><span title="上月GPRS使用流量">上月GPRS使用流量</span></li>
+														<li><span title="上月GPRS流量费">上月GPRS流量费</span></li>
+														<li><span title="最近连续3月平均ARPU[日]">最近连续3月平均ARPU[日]</span></li>
+														<li><span title="上月ARPU[日]">上月ARPU[日]</span></li>
+														<li><span title="上月数据业务费[日]">上月数据业务费[日]</span></li>
+														<li><span title="上月GPRS使用流量[日]">上月GPRS使用流量[日]</span></li>
+														<li><span title="上月GPRS流量费[日]">上月GPRS流量费[日]</span></li>
+													</ul>
+												</li>
+												<li><span class="tree-third-items have-chirld">短信</span>
+													<ul>
+														<li><span title="上月点对点短信条数">上月点对点短信条数</span></li>
+														<li><span title="上月点对点短信费">上月点对点短信费</span></li>
+														<li><span title="上月点对点短信条数[日]">上月点对点短信条数[日]</span></li>
+														<li><span title="上月点对点短信费[日]">上月点对点短信费[日]</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><span class="tree-secondary-items have-chirld">终端属性</span>
+											<ul>
+												<li><span class="tree-third-items">终端信息偏好</span></li>
+												<li><span class="tree-third-items">终端特性偏好</span></li>
+												<li><span class="tree-third-items">换机行为</span></li>
+												<li><span class="tree-third-items">上次终端信息</span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><span class="tree-primary-items">特殊号码名单</span>
+									<ul>
+										<li><span class="tree-secondary-items no-chirld">黑名单</span></li>
+										<li><span class="tree-secondary-items no-chirld">红名单</span></li>
+										<li><span class="tree-secondary-items no-chirld">白名单</span></li>
+										<li><span class="tree-secondary-items no-chirld">免打扰名单</span></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs_body-left">
+							<div class="tabs_nav">
+								<!---<<<<  左侧功能   >>>>-->
+								<div class="tabs_nav-left">
+									<span class="placeholder">新建客户群名称</span>
+									<input type="text" />
+								</div>
+
+								<!---<<<<  右侧功能   >>>>-->
+								<div class="tabs_nav-right">
+									<button class="TextBtn-import clear-margin-right" class="text-btn">保存</button>
+								</div>
+							</div>
+
+							<!---<<<<   chart   >>>>-->
+							<div class="tabs_body-left-chart">
+								<!---<<<<  头部   >>>>-->
+								<div class="chart-head">
+									<button class="delete-btn iconTextBtn"><i class="iconfont icon-delete"></i>清空</button>
+									<div class="chart--btn">
+										<li><button>或</button><span>或者</span></li>
+										<li><button>且</button><span>并且</span></li>
+										<li><button>非</button><span>排除</span></li>
+										<li><button>(</button><span>左括号</span></li>
+										<li class="last-child"><button>)</button><span>右括号</span></li>
+									</div>
+								</div>
+								<!---<<<<  条件显示区域   >>>>-->
+								<div class="chart-body">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<   右弹窗   >>>>-->
+		<div id="import-inventory-customer-base" class="right-alert">
+			<div class="right-alert-closeBg">
+				<div class="right-alert-boxShadow"></div>
+			</div>
+			<div class="right-alert-main">
+				<div class="right-alert_head">
+					<button class="right-alert-closeBtn">
+						<i class="iconfont icon-close"></i>
+					</button>
+					<span class="right-alert_head_title">导入清单客户群</span>
+				</div>
+
+				<div class="right-alert_content">
+					<div class="right-alert-content-main current">
+						<!---<<<<  导入客户群   >>>>-->
+						<div class="import-clientBase">
+							<!---<<<<  导入客户群左侧   >>>>-->
+							<div class="import-clientBase-left">
+								<li>
+									<div class="form-left">
+										<span>客户群名称：</span>
+									</div>
+									<div class="form-right">
+										<span class="placeholder">例如：100运营</span>
+										<input type="text" />
+									</div>
+								</li>
+								<li class="nth2">
+									<div class="form-left">
+										<span>上传文件：</span>
+									</div>
+									<div class="form-right">
+										<input type="file" />
+									</div>
+								</li>
+								<li class="nth3">
+									<div class="form-left">
+										<span>描述：</span>
+									</div>
+									<div class="form-right">
+										<span class="placeholder">添加客户群描述</span>
+										<textarea></textarea>
+									</div>
+								</li>
+
+								<li class="form-btn">
+									<div>
+										<button class="TextBtn-import">确定</button>
+										<button class="TextBtn">取消</button>
+									</div>
+								</li>
+							</div>
+
+							<!---<<<<  导入客户群左侧   >>>>-->
+							<div class="import-clientBase-right">
+								<span>1. <a>点击下载</a>《客户导入模板》</span>
+								<span>2. 填写客户群信息，并开始导入</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<  树形菜单弹窗-单选类-流量运营   >>>>-->
+		<div id="liuliangyunying" class="tree_choose-alrte-div">
+			<!---<<<<  弹窗标题   >>>>-->
+			<div class="tree_choose-alrte-div_head">流量运营</div>
+			<!---<<<<  关闭按钮   >>>>-->
+			<a class="tree_choose-alrte-div_close-btn"><i class="iconfont icon-close"></i></a>
+			<!---<<<<  内容区域   >>>>-->
+			<div class="tree_choose-alrte-div_body">
+				<li class="col-1-2"><span>已订购五元流量包</span></li>
+				<li class="col-1-2"><span>已订购三十元流量包</span></li>
+				<li class="col-1-2"><span>已订购一百元流量包</span></li>
+				<li class="col-1-2"><span>已订购十元流量包</span></li>
+				<li class="col-1-2"><span>已订购五十元流量包</span></li>
+			</div>
+			<!---<<<<  确认按钮   >>>>-->
+			<div class="col-full ok-btn">
+				<a>确认</a>
+			</div>
+		</div>
+
+		<!---<<<<  树形菜单弹窗-多选类-归属地市   >>>>-->
+		<div id="city" class="tree_choose-alrte-div">
+			<!---<<<<  弹窗标题   >>>>-->
+			<div class="tree_choose-alrte-div_head"><span>归属地市</div>
+			<!---<<<<  关闭按钮   >>>>-->
+			<a class="tree_choose-alrte-div_close-btn"><i class="iconfont icon-close"></i></a>
+			<!---<<<<  内容区域   >>>>-->
+			<div class="tree_choose-alrte-div_body">
+				<li class="col-1-3">
+					<div class="checked-box"><i class="iconfont"></i></div>
+					<p>北京</p>
+				</li>
+
+				<li class="col-1-3">
+					<div class="checked-box"><i class="iconfont"></i></div>
+					<p>上海</p>
+				</li>
+
+				<li class="col-1-3">
+					<div class="checked-box"><i class="iconfont"></i></div>
+					<p>广州</p>
+				</li>
+			</div>
+			<!---<<<<  确认按钮   >>>>-->
+			<div class="col-full ok-btn">
+				<a>确认</a>
+			</div>
+		</div>
+
+		<!---<<<<  树形菜单弹窗-单选 + 下拉框 + 时间选择 -入网时间   >>>>-->
+		<div id="network-time" class="tree_choose-alrte-div">
+			<!---<<<<  标题   >>>>-->
+			<div class="tree_choose-alrte-div_head">入网时间</div>
+			<!---<<<<  关闭按钮   >>>>-->
+			<a class="tree_choose-alrte-div_close-btn"><i class="iconfont icon-close"></i></a>
+			<!---<<<<  内容区域   >>>>-->
+			<div class="tree_choose-alrte-div_body">
+				<li class="col-full btn1 checked">
+					<span>普通</span>
+				</li>
+				
+				<li class="col-full btn2">
+					<span>在当前日期之前且距离当前日期</span>
+				</li>
+				
+				<li class="col-full btn2">
+					<span>在当前日期之后且距离当前日期</span>
+				</li>
+				
+				<li class="col-full btn2">
+					<span>在当期月之前且距离当前月</span>
+				</li>
+				
+				<li class="col-full btn2">
+					<span>在当前月之后且距离当前月</span>
+				</li>
+				
+				<div class="selet-choose-dete div1">
+					<div class="SpanSelect select3">
+						<button class="select-btn">
+							<p></p>
+							<a><i class="iconfont icon-expandmore"></i></a>
+						</button>
+						<ul class="select-menu">
+							<li class="choosed">等于</li>
+							<li>大于</li>
+							<li>大于等于</li>
+							<li>小于</li>
+							<li>小于等于</li>
+							<li>区间</li>
+							<li>不等于</li>
+						</ul>
+					</div>
+					
+					<div class="start-date">
+						<input class="date_input" type="text" name="date" autocomplete="off" />
+						<span class="placeholder">选择开始日期</span>
+					</div>
+				</div>
+				
+				<div class="selet-choose-dete div2">
+					<div class="SpanSelect select1">
+						<button class="select-btn">
+							<p></p>
+							<a><i class="iconfont icon-expandmore"></i></a>
+						</button>
+						<ul class="select-menu">
+							<li class="choosed">等于</li>
+							<li>大于</li>
+							<li>大于等于</li>
+							<li>小于</li>
+							<li>小于等于</li>
+							<li>区间</li>
+							<li>不等于</li>
+						</ul>
+					</div>
+					
+					<input type="text" />
+					
+					<div class="SpanSelect select2">
+						<button class="select-btn">
+							<p></p>
+							<a><i class="iconfont icon-expandmore"></i></a>
+						</button>
+						<ul class="select-menu">
+							<li class="choosed">等于</li>
+							<li>大于</li>
+							<li>大于等于</li>
+							<li>小于</li>
+							<li>小于等于</li>
+							<li>区间</li>
+							<li>不等于</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!---<<<<  确认按钮   >>>>-->
+			<div class="col-full ok-btn">
+				<a>确认</a>
+			</div>
+		</div>
+		
+		<!---<<<<  树形菜单弹窗-输入框-姓名   >>>>-->
+		<div id="name" class="tree_choose-alrte-div">
+			<!---<<<<  标题   >>>>-->
+			<div class="tree_choose-alrte-div_head">姓名</div>
+			<!---<<<<  关闭按钮   >>>>-->
+			<a class="tree_choose-alrte-div_close-btn"><i class="iconfont icon-close"></i></a>
+			<!---<<<<  内容区域   >>>>-->
+			<div class="tree_choose-alrte-div_body">
+				<!---<<<<  输入框   >>>>-->
+				<input type="text" />
+			</div>
+			<!---<<<<  确认按钮   >>>>-->
+			<div class="col-full ok-btn">
+				<a>确认</a>
+			</div>
+		</div>
+		
+		<!---<<<<  新增策略弹窗   >>>>-->
+		<div class="main-alert">
+			<!---<<<<  关闭背景   >>>>-->
+			<div class="main-alert-closeBg"></div>
+			<!---<<<<   内容区域  >>>>-->
+			<div class="main-alert-content">
+				<!---<<<<  标题   >>>>-->
+				<div class="main-alert-content-top">新增策略<i class="iconfont icon-close"></i></div>
+				<!---<<<<  正文   >>>>-->
+				<div class="main-alert-content-main">
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>策略名称:</span>
+						<input type="text" />
+					</div>
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>策略描述:</span>
+						<textarea></textarea>
+					</div>
+					<!---<<<<  按钮   >>>>-->
+					<div class="form-items">
+						<div class="btn-div">
+							<button class="TextBtn cancel">取消</button>
+							<button class="TextBtn-import ok">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="lib/js/tipso.min.js"></script>
+		<script type="text/javascript" src="lib/js/tabs.js"></script>
+		<script type="text/javascript" src="lib/js/jquery.date_input.js" ></script>
+		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
+		<script type="text/javascript" src="js/current.js"></script>
+		<script type="text/javascript" src="js/target-customer-base.js"></script>
+	</body>
+
+</html>

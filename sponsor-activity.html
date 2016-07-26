@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>一体化营销平台-我的营销</title>
+		<!---<<<<   normal.css统一浏览器默认值   >>>>-->
+		<link rel="stylesheet" href="lib/css/normal.css" />
+		<!---<<<<   字体图标  >>>>-->
+		<link rel="stylesheet" href="lib/font/iconfont.css" />
+		<link rel="stylesheet" href="css/ui.css" />
+		<!---<<<<   表格相关CSS   >>>>-->
+		<link rel="stylesheet" href="css/table.css" />
+		<!---<<<<   日期CSS   >>>>-->
+		<link rel="stylesheet" href="lib/css/date_input.css" />
+		<!---<<<<   通用CSS  >>>>-->
+		<link rel="stylesheet" href="css/current.css" />
+		<!---<<<<   发起活动CSS  >>>>-->
+		<link rel="stylesheet" href="css/sponsor-activity.css" />
+	</head>
+
+	<body>
+		<!---<<<<  内容区域外层    >>>>-->
+		<div class="viewFramework-index-body">
+			<!---<<<<  标题    >>>>-->
+			<span class="viewFramework-index-title">活动列表</span>
+			<!---<<<<  tabs    >>>>-->
+			<div class="viewFramework-index-tabs">
+				<!---<<<<  tabs按钮    >>>>-->
+				<ul class="tabs_menu">
+					<li class="current js-tabs-btn1">
+						<a>全部活动</a>
+					</li>
+					<li class="js-tabs-btn2">
+						<a>待审核</a>
+					</li>
+					<li class="js-tabs-btn3">
+						<a>待发布</a>
+					</li>
+					<li class="js-tabs-btn4">
+						<a>已上线</a>
+					</li>
+					<li class="js-tabs-btn5">
+						<a>已下线</a>
+					</li>
+					<li class="js-tabs-btn6">
+						<a>测试</a>
+					</li>
+				</ul>
+
+				<!---<<<<  tabs按钮下划线    >>>>-->
+				<hr />
+
+				<!---<<<<  tabs div    >>>>-->
+				<div class="tabs_box">
+					<!---<<<<  tabs div 外层    >>>>-->
+					<div class="tabs-wapper js-tabs-div1 open">
+						<!---<<<<  tabs div 功能   >>>>-->
+						<div class="tabs_nav">
+							<!---<<<<  搜索功能   >>>>-->
+							<div class="tabs_search">
+								<span class="placeholder">输入活动名称例如：乐享100运营</span>
+								<input type="text" autocomplete="off" />
+								<button><i class="iconfont icon-search"></i></button>
+							</div>
+
+							<!---<<<<  选择日期   >>>>-->
+							<div class="tabs_choose-date">
+								<!---<<<<  开始日期   >>>>-->
+								<div class="start-date datetimepicker">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择开始日期</span>
+								</div>
+
+								<p>至</p>
+
+								<!---<<<<  结束日期   >>>>-->
+								<div class="over-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择结束日期</span>
+								</div>
+
+								<!---<<<<  搜索日期   >>>>-->
+								<button class="iconBtn">
+									<i class="iconfont icon-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<!---<<<<  tabs div 主体   >>>>-->
+						<div class="tabs_body">
+							<!---<<<<  表格   >>>>-->
+							<table>
+								<!---<<<<  表格头部   >>>>-->
+								<thead>
+									<th class="name">营销/活动名称</th>
+									<th>开始日期</th>
+									<th>结束日期</th>
+									<th>策略数</th>
+									<th>优先级</th>
+									<th class="current-state">当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<!---<<<<  表格正文   >>>>-->
+								<tbody>
+									<!---<<<<  
+													tr class running代表此活动正在运行，
+													suspend为暂停,
+													stop为停止，
+													audit为待审核，
+													wait-release为待发布，
+													current-state中的icon和文本与tr class有关
+												>>>>-->
+									<!--   正在运行     -->
+									<tr class="running">
+										<!---<<<<  右侧弹窗按钮   >>>>-->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<!--   当前状态     -->
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<!--    操作     -->
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<!--   暂停     -->
+									<tr class="suspend">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">开始</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+								</tbody>
+
+								<!---<<<<  表格底部   >>>>-->
+								<tfoot>
+									<tr>
+
+										<td colspan="7">
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+
+					<!---<<<<  tabs div 外层    >>>>-->
+					<div class="tabs-wapper js-tabs-div2">
+						<!---<<<<  tabs div 功能   >>>>-->
+						<div class="tabs_nav">
+							<!---<<<<  搜索功能   >>>>-->
+							<div class="tabs_search">
+								<span class="placeholder">输入活动名称例如：乐享100运营</span>
+								<input type="text" autocomplete="off" />
+								<button><i class="iconfont icon-search"></i></button>
+							</div>
+
+							<!---<<<<  选择日期   >>>>-->
+							<div class="tabs_choose-date">
+								<!---<<<<  开始日期   >>>>-->
+								<div class="start-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择开始日期</span>
+								</div>
+
+								<p>至</p>
+
+								<!---<<<<  结束日期   >>>>-->
+								<div class="over-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择结束日期</span>
+								</div>
+
+								<!---<<<<  搜索日期   >>>>-->
+								<button class="iconBtn">
+									<i class="iconfont icon-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="tabs_body">
+							<table>
+								<thead>
+
+									<th class="name">营销/活动名称</th>
+									<th>开始日期</th>
+									<th>结束日期</th>
+									<th>策略数</th>
+									<th>优先级</th>
+									<th class="current-state">当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<tbody>
+									<!---<<<<  
+													tr class audit代表此活动待审核，
+													current-state中的icon和文本与tr class有关
+												>>>>-->
+									<tr class="audit">
+										<!---<<<<  右侧弹窗按钮   >>>>-->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="audit">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>提交审核</button>
+											<button>查看</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+
+										<td colspan="7">
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+
+					<div class="tabs-wapper js-tabs-div3">
+						<div class="tabs_nav">
+							<!---<<<<  搜索功能   >>>>-->
+							<div class="tabs_search">
+								<span class="placeholder">输入活动名称例如：乐享100运营</span>
+								<input type="text" autocomplete="off" />
+								<button><i class="iconfont icon-search"></i></button>
+							</div>
+
+							<!---<<<<  选择日期   >>>>-->
+							<div class="tabs_choose-date">
+								<!---<<<<  开始日期   >>>>-->
+								<div class="start-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择开始日期</span>
+								</div>
+
+								<p>至</p>
+
+								<!---<<<<  结束日期   >>>>-->
+								<div class="over-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择结束日期</span>
+								</div>
+
+								<!---<<<<  搜索日期   >>>>-->
+								<button class="iconBtn">
+									<i class="iconfont icon-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="tabs_body">
+							<table>
+								<thead>
+									<th class="name">营销/活动名称</th>
+									<th>开始日期</th>
+									<th>结束日期</th>
+									<th>策略数</th>
+									<th>优先级</th>
+									<th class="current-state">当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<tbody>
+									<!---<<<<  
+													tr class wait-release代表此活动待发布，
+													current-state中的icon和文本与tr class有关
+												>>>>-->
+									<tr class="wait-release">
+										<!---<<<<  右侧弹窗按钮   >>>>-->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+
+									<tr class="wait-release">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button>查看</button>
+											<button class="text-btn">测试</button>
+											<button>启动</button>
+											<button class="clear-after">配置</button>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+
+										<td colspan="7">
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+
+					<div class="tabs-wapper js-tabs-div4">
+						<div class="tabs_nav">
+							<!---<<<<  搜索功能   >>>>-->
+							<div class="tabs_search">
+								<span class="placeholder">输入活动名称例如：乐享100运营</span>
+								<input type="text" autocomplete="off" />
+								<button><i class="iconfont icon-search"></i></button>
+							</div>
+
+							<!---<<<<  选择日期   >>>>-->
+							<div class="tabs_choose-date">
+								<!---<<<<  开始日期   >>>>-->
+								<div class="start-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择开始日期</span>
+								</div>
+
+								<p>至</p>
+
+								<!---<<<<  结束日期   >>>>-->
+								<div class="over-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择结束日期</span>
+								</div>
+
+								<!---<<<<  搜索日期   >>>>-->
+								<button class="iconBtn">
+									<i class="iconfont icon-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="tabs_body">
+							<table>
+								<thead>
+									<th class="name">营销/活动名称</th>
+									<th>开始日期</th>
+									<th>结束日期</th>
+									<th>策略数</th>
+									<th>优先级</th>
+									<th class="current-state">当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<tbody>
+									<!---<<<<  
+													tr class running代表此活动正在运行，
+													suspend为暂停,
+													current-state中的icon和文本与tr class有关
+												>>>>-->
+									<tr class="running">
+										<!---<<<<  右侧弹窗按钮   >>>>-->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="suspend">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">开始</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="suspend">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">开始</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+
+										<td colspan="7">
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+
+					<div class="tabs-wapper js-tabs-div5">
+						<div class="tabs_nav">
+							<!---<<<<  搜索功能   >>>>-->
+							<div class="tabs_search">
+								<span class="placeholder">输入活动名称例如：乐享100运营</span>
+								<input type="text" autocomplete="off" />
+								<button><i class="iconfont icon-search"></i></button>
+							</div>
+
+							<!---<<<<  选择日期   >>>>-->
+							<div class="tabs_choose-date">
+								<!---<<<<  开始日期   >>>>-->
+								<div class="start-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择开始日期</span>
+								</div>
+
+								<p>至</p>
+
+								<!---<<<<  结束日期   >>>>-->
+								<div class="over-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择结束日期</span>
+								</div>
+
+								<!---<<<<  搜索日期   >>>>-->
+								<button class="iconBtn">
+									<i class="iconfont icon-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="tabs_body">
+							<table>
+								<thead>
+									<th class="name">营销/活动名称</th>
+									<th>开始日期</th>
+									<th>结束日期</th>
+									<th>策略数</th>
+									<th>优先级</th>
+									<th class="current-state">当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<tbody>
+									<!---<<<<  
+													tr class stop代表此活动已结束，
+													current-state中的icon和文本与tr class有关
+												>>>>-->
+									<tr class="stop">
+
+										</th>
+										<!---<<<<  右侧弹窗按钮   >>>>-->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+
+									<tr class="stop">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="clear-after">查看</button>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+
+										<td colspan="7">
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+
+					<div class="tabs-wapper js-tabs-div6">
+						<div class="tabs_nav">
+							<!---<<<<  搜索功能   >>>>-->
+							<div class="tabs_search">
+								<span class="placeholder">输入活动名称例如：乐享100运营</span>
+								<input type="text" autocomplete="off" />
+								<button><i class="iconfont icon-search"></i></button>
+							</div>
+
+							<!---<<<<  选择日期   >>>>-->
+							<div class="tabs_choose-date">
+								<!---<<<<  开始日期   >>>>-->
+								<div class="start-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择开始日期</span>
+								</div>
+
+								<p>至</p>
+
+								<!---<<<<  结束日期   >>>>-->
+								<div class="over-date">
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<span class="placeholder">选择结束日期</span>
+								</div>
+
+								<!---<<<<  搜索日期   >>>>-->
+								<button class="iconBtn">
+									<i class="iconfont icon-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="tabs_body">
+							<table>
+								<thead>
+									<th class="name">营销/活动名称</th>
+									<th>开始日期</th>
+									<th>结束日期</th>
+									<th>策略数</th>
+									<th>优先级</th>
+									<th class="current-state">当前状态</th>
+									<th class="operation">操作</th>
+								</thead>
+								<tbody>
+									<tr class="running">
+										<!---<<<<  右侧弹窗按钮   >>>>-->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="suspend">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">开始</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="suspend">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>自动终端运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>5</td>
+										<td>2</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">开始</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+
+									<tr class="running">
+										<!--   右弹窗按钮     -->
+										<td class="name">
+											<a>乐享100运营位</a>
+										</td>
+										<td>2016-01-01</td>
+										<td>2017-01-01</td>
+										<td>7</td>
+										<td>5</td>
+										<td class="current-state">
+											<div>
+												<i class="iconfont"></i>
+												<span></span>
+											</div>
+										</td>
+
+										<td class="operation">
+											<button class="state-btn">暂停</button>
+											<button>查看</button>
+											<button>事件生成</button>
+											<button>状态初始化</button>
+											<button class="clear-after">删除</button>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+
+										<td colspan="7">
+
+											<div class="pull-right page-box">
+												<div class="pagination-info">共有20条，每页显示10条</div>
+												<ul class="pagination">
+
+												</ul>
+												<div class="pagination-goto">
+													<input type="text" class="ipt form-control gotoPageNo">
+													<button type="button" class="btn btn-default goBtn">GO</button>
+													<input type="hidden" class="totalCount" name="totalCount" />
+												</div>
+												<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<   右弹窗   >>>>-->
+		<div class="right-alert">
+			<!---<<<<   右弹窗关闭背景   >>>>-->
+			<div class="right-alert-closeBg">
+				<!---<<<<   右弹窗阴影   >>>>-->
+				<div class="right-alert-boxShadow"></div>
+			</div>
+			<!---<<<<   右弹窗内容区域   >>>>-->
+			<div class="right-alert-main">
+				<!---<<<<   右弹窗头部   >>>>-->
+				<div class="right-alert_head">
+					<!---<<<<   右弹窗关闭按钮   >>>>-->
+					<button class="right-alert-closeBtn">
+						<i class="iconfont icon-close"></i>
+					</button>
+					<!---<<<<   右弹窗标题   >>>>-->
+					<span class="right-alert_head_title">乐享100运营位</span>
+					<!---<<<<   活动基本信息   >>>>-->
+					<div class="activity-information">
+						<span class="nth1">活动创建人：<p>王某某</p></span>
+						<span class="nth2">结束时间：<p>2016-03-06</p></span>
+						<span class="nth3">当前状态：<p>运行中</p></span>
+					</div>
+					<!---<<<<   右弹窗tab按钮   >>>>-->
+					<div class="right-alert-tabs-nav">
+						<ul class="right-alert-tabs_menu">
+							<li class="current nth1">
+								<a>活动详情</a>
+							</li>
+							<li class="nth2">
+								<a>策略</a>
+							</li>
+							<li class="nth3">
+								<a>审核信息</a>
+							</li>
+						</ul>
+						<!---<<<<   右弹窗新增策略按钮   >>>>-->
+						<button class="add-strategy-btn">新增策略</button>
+					</div>
+				</div>
+
+				<!---<<<<   右弹窗正文区域   >>>>-->
+				<div class="right-alert_content">
+					<!---<<<<   右弹窗对应tab按钮1   >>>>-->
+					<div class="right-alert-content-main current nth1">
+						<div class="btn-div">
+							<button class="TextBtn-import operation-btn">编辑</button>
+							<button class="TextBtn cancel">取消</button>
+						</div>
+						<ul>
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销活动名称：</span>
+									<input type="text" value="乐享100" disabled />
+								</div>
+							</li>
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销活动编号：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<div class="SpanSelect">
+										<span>营销活动目标：</span>
+										<button class="select-btn">
+											<p></p>
+											<div><i class="iconfont icon-expandmore"></i></div>
+										</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>归属地市：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销活动生效时间：</span>
+									<input class="date_input" type="text" name="date" autocomplete="off" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销活动失效时间：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<div class="SpanSelect">
+										<span>营销活动优先级：</span>
+										<button class="select-btn">
+											<p></p>
+											<div><i class="iconfont icon-expandmore"></i></div>
+										</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<div class="SpanSelect">
+										<span>营销活动重要性：</span>
+										<button class="select-btn">
+											<p></p>
+											<div><i class="iconfont icon-expandmore"></i></div>
+										</button>
+										<ul class="select-menu">
+											<li class="choosed">全部</li>
+											<li>自定义</li>
+											<li>自定义2</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销对象：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销产品：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>促销资源：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销渠道：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销活动描述：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>创建人：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>创建部门：</span>
+									<input type="text" />
+								</div>
+							</li>
+
+							<li>
+								<!---<<<<  列表   >>>>-->
+								<div class="form-items">
+									<span>营销活动方案：</span>
+									<input type="text" />
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!---<<<<   右弹窗对应tab按钮2   >>>>-->
+					<div class="right-alert-content-main nth2">
+						<table>
+							<thead>
+								<th class="strategy-name">策略名称</th>
+								<th>营销活动名称</th>
+								<th>策略状态</th>
+								<th>开始时间</th>
+								<th>截止时间</th>
+								<th class="creater">创建人</th>
+								<th class="operation">操作</th>
+							</thead>
+							<tbody>
+								<tr class="running">
+									<td>策略A</td>
+									<td>营销活动A</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="running">
+									<td>策略B</td>
+									<td>营销活动B</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="running">
+									<td>策略C</td>
+									<td>营销活动C</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="running">
+									<td>策略D</td>
+									<td>营销活动D</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="suspend">
+									<td>策略E</td>
+									<td>营销活动E</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="running">
+									<td>策略F</td>
+									<td>营销活动F</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="suspend">
+									<td>策略G</td>
+									<td>营销活动G</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="running">
+									<td>策略H</td>
+									<td>营销活动H</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="stop">
+									<td>策略I</td>
+									<td>营销活动I</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+								<tr class="running">
+									<td>策略J</td>
+									<td>营销活动J</td>
+									<td class="strategy-state">
+										<div>
+											<i class="iconfont"></i>
+											<span></span>
+										</div>
+									</td>
+									<td>2016-01-01</td>
+									<td>2017-01-01</td>
+									<td>艾泽</td>
+									<td class="operation">
+										<button>编辑</button>
+										<button class="clear-after">删除</button>
+									</td>
+								</tr>
+
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="7">
+										<div class="pull-right page-box">
+											<div class="pagination-info">共有20条，每页显示10条</div>
+											<ul class="pagination">
+
+											</ul>
+											<div class="pagination-goto">
+												<input type="text" class="ipt form-control gotoPageNo">
+												<button type="button" class="btn btn-default goBtn">GO</button>
+												<input type="hidden" class="totalCount" name="totalCount" />
+											</div>
+											<p class="page-tips">请输入1-<span>35</span>之间的有效页码</p>
+										</div>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<!---<<<<   右弹窗对应tab按钮1   >>>>-->
+					<div class="right-alert-content-main nth3"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-div">
+			<!---<<<<  标题   >>>>-->
+			<div class="tree_choose-alrte-div_head">选择测试号码</div>
+			<!---<<<<  关闭按钮   >>>>-->
+			<a class="tree_choose-alrte-div_close-btn"><i class="iconfont icon-close"></i></a>
+			<!---<<<<  内容区域   >>>>-->
+			<div class="tree_choose-alrte-div_body">
+				<div class="choose-customer-base">
+					<ul>
+						<li><span>客户群1</span></li>
+						<li><span>客户群2</span></li>
+						<li><span>客户群3</span></li>
+						<li><span>客户群4</span></li>
+						<li><span>客户群5</span></li>
+						<li><span>客户群6</span></li>
+						<li><span>客户群7</span></li>
+						<li><span>客户群8</span></li>
+						<li><span>客户群9</span></li>
+						<li><span>客户群10</span></li>
+						<li><span>客户群11</span></li>
+						<li><span>客户群12</span></li>
+						<li><span>客户群13</span></li>
+					</ul>
+				</div>
+
+				<div class="choose-phone-number">
+					<ul>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+						<li>
+							<div class="checked-box"><i class="iconfont"></i></div>
+							<span>13874277656</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!---<<<<  确认按钮   >>>>-->
+			<div class="col-full ok-btn">
+				<a>确认</a>
+			</div>
+		</div>
+
+		<!---<<<<  新增策略弹窗   >>>>-->
+		<div class="main-alert">
+			<!---<<<<  关闭背景   >>>>-->
+			<div class="main-alert-closeBg"></div>
+			<!---<<<<   内容区域  >>>>-->
+			<div class="main-alert-content">
+				<!---<<<<  标题   >>>>-->
+				<div class="main-alert-content-top">新增策略<i class="iconfont icon-close"></i></div>
+				<!---<<<<  正文   >>>>-->
+				<div class="main-alert-content-main">
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>策略名称：</span>
+						<input type="text" />
+					</div>
+					<!---<<<<  列表   >>>>-->
+					<div class="form-items">
+						<span>策略描述：</span>
+						<textarea></textarea>
+					</div>
+					<!---<<<<  按钮   >>>>-->
+					<div class="form-items">
+						<div class="btn-div">
+							<button class="TextBtn cancel">取消</button>
+							<button class="TextBtn-import ok">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---<<<<   jQuery  >>>>-->
+		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
+		<!---<<<<   基于jQuery的日期插件  >>>>-->
+		<script type="text/javascript" src="lib/js/bootstrap-datetimepicker.js"></script>
+		<!---<<<<   bootstrap 分页  >>>>-->
+		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
+		<script type="text/javascript" src="lib/js/tabs.js"></script>
+		<script type="text/javascript" src="js/sponsor-activity.js"></script>
+		<!---<<<<   通用js  >>>>-->
+		<script type="text/javascript" src="js/current.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+.tabs_box {
+	top: 112px;
+}
+.viewFramework-index-tabs hr {
+    border: none;
+    height: 1px;
+    background-color: #E1E6EB;
+    margin-top: -1px;
+}
+
+.viewFramework-index-tabs {
+    margin-top: 15px;
+}
+
+.tabs_nav {
+    height: 35px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.tabs_nav-left {
+	float: left;
+}
+
+.tabs_nav-right {
+	float: right;
+}
+
+.ranking-type,
+.time-type {
+	width: 132px;
+	height: 32px;
+}
+
+.time-type {
+	width: 125px;
+	float: left;
+}
+
+.ranking-type a,
+.time-type a {
+	float: left;
+	display: block;
+	width: 50%;
+	height: 32px;
+	line-height: 32px;
+	color: #9DA2B6;
+	background-color: #F8F8F8;
+	border: 1px solid #E1E6EB;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ranking-type a:hover,
+.time-type a:hover {
+    background: #f5f5f5;
+    text-decoration: none;
+}
+
+.time-type a {
+	width: 25%;
+}
+
+.time-type .hour {
+	border-left: none;
+}
+
+.ranking-type .activity,
+.time-type .mouth {
+	border-right: none;
+	border-radius: 4px 0 0 4px;
+}
+
+.time-type .minute,
+.ranking-type .tactics {
+	border-left: none;
+	border-radius: 0px 4px 4px 0px;
+}
+
+.ranking-type a.active,
+.time-type a.active {
+	background-color: #24AC7E;
+	color: #FFF;
+	border-color: #24AC7E;
+}
+
+.tabs_body thead th.operation {
+    width: 120px;
+}
+
+.time-type + button {
+	float: left;
+	margin-left: 20px;
+}
+
+.table2,
+.table1 {
+	display: none;
+}
+
+.table1.active,
+.table2.active {
+	display: table;
+}
+
+table tbody tr td:first-child {
+	padding: 8px;
+}
