@@ -151,6 +151,7 @@
 	padding: 0;
 	margin: 0;
 	border: none;
+	z-index: 999;
 }
 
 .dropdown-menu {
@@ -1524,6 +1525,7 @@ padding-top: 15px;
 	width: 12px;
 	height: 12px;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .checked-box i,

@@ -37,15 +37,15 @@
 .text-div {
 	position: absolute;
 	z-index: 9999999999999999;
-	background: url(../img/black80%.png) repeat;
+	background: url(../img/black80.png) repeat;
 	color: #fff;
 	left: 50%;
 	top: 50%;
 	margin-left: -235px;
 	width: 470px;
 	margin-bottom: 0;
-	height: 457px;
-	margin-top: -228px;
+	height: 437px;
+	margin-top: -218px;
 	display: none;
 }
 
@@ -70,8 +70,7 @@
 }
 
 .tree_choose-alrte-div_body {
-	padding: 30px 30px;
-	float: left;
+	padding: 30px 10px 0 10px;
 	width: 100%;
 }
 
@@ -84,7 +83,7 @@
 
 .ok-btn {
 	float: left;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .ok-btn a {
@@ -104,12 +103,6 @@
 	background-color: #1FA075;
 }
 
-.choose-customer-base,
-.choose-phone-number {
-	width: 190px;
-	float: left;
-}
-
 .choose-customer-base ul,
 .choose-phone-number ul {
 	height: 300px;
@@ -117,8 +110,8 @@
 }
 
 .choose-phone-number {
-	width: 190px;
-	margin-left: 30px;
+	width: 400px;
+	margin: 0 auto;
 }
 
 .choose-customer-base li,
@@ -159,10 +152,10 @@
 	margin: 9px 10px 9px 0;
 }
 
-.right-alert {
+/*.right-alert {
 	display: block;
 	margin-right: 0;
-}
+}*/
 
 /*.right-alert-content-main.nth1 .operation-btn {
 	float: right;
@@ -210,4 +203,44 @@
 
 .right-alert-content-main.nth1 ul li .form-items .select-btn p {
 	width: 203px;
+}
+.select-btn{
+	float: right;
+}
+.new-event-time-select{
+	width: 360px;
+}
+.new-event-time-select span,.new-event-channel-select span{
+	width: auto;
+}
+.new-event-channel-select{
+	width: 360px;
+}
+.channel-select-menu{
+	height: 100px;
+	overflow-y: auto;
+}
+.select-operationPos-table,
+.select-event-table,
+.select-user-table{
+	/*width: 160px;*/
+	background-color: #fff;
+	color: #000;
+	display: inline-block;
+	margin: 30px 4px 10px;
+}
+.select-operationPos-title{
+	width: 160px;
+}
+.select-event-name-title,.select-event-id-title{
+	width: 100px;
+}
+.select-operationPos-tbody{
+	border: 1px solid #E1E6EB;
+}
+#new-event-div{
+	width: 780px;
+}
+.radio-buttons i{
+	float: left;
 }

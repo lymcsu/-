@@ -1,8 +1,19 @@
 /* 日期js */
-$(function () {
-	$('.datetimepicker').datetimepicker();
+//$(function () {
+//	$('.datetimepicker').datetimepicker();
+//});
+$(function(){
+	$(".select-menu li.choosed").each(function(){
+		var	btnMenuChooseText = $(this).text();	
+		$(this).parent().siblings(".select-btn").find("p").text(btnMenuChooseText);
+	})
+})
+$('.select-menu li').click(function(){
+	$(this).siblings().removeClass('choosed');
+	$(this).addClass('choosed');
+	var	btnMenuChooseText = $(this).text();
+	$(this).parent().siblings(".select-btn").find("p").text(btnMenuChooseText);
 });
-
 /* 分页 */
 $('.pagination').twbsPagination({
 	totalPages: 35,
@@ -64,3 +75,21 @@ $('.add-strategy-btn').click(function(){
 $('.main-alert-closeBg,.cancel,.ok,.icon-close').click(function(){
 	$('.main-alert').fadeOut();
 });
+
+//事件生成
+$(".new-event").on("click",function(){
+	$("#new-event-div").fadeIn();
+})
+$('#new-event-div').on('click', '.tree_choose-alrte-div_close-btn, .ok-btn a', function() {
+	$('this').fadeOut();
+});
+$(".SpanSelect").on("click",function(){
+	$(this).toggleClass("open");
+})
+
+$('body').click(function(e) {
+	var _fastNewBuilt = $('.SpanSelect'); // 设置目标区域
+    if (!_fastNewBuilt.is(e.target) && _fastNewBuilt.has(e.target).length === 0) { 
+   	 	$('.SpanSelect').removeClass('open');
+    }
+})

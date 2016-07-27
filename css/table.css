@@ -21,8 +21,8 @@ td.name a:hover {
 .right-alert {
 	z-index: 999999999999;
 }
-.right-alert-main table,
-.tabs_body table {
+
+table {
 	width: 100%;
 	border-collapse: collapse;
 }
