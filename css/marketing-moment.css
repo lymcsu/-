@@ -253,7 +253,7 @@ thead tr {
 }
 
 .tabs_body tbody td.operation {
-    width: 180px;
+    width: 160px;
 }
 
 .my-define-moment input {
@@ -337,6 +337,15 @@ thead tr {
 	background: #FAFAFA;
 }
 
+tbody tr td:first-child + td{
+	width: 190px !important;
+	line-height: 40px;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1368px) {
 	.tabs_nav-li-items input,
 	.tabs_nav-li-items .select-btn {
@@ -349,5 +358,20 @@ thead tr {
 	
 	.tabs_nav-li-items .select-btn p {
 		width: 153px;
+	}
+}
+@media (max-width: 1200px) {
+	tbody tr td,thead tr th{ padding: 0 8px !important;}
+	.tabs_nav-li-items input,
+	.tabs_nav-li-items .select-btn {
+		width: 180px;
+	}
+	
+	.tabs_nav-li-items .SpanSelect {
+		width: 265px;
+	}
+	
+	.tabs_nav-li-items .select-btn p {
+		width: 133px;
 	}
 }

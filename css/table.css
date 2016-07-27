@@ -8,6 +8,10 @@ tbody tr:hover {
 td.name a {
 	font-weight: 400;
 	display: block;
+	width: 190px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	line-height: 39px;
 }
 
