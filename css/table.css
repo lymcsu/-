@@ -4,7 +4,6 @@ tbody tr:hover {
 }
 
 /*  表格 class name a标签字体加粗   */
-
 td.name a {
 	font-weight: 400;
 	display: block;

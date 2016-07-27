@@ -360,6 +360,7 @@ tbody tr td:first-child + td{
 		width: 153px;
 	}
 }
+
 @media (max-width: 1200px) {
 	tbody tr td,thead tr th{ padding: 0 8px !important;}
 	.tabs_nav-li-items input,
