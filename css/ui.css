@@ -4,7 +4,7 @@
 	position: absolute;
 	left: 0px;
 	padding-left: 10px;
-	line-height: 33px;
+	line-height: 32px;
 	z-index: 1;
 	width: 100% !important;
 	text-align: left !important;
@@ -87,7 +87,8 @@
 .select-btn div,
 .DeepColor-select-btn div,
 .select-input-select-btn .select-input-select-btn_icon,
-.select-input-search-btn div {
+.select-input-search-btn div,
+.search-input-btn div {
 	width: 30px;
 	height: 30px;
 	float: right;
@@ -104,7 +105,8 @@
 .select-btn div i,
 .DeepColor-select-btn div i,
 .select-input-select-btn div i,
-.select-input-search-btn div i {
+.select-input-search-btn div i,
+.search-input-btn div i {
 	line-height: 30px;
 	color: #24AC7E;
 	display: block;
@@ -188,9 +190,19 @@
 	height: 32px;
 	position: relative;
 }
+.Input{
+	width: 260px;
+	overflow: hidden;
+}
+.SearchInput{
+	width: 292px;
+	height: 32px;
+	border: 1px solid #E1E6EB;
+	overflow: hidden;
+}
 
 .SpanSelect span,
-.SpanInput span {
+.SpanInput > span {
 	display: block;
 	width: 85px;
 	float: left;
@@ -199,21 +211,38 @@
 	text-align: right;
 }
 
-.select-btn,
-.DeepColor-select-btn,
-.SpanInput input {
+.SpanInput-input,.Input-input,.SearchInput-input{
 	width: 260px;
-	height: 32px;
-	float: left;
-	text-align: left;
-	background-color: #FAFAFA;
-	padding-left: 15px;
-	border: 1px solid #E1E6EB;
+    height: 32px;
+    float: left;
+    background-color: #FAFAFA;
+    padding-left: 10px;
+    border: 1px solid #E1E6EB;
+    line-height: 32px;
+    position: relative;
+}
+.SearchInput-input{
+	width: 200px;
+	border: 0;
+}
+.SpanInput input,.Input input,.SearchInput input{
+	width: 260px;
+    height: 32px;
+    float: left;
+    z-index: 9999;
+    line-height: 33px;
+    color: #9DA2B6;
+    box-shadow: none;
+    position: relative;
+    background: transparent url(0) no-repeat !important;
 }
 
+.select-btn,
+.DeepColor-select-btn,
 .select-btn a,
 .DeepColor-select-btn a,
 .select-input-search-btn a,
+.search-input-btn a,
 .select-input-select-btn .select-input-select-btn_icon {
 	margin-left: 0;
 }
@@ -242,12 +271,17 @@
 	float: left;
 	height: 30px;
 	line-height: 30px;
+	text-align: left;
+	padding-left: 10px;
 }
 
 .SpanSelect.open .select-menu,
 .DeepColorSelect.open .DeepColor-select-menu,
 .dropdown-body.open .dropdown-menu {
 	display: block;
+}
+.select-btn,.DeepColor-select-btn{
+	border: 1px solid #E1E6EB;
 }
 
 .DeepColor-select-btn {
@@ -279,7 +313,8 @@
 
 .select-input-search-btn,
 .select-input-select-btn,
-.Select-input input {
+.Select-input input,
+.search-input-btn {
 	float: left;
 }
 
@@ -914,7 +949,6 @@
 
 
 /*  页面标题CSS  */
-
 .viewFramework-index-title {
 	width: 100%;
 	height: 62px;
@@ -929,7 +963,6 @@
 
 
 /*  页面标题左侧竖线   */
-
 .viewFramework-index-title:before {
 	content: '';
 	width: 2px;
@@ -942,15 +975,90 @@
 
 
 /* 树形菜单CSS */
-
-.tree {
-	color: #46CFB0;
+.tree,
+.special-tree {
+	color: #24AC7E;
 	width: 100%;
 	overflow: hidden;
 }
 
-.toggler {
+.special-tree {
+	background-color: #FFF;
+}
+
+/*.secondary-li,
+.thired-li,
+.fourth-li {
+	display: none;
+}*/
+
+.primary-li,
+.secondary-li,
+.thired-li,
+.fourth-li {
+	width: 100%;
+	line-height: 20px;
+	float: left;
+}
+
+.primary-li ul {
+	width: 100%;
+	float: left;
+	display: none;
+}
+
+.primary-li ul.open {
 	display: block;
+}
+
+.special-tree-btn,
+.primary-li span {
+	float: left;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.special-tree-btn {
+	height: 20px;
+	width: 20px;
+	background-color: #FFF;
+}
+
+.special-tree-btn i {
+	display: block;
+}
+
+.special-tree-btn:hover {
+	background-color: #FAFAFA;
+}
+
+.secondary-li {
+	padding-left: 5px;
+}
+
+.thired-li {
+	padding-left: 10px;
+}
+
+.fourth-li {
+	padding-left: 15px;
+}
+
+.fourth-li button {
+	display: none;
+}
+
+.primary-li span {
+	color: #293038;
+	display: block;
+	height: 20px;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+
+.primary-li span:hover {
+	color: #FFF;
+	background-color: #24AC7E;
 }
 
 .tree-primary-items {
@@ -1025,7 +1133,11 @@
 	width: 100%;
 }
 
-.tree ul.open {
+.tree li.li-search {
+    padding: 7px;
+}
+
+.tree li span.open + ul {
 	display: block;
 }
 
@@ -1065,7 +1177,8 @@
 
 .have-chirld:before,
 .tree-secondary-items:before,
-.tree-primary-items:after {
+.tree-primary-items:after,
+.special-tree-btn i {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
@@ -1078,7 +1191,8 @@
 
 .tree-third-items.active.have-chirld:before,
 .tree-secondary-items.open:before,
-.tree-primary-items.open:after {
+.tree-primary-items.open:after,
+.special-tree-btn.open i {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
@@ -1267,11 +1381,10 @@
 
 
 /* tab */
-
 .tabs_menu {
 	float: left;
-height: 35px;
-position: relative;
+	height: 35px;
+	position: relative;
 }
 
 .tabs_menu li {
@@ -1489,4 +1602,22 @@ padding-top: 15px;
 
 .color-2 {
 	background-color: #87BFAC;
+}
+
+.Wdate{
+	width: 240px;
+	height: 33px;
+	float: left;
+	padding-left: 10px;
+	line-height: 33px;
+	color: #9DA2B6;
+	border: 1px solid #E1E6EB;
+	box-shadow: none;
+	background:#fff url(../lib/My97DatePicker/skin/datePicker.png) no-repeat right;
+}
+.Wdate::-ms-clear{display:none;}
+
+.WdateFmtErr{
+	font-weight:bold;
+	color:red;
 }
