@@ -127,7 +127,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url(../img/black15%.png) repeat;
+	background: url(../img/black15.png) repeat;
 	display: none;
 }
 .add-channel-btn{
@@ -283,3 +283,12 @@
 	margin-right: 10px;
 	line-height: 32px;
 }
+	width: 325px;
+	float: left;
+}
+.right-alert-content-main .chooseSecond-input input{
+	border: none;
+	padding-left: 35px;
+	width: 100%;
+}
+

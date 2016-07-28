@@ -18,6 +18,27 @@
 				<!---<<<<  页面标题    >>>>-->
 				<span class="viewFramework-index-title">活动对比分析</span>
 				<!---<<<<   保存按钮    >>>>-->
+					<!---<<<<  页面右侧控件    >>>>-->
+			<div class="time-control">
+				<div class="chooseDay-input">
+					<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd',skin:'twoer'})" class="Wdate" />
+					<button class="select-input-search-btn">
+						<div><i class="iconfont icon-search"></i></div>
+					</button>
+				</div>
+			</div>
+			<div class="location-control">
+				<div class="Select-input">
+						<div id="store-selector" class="select-input-select-btn">
+							<div class="select-input-select-btn_icon"><i class="iconfont icon-expandmore"></i></div>
+							<div onclick="$('#store-selector').removeClass('hover')" class="close"><i class="iconfont icon-close"></i></div>
+						</div>
+						<input class="areaText" type="text" />
+						<button class="select-input-search-btn">
+							<div><i class="iconfont icon-search"></i></div>
+						</button>
+				</div>
+			</div>
 				<button class="save-btn TextBtn-import">保存</button>
 				<!---<<<<   表格    >>>>-->
 				<div class="table">
@@ -556,6 +577,8 @@
 				}
 			})
 		</script>
+		<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="lib/js/location.js"></script>
 	</body>
 
 </html>

@@ -239,7 +239,6 @@ tbody .second-tr,tbody .third-tr {
 
 tbody .second-tr td {
 	height: 30px;
-	cursor: default;
 }
 
 tbody .second-tr td:first-child {
@@ -325,4 +324,30 @@ tbody tr.primary-tr.open td:first-child i,.has-third.open td:first-child i {
 .choose-activity-radio{
 	vertical-align: sub;
 	margin-right: 10px;
+	display: inline-block;
+}
+.time-control, .location-control{
+	float: right;
+	position: absolute;
+	top: 14px;
+}
+.time-control{
+	right: 380px;
+}
+.time-control .chooseDay-input{
+	width: 202px;
+	float: left;
+}
+.time-control .chooseDay-input input{
+	width: 170px;
+}
+.location-control{
+	right: 110px;
+}
+.select-input-search-btn div,.Select-input input,.select-input-select-btn_icon{
+	height: 33px !important;
+}
+.select-input-search-btn div i,
+.select-input-select-btn_icon i{
+	line-height: 33px !important;
 }
