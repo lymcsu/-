@@ -46,9 +46,7 @@ body {
 .tabs_search {
 	float: left;
 	width: 245px;
-	height: 35px;
 	margin-right: 38px;
-	position: relative;
 }
 
 /*  右侧tab对应div   */
@@ -68,26 +66,6 @@ body {
 .over-date input,
 .tabs_search input {
 	width: 210px;
-	height: 33px;
-	float: left;
-	padding-left: 10px;
-	border-right: 1px solid #E1E6EB;
-	box-shadow: none;
-	position: relative;
-	background: transparent url(0) no-repeat !important;
-}
-
-
-
-/*  右侧tab对应div 日期左侧icon按钮   */
-.tabs_search button {
-	width: 33px;
-	height: 33px;
-	float: left;
-	background-color: #FFF;
-	color: #24AC7E;
-	z-index: 9;
-	position: relative;
 }
 
 .tabs_search button:hover {
@@ -114,17 +92,10 @@ body {
 	width: 135px;
 	height: 35px;
 	float: left;
-	border: 1px solid #E1E6EB;
 	padding-left: 0;
 	position: relative;
 }
 
-.tabs_choose-date .start-date .placeholder,
-.tabs_choose-date .over-date .placeholder {
-	width: 100px;
-	top: 0;
-	left: 33px;
-}
 
 /*  开始、结束日期 input   */
 .tabs_choose-date .start-date input,
@@ -134,8 +105,8 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-	padding-left: 43px;
 }
+
 /*  开始、结束日期 搜索按钮   */
 .tabs_nav .iconBtn {
 	width: 35px !important;
@@ -143,20 +114,6 @@ body {
 	border: 1px solid #E1E6EB;
 	margin-left: 10px;
 } 
-
-.start-date:before,
-.over-date:before {
-	font-family: iconfont;
-	content: "\e609";
-	color: #24AC7E;
-	display: block;
-	font-size: 16px;
-	line-height: 33px;
-	width: 33px;
-	text-align: center;
-	background-color: #FFF;
-	border-right: 1px solid #E1E6EB;
-}
 
 
 /*《《《《《《《《《《

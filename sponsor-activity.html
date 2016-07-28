@@ -58,7 +58,7 @@
 						<!---<<<<  tabs div 功能   >>>>-->
 						<div class="tabs_nav">
 							<!---<<<<  搜索功能   >>>>-->
-							<div class="tabs_search SearchInput">
+							<div class="tabs_search iconInput">
 								<span class="placeholder">输入活动名称例如：乐享100运营</span>
 								<input type="text" autocomplete="off" />
 								<button><i class="iconfont icon-search"></i></button>
@@ -68,7 +68,7 @@
 							<div class="tabs_choose-date">
 								<!---<<<<  开始日期   >>>>-->
 								<div class="start-date datetimepicker">
-									<input class="date_input" type="text" name="date" autocomplete="off" />
+									<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd',skin:'twoer'})" class="Wdate" />
 									<span class="placeholder">选择开始日期</span>
 								</div>
 
@@ -2462,6 +2462,7 @@
 		<script type="text/javascript" src="js/sponsor-activity.js"></script>
 		<!---<<<<   通用js  >>>>-->
 		<script type="text/javascript" src="js/current.js"></script>
+		<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
 	</body>
 
 </html>
