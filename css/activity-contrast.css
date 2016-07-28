@@ -234,6 +234,10 @@ tbody .primary-tr td:first-child {
 }
 
 tbody .second-tr,tbody .third-tr {
+	display: table-row;
+}
+
+.third-tr{
 	display: none;
 }
 
