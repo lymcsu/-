@@ -187,17 +187,11 @@
 .Select-input,
 .SpanInput {
 	width: 345px;
-	height: 32px;
+	height: 35px;
 	position: relative;
 }
 .Input{
 	width: 260px;
-	overflow: hidden;
-}
-.SearchInput{
-	width: 292px;
-	height: 32px;
-	border: 1px solid #E1E6EB;
 	overflow: hidden;
 }
 
@@ -319,10 +313,10 @@
 
 .Select-input input {
 	width: 198px;
-	height: 30px;
+	height: 33px;
 	padding: 0 10px;
 	background-color: #FAFAFA;
-	line-height: 30px;
+	line-height: 33px;
 }
 
 .select-input-select-btn .select-input-select-btn_icon {
@@ -1669,4 +1663,72 @@ padding-top: 15px;
 	z-index: 1;
 	position: relative;
 	border-right: 1px solid #E1E6EB;
+}
+
+.special-tree {
+	color: #293038;
+	width: 100%;
+}
+
+.special-tree li,
+.special-tree li> a,
+.special-tree li> span {
+	padding: 4pt;
+	border-radius: 4px;
+}
+
+.special-tree li a {
+	color: #293038;
+	text-decoration: none;
+	line-height: 20pt;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.special-tree li a:hover {
+	background-color: #34BC9D;
+	color: #fff;
+}
+
+.special-tree .active {
+	background-color: #34BC9D;
+	color: #fff !important;
+}
+
+.special-tree .active a {
+	color: #fff;
+}
+
+.special-tree li a.active:hover {
+	background-color: #34BC9D;
+}
+
+.special-tree.treemenu li {
+	list-style: none;
+}
+
+.special-tree.treemenu .toggler {
+	cursor: pointer;
+	color: #24AC7E;
+}
+
+.special-tree.treemenu .toggler:before {
+	display: inline-block;
+	margin-right: 2pt;
+}
+
+.special-tree li.tree-empty> .toggler {
+	color: #24AC7E;
+}
+
+.special-tree li.tree-empty> .toggler:before {
+	content: "\2212";
+}
+
+.special-tree li.tree-closed> .toggler:before {
+	content: "+";
+}
+
+.special-tree li.tree-opened> .toggler:before {
+	content: "\2212";
 }

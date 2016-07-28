@@ -101,6 +101,10 @@ body {
 	margin-left: 10px;
 } 
 
+.disabled,
+.disabled .select-btn {
+	cursor: default;
+}
 
 /*《《《《《《《《《《
  *   栅格

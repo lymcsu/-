@@ -141,10 +141,10 @@
 	margin: 9px 10px 9px 0;
 }
 
-/*.right-alert {
+.right-alert {
 	display: block;
 	margin-right: 0;
-}*/
+}
 
 /*.right-alert-content-main.nth1 .operation-btn {
 	float: right;
@@ -165,10 +165,61 @@
 	float: right;
 }
 
-.right-alert-content-main .btn-div button.cancel {
+.right-alert-content-main .btn-div button.cancel-btn {
 	margin-right: 15px;
+	display: none;
 }
 
+.right-alert-content-main .btn-div .operation-btn:before {
+	content: "编辑";
+}
+
+.right-alert-content-main .btn-div .save-btn:before {
+	content: "保存";
+}
+
+.right-alert-content-main.nth1 .select-menu {
+	width: 250px;
+}
+
+.right-alert-content-main.nth1 .select-menu li {
+	width: 100%;
+}
+
+.right-alert-content-main.nth1 .chooseSecond-input {
+	width: 250px;
+	float: left;
+}
+
+.right-alert-content-main.nth1 .chooseSecond-input input {
+	border: none;
+	width: 248px !important;
+	padding-left: 43px !important;
+}
+
+.form-items {
+	float: left;
+}
+
+.form-items input[type="file"] {
+	height: auto;
+	border: none;
+	background: transparent;
+}
+
+.right-alert-content-main.nth1 .col-full {
+	float: left;
+}
+
+.right-alert-content-main.nth1 .col-full p {
+	width: 250px;
+	height: 32px;	
+	line-height: 30px;
+	color: #9DA2B6;
+	padding: 0 10px;
+	float: left;
+}
+	
 .right-alert-content-main.nth1 ul li {
 	width: 400px;
 	float: left;
@@ -193,9 +244,21 @@
 .right-alert-content-main.nth1 ul li .form-items .select-btn p {
 	width: 203px;
 }
-.select-btn{
+.right-alert-content-main.nth1 .select-btn{
 	float: right;
+	background-color: #FAFAFA;
+	color: #9DA2B6;
 }
+
+.right-alert-content-main.nth1 textarea {
+	max-width: 250px;
+	min-width: 250px;
+	min-height:64px;
+	max-height:64px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
 .new-event-time-select{
 	width: 360px;
 }

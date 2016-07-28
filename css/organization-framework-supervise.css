@@ -1,10 +1,30 @@
 @charset "utf-8";
 .tabs_sidebar {
+	width: 190px;
+	border: 1px solid #E1E6EB;
+	background-color: #F1F4F7;
+	overflow-y: auto;
+	overflow-x: hidden;
+	float: left;
+	height: 100%;
 	top: 48px;
 }
 
 .tabs_main {
+	overflow: hidden;
+float: left;
+width: 100%;
 	margin-top: 10px;
+}
+
+.tabs_body {
+    width: 100%;
+    height: 100%;
+    padding-left: 205px;
+}
+
+.tabs_main table thead tr th:first-child {
+	width: 10px;
 }
 
 /* 表标题最后一列 */
@@ -15,45 +35,53 @@
 
 /* 树形菜单搜索 */
 .tree--search {
-	float: left;
-	width: 155px;
+	width: 100%;
 	height: 40px;
-	border: 1px solid #E1E6EB;
-	border-left: none;
-	border-top: none;
+	position: relative;
+	border-bottom: 1px solid #E1E6EB;
+}
+
+.special-tree-title {
+	width: 100%;
+	height: 40px;
+	background: #FFF;
+	text-align: center;
+	display: block;
+	line-height: 40px;
+}
+
+.special-tree {
+	background: #E5EAEE;
 }
 
 .tree--search input {
-	width: 119px;
-	float: left;
+	position: absolute;
+	left: 0;
+	right: 33px;
+	top: 0;
+	bottom: 0;
 	height: 39px;
-	background-color: #FFF;
+	background: transparent url(0) no-repeat !important;
 	padding: 0 10px;
 	color: #9DA2B6;
 	line-height: 39px;
+	z-index: 9;
 }
 
 .tree--search input:focus {
 	color: #333;
 }
 
+.tree--search span {
+	line-height: 40px;
+}
+
 .tree--search button {
-	float: left;
+	float: right;
 	height: 39px;
 	border-top: none;
 	border-right: none;
 	border-bottom: none;	
-}
-
-/* 更多操作按钮 */
-.tree--search + button {
-	float: left;
-	width: 33px;
-	height: 40px;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	background-color: #F8F8F8;
 }
 
 /* 选择框 */
@@ -98,6 +126,35 @@
 	background-color: #F8F8F8;
 	padding: 0 10px;
 	line-height: 32px;
+}
+
+/*  左侧边栏添加删除分类按钮  */
+
+.tree--btn button.add,
+.tree--btn button.delete {
+	width: 50%;
+	height: 32px;
+	float: left;
+	background-color: #FAFAFA;
+	border: 1px solid #E1E6EB;
+	border-left: none;
+	color: #293038;
+}
+
+.tree--btn button.delete {
+	border-right: none;
+}
+
+.tree--btn button.add i,
+.tree--btn button.delete i {
+	font-size: 12px;
+	color: #24AC7E;
+	margin-right: 6px;
+}
+
+.tree--btn button.add:hover,
+.tree--btn button.delete:hover {
+	background-color: #FEFEFE;
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1495px) {

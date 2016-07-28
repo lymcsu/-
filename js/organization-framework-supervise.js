@@ -6,38 +6,29 @@ $('body').click(function(e) {
     		_dropdownBody.toggleClass('open');
     }
     
-    var _dropdownBody2 = $('.js-tabs-div2 .dropdown-body '); // 设置目标区域
-    if (!_dropdownBody2.is(e.target) && _dropdownBody2.has(e.target).length === 0) { 
-   	 	_dropdownBody2.removeClass('open');
+    var _fastNewBuilt = $('.js-tabs-div1 .SpanSelect'); // 设置目标区域
+    if (!_fastNewBuilt.is(e.target) && _fastNewBuilt.has(e.target).length === 0) { 
+   	 	$('.js-tabs-div1 .SpanSelect').removeClass('open');
     } else {
-    		_dropdownBody2.toggleClass('open');
+    		$('.js-tabs-div1 .SpanSelect').toggleClass('open');
     }
 });
 
-$('.checked-box').not('.disabled,.all-checked-btn').click(function(){
+$('.checked-box').click(function(){
 	$(this).toggleClass('checked');
-});
-
-$('.js-tabs-div1 .checked-box.all-checked-btn').click(function(){
-	if ($('.js-tabs-div1 .checked-box.all-checked-btn').hasClass('checked')){
-		$('.js-tabs-div1 .checked-box').not('.disabled').removeClass('checked');
-	} else {
-		$('.js-tabs-div1 .all-checked-btn').addClass('checked');
-		$('.js-tabs-div1 .checked-box').not('.disabled,.all-checked-btn').addClass('checked');
-	}
-});
-
-$('.js-tabs-div2 .checked-box.all-checked-btn').click(function(){
-	if ($('.js-tabs-div2 .checked-box.all-checked-btn').hasClass('checked')){
-		$('.js-tabs-div2 .checked-box').not('.disabled').removeClass('checked');
-	} else {
-		$('.js-tabs-div2 .all-checked-btn').addClass('checked');
-		$('.js-tabs-div2 .checked-box').not('.disabled,.all-checked-btn').addClass('checked');
-	}
 });
 
 /* 分页 */
 $('.pagination').twbsPagination({
 	totalPages: 35,
 	visiblePages: 1
+});
+
+$(function(){
+    $(".special-tree").treemenu({delay:300}).openActive();
+});
+
+$(".special-tree").on('click','a',function(){
+	$('.special-tree a').removeClass('active');
+	$(this).addClass('active');
 });
