@@ -1,7 +1,3 @@
-/* 日期js */
-//$(function () {
-//	$('.datetimepicker').datetimepicker();
-//});
 $(function(){
 	$(".select-menu li.choosed").each(function(){
 		var	btnMenuChooseText = $(this).text();	
@@ -15,7 +11,55 @@ $('.select-menu li').click(function(){
 	$(this).parent().siblings(".select-btn").find("p").text(btnMenuChooseText);
 });
 /* 分页 */
-$('.pagination').twbsPagination({
+$('.js-tabs-div1 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.js-tabs-div2 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.js-tabs-div3 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.js-tabs-div4 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.js-tabs-div5 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.js-tabs-div6 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.three-table .nth1 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.three-table .nth2 .pagination').twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
+
+/* 分页 */
+$('.three-table .nth3 .pagination').twbsPagination({
 	totalPages: 35,
 	visiblePages: 1
 });
@@ -81,15 +125,20 @@ $(".new-event").on("click",function(){
 	$("#new-event-div").fadeIn();
 })
 $('#new-event-div').on('click', '.tree_choose-alrte-div_close-btn, .ok-btn a', function() {
-	$('this').fadeOut();
+	$("#new-event-div").fadeOut();
 });
 $(".SpanSelect").on("click",function(){
 	$(this).toggleClass("open");
 })
 
 $('body').click(function(e) {
-	var _fastNewBuilt = $('.SpanSelect'); // 设置目标区域
+	var _fastNewBuilt = $('.SpanSelect.new-event-channel-select'); // 设置目标区域
     if (!_fastNewBuilt.is(e.target) && _fastNewBuilt.has(e.target).length === 0) { 
-   	 	$('.SpanSelect').removeClass('open');
+   	 	$('.SpanSelect.new-event-channel-select').removeClass('open');
     }
+});
+
+$('.three-table').on('click','table tbody tr',function(){
+	$(this).siblings('tr').children('td:first-child').children('.radio-buttons').removeClass('checked');
+	$(this).children('td:first-child').children('.radio-buttons').addClass('checked');
 })

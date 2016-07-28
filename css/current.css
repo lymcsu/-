@@ -62,8 +62,6 @@ body {
 }
 
 /*  右侧tab对应div 搜索、日期input   */
-.start-date input,
-.over-date input,
 .tabs_search input {
 	width: 210px;
 }
@@ -93,18 +91,6 @@ body {
 	height: 35px;
 	float: left;
 	padding-left: 0;
-	position: relative;
-}
-
-
-/*  开始、结束日期 input   */
-.tabs_choose-date .start-date input,
-.tabs_choose-date .over-date input {
-	width: 100%;
-	border-right: none;
-	position: absolute;
-	left: 0;
-	top: 0;
 }
 
 /*  开始、结束日期 搜索按钮   */

@@ -36,7 +36,7 @@
 
 .text-div {
 	position: absolute;
-	z-index: 9999999999999999;
+	z-index: 99999;
 	background: url(../img/black80.png) repeat;
 	color: #fff;
 	left: 50%;
@@ -207,29 +207,119 @@
 }
 .channel-select-menu{
 	height: 100px;
+	width: 245px;
 	overflow-y: auto;
 }
-.select-operationPos-table,
-.select-event-table,
-.select-user-table{
-	/*width: 160px;*/
-	background-color: #fff;
-	color: #000;
-	display: inline-block;
-	margin: 30px 4px 10px;
+
+.three-table {
+	width: 100%;
+	margin-top: 30px;
 }
-.select-operationPos-title{
-	width: 160px;
+
+.three-table table {
+	margin: 0 11px;
+	color: #333;
+	float: left;
+	background-color: #FFF;
+	text-align: left;
 }
-.select-event-name-title,.select-event-id-title{
-	width: 100px;
+
+.three-table table.nth1,
+.three-table table.nth3 {
+	width: 25%;
 }
-.select-operationPos-tbody{
-	border: 1px solid #E1E6EB;
+
+.three-table table.nth2 {
+	width: 40%;
 }
+
+.three-table table thead {
+	height: 30px;
+	background-color: #FAFAFA;
+}
+
+.three-table table tbody tr {
+	height: 25px;
+}
+
+.three-table table tbody {
+	border-top: 1px solid #E1E6EB;
+	line-height: 25px;
+	border-bottom: 1px solid #E1E6EB;
+}
+
+.three-table table tfoot td {
+	position: relative;
+}
+
+.three-table table tfoot ul {
+	margin: 0 8px;
+	float: none;
+}
+
+.three-table table.nth2 tfoot ul {
+	margin: 0 65px;
+}
+
+.three-table .center {
+	width: 100%;
+	
+}
+
 #new-event-div{
 	width: 780px;
+	margin-left: -390px;
 }
+
+#new-event-div .SpanInput {
+	width: 360px;
+}
+
+#new-event-div .SpanInput .chooseSecond-input {
+	width: 245px;
+	float: right;
+}
+
+#new-event-div .SpanInput span {
+	width: 100px;
+}
+
+#new-event-div .SpanInput input {
+	width:243px;
+	padding-left: 43px;
+}
+
 .radio-buttons i{
 	float: left;
+}
+
+.three-table .radio-buttons {
+	float: left;
+	line-height: 12px;
+}
+
+.three-table table thead th {
+	padding-left: 15px;
+}
+
+.three-table table tbody tr td:first-child {
+	width: 10px;
+}
+
+.three-table table tbody tr {
+	cursor: pointer;	
+}
+
+#new-event-div .SpanInput,
+.new-event-channel-select {
+	margin: 0 auto;
+}
+
+.new-event-time-select p,
+.new-event-channel-select p {
+	color: #333;
+}
+
+.new-event-channel-select {
+	margin-top: 20px;
 }
