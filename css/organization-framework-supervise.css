@@ -185,12 +185,6 @@ width: 100%;
 }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 1300px) {
-.tabs_nav-div-items.last-child {
-	margin: 20px 0;
-}
-}
-
 @media only screen and (min-width: 100px) and (max-width: 1248px) {
 .select-btn {
 	width: 200px;
@@ -207,6 +201,22 @@ width: 100%;
 
 @media only screen and (min-width: 100px) and (max-width: 1180px) {
 .tabs_nav-div-items input {
+	width: 120px;
+}
+
+.select-btn {
 	width: 180px;
+}
+
+.select-btn p {
+    width: 133px;
+}
+
+.SpanSelect {
+	width: 245px;
+}
+
+.SpanSelect span {
+	width: 55px;
 }
 }
