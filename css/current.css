@@ -323,7 +323,7 @@ body {
 	border-bottom: 3px solid #F5A623;
 }
 
-.right-alert-tabs-nav .add-strategy-btn {
+.right-alert-tabs-nav .top-operation-btn {
 	width: 75px;
 	height: 30px;
 	float: right;
@@ -450,41 +450,6 @@ body {
 	padding: 30px 35px;
 }
 
-/* 表列表 */
-.form-items {
-	width: 415px;
-	margin: 0 auto 30px;
-}
-
-.form-items .form-left span {
-	width: 70px;
-	float: left;
-	margin-right: 20px;
-	line-height: 32px;
-	text-align: right;
-}
-
-.form-items input,
-.form-items textarea {
-	width: 325px;
-	height: 35px;
-	border: 1px solid #E1E6EB;
-	line-height: 33px;
-	color: #9DA2B6;
-	background-color: #FAFAFA;
-	padding: 0 10px;
-}
-
-.form-items textarea {
-	max-width: 325px;
-	min-width: 325px;
-	min-height: 64px;
-}
-
-.form-items input:focus,
-.form-items textarea:focus {
-	border-color: #24AC7E;
-}
 
 .btn-div {
 	width: 164px;

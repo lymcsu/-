@@ -210,7 +210,9 @@
 .right-alert-content-main.nth1 .col-full {
 	float: left;
 }
-
+.col-full .form-right{
+	background-color: #fff;
+}
 .right-alert-content-main.nth1 .col-full p {
 	width: 250px;
 	height: 32px;	
@@ -220,28 +222,28 @@
 	float: left;
 }
 	
-.right-alert-content-main.nth1 ul li {
+.right-alert-content-main.nth1>ul>li {
 	width: 400px;
 	float: left;
 	display: inline-block;
 }
 
-.right-alert-content-main.nth1 ul li .form-items,
-.right-alert-content-main.nth1 ul li .form-items .SpanSelect {
+.right-alert-content-main.nth1>ul>li .form-items,
+.right-alert-content-main.nth1>ul>li .form-items .SpanSelect {
 	width: 400px;
 }
 
-.right-alert-content-main.nth1 ul li .form-items span {
+.right-alert-content-main.nth1>ul>li .form-items span {
 	width: 130px;
 	padding-right: 0;
 }
 
-.right-alert-content-main.nth1 ul li .form-items input,
-.right-alert-content-main.nth1 ul li .form-items .select-btn {
+.right-alert-content-main.nth1>ul>li .form-items input,
+.right-alert-content-main.nth1>ul>li .form-items .select-btn {
 	width: 250px;
 }
 
-.right-alert-content-main.nth1 ul li .form-items .select-btn p {
+.right-alert-content-main.nth1>ul>li .form-items .select-btn p {
 	width: 203px;
 }
 .right-alert-content-main.nth1 .select-btn{
@@ -253,10 +255,11 @@
 .right-alert-content-main.nth1 textarea {
 	max-width: 250px;
 	min-width: 250px;
-	min-height:64px;
-	max-height:64px;
+	min-height:66px;
+	max-height:66px;
 	font-size: 12px;
 	font-weight: 400;
+	float: left;
 }
 
 .LocationInput {
@@ -390,3 +393,7 @@
 .new-event-channel-select {
 	margin-top: 20px;
 }
+.top-operation-btn{
+	margin-left: 10px;
+}
+

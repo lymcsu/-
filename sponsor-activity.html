@@ -1854,7 +1854,8 @@
 							</li>
 						</ul>
 						<!---<<<<   右弹窗新增策略按钮   >>>>-->
-						<button class="add-strategy-btn">新增策略</button>
+						<button class="top-operation-btn nth1">新增策略</button>
+						<button class="top-operation-btn nth2">编辑活动</button>
 					</div>
 				</div>
 
@@ -1867,245 +1868,268 @@
 							<button class="TextBtn cancel-btn">取消</button>
 						</div>
 						<ul>
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<span>营销活动名称：</span>
-									<input type="text" value="乐享100" disabled="disabled" />
+								<div class="form-left">
+									<span>营销活动名称</span>
+								</div>
+								<div class="form-right">
+									<span class="placeholder">请输入...</span>
+									<input type="text" />
 								</div>
 							</li>
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<span>营销活动编号：</span>
+								<div class="form-left">
+									<span>营销活动编号</span>
+								</div>
+								<div class="form-right">
+									<span class="placeholder">请输入...</span>
 									<input type="text" />
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<div class="SpanSelect disabled">
-										<span>营销活动目标：</span>
-										<button class="select-btn">
-											<p>请选择</p>
-											<div><i class="iconfont icon-expandmore"></i></div>
-										</button>
-										<ul class="select-menu">
-											<li>自定义</li>
-											<li>自定义2</li>
+								<div class="form-left">
+									<span>自定义</span>
+								</div>
+								<div class="form-right">
+									<button class="form-select-btn nth1">
+										<p></p>
+										<div><i class="iconfont icon-expandmore"></i></div>
+									</button>
+									<ul class="form-select-menu">
+										<li class="choosed">全部</li>
+										<li>自定义</li>
+										<li>自定义2</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="form-items">
+								<!---<<<<  列表   >>>>-->
+								<div class="form-left">
+									<span>归属城市</span>
+								</div>
+								<div class="form-right">
+									<div class="form-LocationInput">
+										<div>
+											<input type="text" autocomplete="off" />
+											<span class="placeholder">请输入</span>
+											<button class="form-location-input-more-btn"><i class="iconfont icon-expandmore"></i></button>
+										</div>
+										<ul class="special-tree form-location-input-tree">
+											<li>
+												<a>Category</a>
+												<ul>
+													<li>
+														<a>jQuery</a>
+														<ul>
+															<li>
+																<a>jQuery</a>
+															</li>
+															<li>
+																<a>jQuery UI</a>
+															</li>
+															<li>
+																<a>jQuery Mobile</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a>JavaScript</a>
+														<ul>
+															<li>
+																<a>AngularJS</a>
+															</li>
+															<li>
+																<a>React</a>
+															</li>
+															<li>
+																<a>Backbone</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a>Golang</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a>About</a>
+												<ul>
+													<li>
+														<a>Contact</a>
+													</li>
+													<li>
+														<a>Blog</a>
+													</li>
+													<li>
+														<a>Jobs</a>
+														<ul>
+															<li>
+																<a>Job 1</a>
+															</li>
+															<li>
+																<a>Job 2</a>
+															</li>
+															<li>
+																<a>Job 3</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
 										</ul>
 									</div>
 								</div>
 							</li>
 
-							<li>
-								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<span>归属地市：</span>
-									<div class="LocationInput">
-						<div>
-							<input type="text" autocomplete="off" />
-							<span class="placeholder">请输入</span>
-							<button class="location-input-more-btn"><i class="iconfont icon-expandmore"></i></button>
-						</div>
-						<ul class="special-tree location-input-tree">
-						<li><a>Category</a>
-							<ul>
-								<li>
-									<a>jQuery</a>
-									<ul>
-										<li>
-											<a>jQuery</a>
-										</li>
-										<li>
-											<a>jQuery UI</a>
-										</li>
-										<li>
-											<a>jQuery Mobile</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a>JavaScript</a>
-									<ul>
-										<li>
-											<a>AngularJS</a>
-										</li>
-										<li>
-											<a>React</a>
-										</li>
-										<li>
-											<a>Backbone</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a>Golang</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a>About</a>
-							<ul>
-								<li>
-									<a>Contact</a>
-								</li>
-								<li>
-									<a>Blog</a>
-								</li>
-								<li>
-									<a>Jobs</a>
-									<ul>
-										<li>
-											<a>Job 1</a>
-										</li>
-										<li>
-											<a>Job 2</a>
-										</li>
-										<li>
-											<a>Job 3</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					</div>
-								</div>
-							</li>
-
-							<li>
-								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+							<li class="form-items">
+								<div class="form-left">
 									<span>营销活动生效时间：</span>
-									<div class="chooseSecond-input">
-										<input onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" disabled="disabled" class="Wdate" />
+								</div>
+								<div class="form-right">
+									<div class="form-chooseSecond-input">
+										<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" class="Wdate" />
 									</div>
 								</div>
 							</li>
 
-							<li>
-								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+							<li class="form-items">
+								<div class="form-left">
 									<span>营销活动失效时间：</span>
-									<div class="chooseSecond-input">
-										<input onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" disabled="disabled" class="Wdate" />
+								</div>
+								<div class="form-right">
+									<div class="form-chooseSecond-input">
+										<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" class="Wdate" />
 									</div>
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<div class="SpanSelect disabled">
-										<span>营销活动优先级：</span>
-										<button class="select-btn">
-											<p>请选择</p>
-											<div><i class="iconfont icon-expandmore"></i></div>
-										</button>
-										<ul class="select-menu">
-											<li>1</li>
-											<li>2</li>
-											<li>3</li>
-											<li>4</li>
-											<li>5</li>
-											<li>6</li>
-											<li>7</li>
-											<li>8</li>
-											<li>9</li>
-										</ul>
-									</div>
+								<div class="form-left">
+									<span>营销活动优先级：</span>
+								</div>
+								<div class="form-right">
+									<button class="form-select-btn nth2">
+										<p></p>
+										<div><i class="iconfont icon-expandmore"></i></div>
+									</button>
+									<ul class="form-select-menu">
+										<li class="choosed">1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+									</ul>
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<div class="SpanSelect disabled">
-										<span>营销活动重要性：</span>
-										<button class="select-btn">
-											<p>请选择</p>
-											<div><i class="iconfont icon-expandmore"></i></div>
-										</button>
-										<ul class="select-menu">
-											<li>1</li>
-											<li>2</li>
-											<li>3</li>
-											<li>4</li>
-											<li>5</li>
-											<li>6</li>
-											<li>7</li>
-											<li>8</li>
-											<li>9</li>
-										</ul>
-									</div>
+								<div class="form-left">
+									<span>营销活动重要性：</span>
+								</div>
+								<div class="form-right">
+									<button class="form-select-btn nth3">
+										<p></p>
+										<div><i class="iconfont icon-expandmore"></i></div>
+									</button>
+									<ul class="form-select-menu">
+										<li class="choosed">1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+								<div class="form-left">
 									<span>营销对象：</span>
-									<input type="text" disabled />
+								</div>
+								<div class="form-right">
+									<span class="placeholder">请输入...</span>
+									<input type="text" />
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+								<div class="form-left">
 									<span>营销产品：</span>
-									<input type="text" disabled />
+								</div>
+								<div class="form-right">
+									<span class="placeholder">请输入...</span>
+									<input type="text" />
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+								<div class="form-left">
 									<span>促销资源：</span>
-									<input type="text" disabled />
+								</div>
+								<div class="form-right">
+									<span class="placeholder">请输入...</span>
+									<input type="text" />
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+								<div class="form-left">
 									<span>营销渠道：</span>
-									<input type="text" disabled />
+								</div>
+								<div class="form-right">
+									<span class="placeholder">请输入...</span>
+									<input type="text" />
 								</div>
 							</li>
 
-							<li>
+							<li class="form-items">
 								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+								<div class="form-left">
 									<span>营销活动描述：</span>
-									<textarea type="text" disabled></textarea>
 								</div>
-							</li>
-							
-							<div class="col-full">
-								<li>
-								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<span>创建人：</span>
-									<p></p>
+								<div class="form-right form-textarea">
+									<textarea></textarea>
 								</div>
 							</li>
 
-							<li>
-								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
-									<span>创建部门：</span>
-									<p></p>
-								</div>
-							</li>
+							<div class="col-full">
+								<li class="form-items">
+									<!---<<<<  列表   >>>>-->
+									<div class="form-left">
+										<span>创建人：</span>
+									</div>
+									<div class="form-right">
+										<p></p>
+									</div>
+								</li>
+
+								<li class="form-items">
+									<!---<<<<  列表   >>>>-->
+									<div class="form-left">
+										<span>创建部门：</span>
+									</div>
+									<div class="form-right">
+										<p></p>
+									</div>
+								</li>
 							</div>
 
-							<li>
-								<!---<<<<  列表   >>>>-->
-								<div class="form-items">
+							<li class="form-items">
+								<div class="form-left">
 									<span>营销活动方案：</span>
-									<input type="file" disabled />
+								</div>
+								<div class="form-right form-fileInput">
+									<input type="file" />
 								</div>
 							</li>
 						</ul>
@@ -2564,15 +2588,16 @@
 		</div>
 		<!---<<<<   jQuery  >>>>-->
 		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
-
+		<!---<<<<   树型菜单插件  >>>>-->
+		<script type="text/javascript" src="lib/js/jquery.treemenu.js"></script>
 		<!---<<<<   bootstrap 分页  >>>>-->
 		<script type="text/javascript" src="lib/js/jquery.twbsPagination.js"></script>
 		<script type="text/javascript" src="lib/js/tabs.js"></script>
+		<!---<<<<   基于jQuery的日期插件  >>>>-->
+		<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
 		<script type="text/javascript" src="js/sponsor-activity.js"></script>
 		<!---<<<<   通用js  >>>>-->
 		<script type="text/javascript" src="js/current.js"></script>
-		<!---<<<<   基于jQuery的日期插件  >>>>-->
-		<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
 	</body>
 
 </html>
