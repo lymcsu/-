@@ -375,7 +375,7 @@ li button.delete:hover {
 .tree_choose-alrte-div {
 	position: absolute;
 	z-index: 9999999999999999;
-	background: url(../img/black80%.png) repeat;
+	background: url(../img/black80.png) repeat;
 	color: #fff;
 	left: 50%;
 	top: 50%;

@@ -103,7 +103,6 @@
 	background-color: #1FA075;
 }
 
-.choose-customer-base ul,
 .choose-phone-number ul {
 	height: 300px;
 	overflow-y: auto;
@@ -114,35 +113,25 @@
 	margin: 0 auto;
 }
 
-.choose-customer-base li,
 .choose-phone-number li {
 	width: 100%;
 	height: 30px;
 	float: left;
 	line-height: 30px;
-	border-bottom: 1px solid #E1E6EB;
 	padding: 0 15px;
 	cursor: pointer;
 	background-color: #FFF;
 	color: #9DA2B6;
 }
 
-.choose-customer-base li:hover,
 .choose-phone-number li:hover {
 	background-color: #F8F8F8;
 }
 
-.choose-phone-number li.checked,
-.choose-customer-base li.checked {
+.choose-phone-number li.checked {
 	background-color: #F8F8F8;
 }
 
-.choose-customer-base li.checked {
-	background-color: #24AC7E;
-	color: #FFF;
-}
-
-.choose-customer-base li span,
 .choose-phone-number li span {
 	color: inherit;
 }

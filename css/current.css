@@ -47,7 +47,6 @@ body {
 	float: left;
 	width: 245px;
 	height: 35px;
-	border: 1px solid #E1E6EB;
 	margin-right: 38px;
 	position: relative;
 }
@@ -73,9 +72,6 @@ body {
 	float: left;
 	padding-left: 10px;
 	border-right: 1px solid #E1E6EB;
-	z-index: 9999;
-	line-height: 33px;
-	color: #9DA2B6;
 	box-shadow: none;
 	position: relative;
 	background: transparent url(0) no-repeat !important;
@@ -466,7 +462,7 @@ body {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	background: url(../img/black80%.png) repeat;
+	background: url(../img/black80.png) repeat;
 	z-index: 99999999;
 }
 

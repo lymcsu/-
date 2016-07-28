@@ -50,11 +50,11 @@ $('.tabs-wapper').on('click', 'td.name a', function() {
 });
 
 $('.js-tabs-div3,.js-tabs-div1').on('click', '.text-btn', function() {
-	$('.text-div').fadeIn();
+	$('.text-div').not('#new-event-div').fadeIn();
 });
 
 $('.text-div').on('click', '.tree_choose-alrte-div_close-btn, .ok-btn a', function() {
-	$('.text-div').fadeOut();
+	$('.text-div').not('#new-event-div').fadeOut();
 });
 
 $('.text-div').on('click', '.choose-phone-number li', function() {
