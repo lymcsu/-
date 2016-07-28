@@ -233,9 +233,10 @@ tbody .primary-tr td:first-child {
 	font-size: 14px;
 }
 
-tbody .second-tr{
+tbody .second-tr,tbody .third-tr {
 	display: table-row;
 }
+
 .third-tr{
 	display: none;
 }
