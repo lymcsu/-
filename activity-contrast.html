@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="lib/css/normal.css" />
 		<link rel="stylesheet" href="lib/font/iconfont.css" />
 		<link rel="stylesheet" href="css/activity-contrast.css" />
+		<link rel="stylesheet" href="css/ui.css" />
 	</head>
+
 	<body>
 		<!---<<<<  首页右侧背景    >>>>-->
 		<div class="viewFramework-index">
@@ -28,10 +31,28 @@
 										<div class="left-text">对比内容</div>
 									</div>
 								</th>
-								<th class="choosed"><div class="top-color"></div><a>活动A</a></th>
-								<th class="choosed"><div class="top-color"></div><a>活动B</a></th>
-								<th><div class="top-color"></div><a><i class="iconfont icon-add"></i>点击添加</a></th>
-								<th><div class="top-color"></div><a><i class="iconfont icon-add"></i>点击添加</a></th>
+								<th class="choosed">
+									<div class="top-color"></div>
+									<a>活动A</a>
+									<div class="delete-activity-div">
+										<button class="delete-activity-btn">删除</button>
+									</div>
+								</th>
+								<th class="choosed">
+									<div class="top-color"></div>
+									<a>活动B</a>
+									<div class="delete-activity-div">
+										<button class="delete-activity-btn">删除</button>
+									</div>
+								</th>
+								<th>
+									<div class="top-color"></div>
+									<a><i class="iconfont icon-add"></i>点击添加</a>
+								</th>
+								<th>
+									<div class="top-color"></div>
+									<a><i class="iconfont icon-add"></i>点击添加</a>
+								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -43,7 +64,7 @@
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
 								<td>活动编号</td>
@@ -52,7 +73,7 @@
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
 								<td>活动编号</td>
@@ -61,7 +82,7 @@
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
 								<td>活动编号</td>
@@ -70,7 +91,7 @@
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
 								<td>活动编号</td>
@@ -79,7 +100,7 @@
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   一级菜单    >>>>-->
 							<tr class="primary-tr">
 								<td><i class="iconfont icon-keyboardarrowright"></i>策略信息对比</td>
@@ -88,156 +109,399 @@
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+								<td></td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+								<td></td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+								<td></td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
 							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+								<td></td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
+								<td>
+									<div class="radio-buttons choose-activity-radio"><i class="iconfont"></i></div>自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   一级菜单    >>>>-->
-							<tr class="primary-tr">
+							<tr class="primary-tr nth3">
 								<td><i class="iconfont icon-keyboardarrowright"></i>效果对比</td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
-							
+
 							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
 							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
 							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
-							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
-							
 							<!---<<<<   二级菜单    >>>>-->
-							<tr class="second-tr">
-								<td>活动编号</td>
-								<td>自定义</td>
-								<td>自定义</td>
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   二级菜单    >>>>-->
+							<tr class="second-tr has-third">
+								<td><i class="iconfont icon-keyboardarrowright"></i>活动编号</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<!---<<<<   三级菜单    >>>>-->
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="third-tr">
+								<td></td>
+								<td>
+									自定义</td>
+								<td>
+									自定义</td>
 								<td></td>
 								<td></td>
 							</tr>
@@ -246,12 +510,12 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- jQuery  -->
 		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
 		<script>
-			$('.primary-tr').click(function() {
-				if ($(this).hasClass('open')) {
+			$('.primary-tr').not(".nth3").click(function() {
+				if($(this).hasClass('open')) {
 					$(this).removeClass('open');
 					$(this).nextUntil('.primary-tr', '.second-tr').hide();
 				} else {
@@ -259,6 +523,39 @@
 					$(this).nextUntil('.primary-tr', '.second-tr').show();
 				}
 			});
+			$('.primary-tr.nth3').click(function() {
+				if($(this).hasClass('open')) {
+					$(this).removeClass('open');
+					$(this).nextUntil('.primary-tr', '.second-tr,.third-tr').removeClass("open").hide();
+				} else {
+					$(this).addClass('open');
+					$(this).nextUntil('.primary-tr', '.second-tr').show();
+				}
+			});
+			$(".has-third").click(function() {
+				if($(this).hasClass("open")) {
+					$(this).removeClass("open");
+					$(this).nextUntil(".second-tr", ".third-tr").hide();
+				} else {
+					$(this).addClass('open');
+					$(this).nextUntil('.second-tr', '.third-tr').show();
+				}
+			})
+			$(".radio-buttons").parent().click(function() {
+				if($(this).find(".radio-buttons").hasClass("checked")) {
+					$(this).find(".radio-buttons").removeClass("checked");
+				} else {
+					var col = $(this).index();
+					$(this).parent().nextUntil(".primary-tr").each(function() {
+						$(this).children().eq(col).find(".checked").removeClass("checked");
+					});
+					$(this).parent().prevUntil(".primary-tr").each(function() {
+						$(this).children().eq(col).find(".checked").removeClass("checked");
+					});
+					$(this).find(".radio-buttons").addClass("checked");
+				}
+			})
 		</script>
 	</body>
+
 </html>

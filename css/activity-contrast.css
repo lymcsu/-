@@ -148,7 +148,9 @@ thead tr th a i {
 thead tr th a:hover {
 	background-color: #FAFAFA;
 }
-
+.choosed{
+	position: relative;
+}
 thead tr th + th.choosed a {
 	font-size: 14px;
 	background-color: #3F6DA5;
@@ -169,9 +171,37 @@ thead tr th + th + th + th + th.choosed a {
 }
 
 thead tr th + th.choosed .top-color {
-	background: transparent url(../img/black10%.png) repeat;
+	background: transparent url(../img/black10.png) repeat;
 }
-
+.delete-activity-div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../img/black15.png) repeat;
+	display: none;
+}
+.delete-activity-btn{
+	width: 72px;
+	height: 24px;
+	padding: 0 20px;
+	line-height: 20px;
+	background-color: #24AC7E;
+	border-radius: 4px;
+	color: #FFF;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	left: 50%;
+	margin-left: -36px;
+}
+.delete-activity-btn:hover{
+	background-color: #1FA075;
+}
+.choosed:hover .delete-activity-div{
+	display: block;
+}
 tbody tr td {
 	border-right: 1px solid #E1E6EB;
 	text-align: center;
@@ -203,19 +233,13 @@ tbody .primary-tr td:first-child {
 	font-size: 14px;
 }
 
-tbody .primary-tr td:first-child i {
-	float: left;
-	margin-left: 10px;
-	color: #24AC7E;
-	margin-right: 15px;
-}
-
-tbody .second-tr {
+tbody .second-tr,tbody .third-tr {
 	display: none;
 }
 
 tbody .second-tr td {
 	height: 30px;
+	cursor: default;
 }
 
 tbody .second-tr td:first-child {
@@ -226,6 +250,19 @@ tbody .second-tr td:first-child {
 
 tbody .second-tr:hover {
 	background-color: #FAFAFA;
+}
+/*third-tr*/
+tbody .third-tr td{
+	height: 28px;
+	background-color: #F6F7F9;
+}
+tbody .third-tr td:first-child{
+	padding-left: 50px;
+	text-align: left;
+	width: 148px;
+}
+.has-third{
+	cursor: pointer;	
 }
 
 tbody tr td:first-child + td,
@@ -262,8 +299,10 @@ tbody tr td:first-child + td + td + td + td {
 	top: 11px;
 }
 
-tbody tr.primary-tr td:first-child i {
+tbody tr.primary-tr td:first-child i,.has-third td:first-child i {
 	float: left;
+	margin-left: 10px;
+	color: #24AC7E;
 	margin-right: 10px;
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
@@ -274,7 +313,7 @@ tbody tr.primary-tr td:first-child i {
 	transition: transform 0.3s;
 }
 
-tbody tr.primary-tr.open td:first-child i {
+tbody tr.primary-tr.open td:first-child i,.has-third.open td:first-child i {
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
@@ -283,3 +322,7 @@ tbody tr.primary-tr.open td:first-child i {
 	transform: rotate3d(0, 0, 1, 90deg);
 	transition: transform 0.3s;
 } 
+.choose-activity-radio{
+	vertical-align: sub;
+	margin-right: 10px;
+}

@@ -1,17 +1,11 @@
 @charset "utf-8";
-.right-alert-main {
+/*.right-alert-main {
 	overflow: visible;
-}
+}*/
 
 .viewFramework-index-body {
 	overflow: hidden;
 	height: auto;
-}
-
-button.add-channel {
-	position: absolute;
-	top: 15px;
-	right: 15px;
 }
 
 .right-alert_head {
@@ -27,7 +21,9 @@ button.add-channel {
 
 /*  电子渠道、实体渠道外层   */
 .electron-channel,
-.entity-channel {
+.entity-channel,
+.third-party-channel,
+.other-channel {
 	float: left;
 	width: 100%;
 	padding-left: 50px;
@@ -55,7 +51,12 @@ button.add-channel {
 .entity-channel .channel-title {
 	background-color: #62B5DF;
 }
-
+.third-party-channel .channel-title{
+	background-color: #FFB840;
+}
+.other-channel .channel-title{
+	background-color: #63CBAC;
+}
 /*  渠道列表   */
 .channel-items {
 	width: 200px;
@@ -129,7 +130,21 @@ button.add-channel {
 	background: url(../img/black15%.png) repeat;
 	display: none;
 }
-
+.add-channel-btn{
+	font-size: 50px;
+	color: #D6D6D6;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+.add-channel{
+	background-color: #fff;
+}
+.add-channel:hover{
+	background-color: #F3F5F7;
+}
 .manage-btn {
 	width: 92px;
 	height: 34px;
@@ -153,17 +168,13 @@ button.add-channel {
 	display: block;
 }
 
-.right-alert {
-	display: block;
-	margin-right: 0;
-}
-
 .right-alert-content-main {
 	padding: 30px 30px 0px 54px;
 }
 
 .form-items {
 	width: 100%;
+	overflow: hidden;
 }
 
 .form-items li {
