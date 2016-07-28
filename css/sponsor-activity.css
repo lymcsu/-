@@ -259,6 +259,10 @@
 	font-weight: 400;
 }
 
+.LocationInput {
+	width: 250px;
+}
+
 .new-event-time-select{
 	width: 360px;
 }

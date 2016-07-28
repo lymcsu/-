@@ -20,57 +20,54 @@
 			<!---<<<<  标题    >>>>-->
 			<span class="viewFramework-index-title">组织架构管理</span>
 
-			<!---<<<<  tabs    >>>>-->
-			<div class="viewFramework-index-tabs">
-				<!---<<<<  tabs按钮    >>>>-->
-				<ul class="tabs_menu">
-					<li class="current js-tabs-btn1">
-						<a>直属员工</a>
-					</li>
-					<li class="js-tabs-btn2">
-						<a>组织信息</a>
-					</li>
-				</ul>
-
-				<!---<<<<  tabs按钮下划线    >>>>-->
-				<hr />
-
-				<!---<<<<  tabs div    >>>>-->
-				<div class="tabs_box">
-					<!---<<<<  tabs div 外层    >>>>-->
-					<div class="tabs-wapper js-tabs-div1 open">
-						<!---<<<<  tabs div 左侧边栏    >>>>-->
-						<div class="tabs_sidebar">
-							<div class="tree--search">
-								<input type="text" />
-								<span class="placeholder">输入关键字搜索</span>
-								<button class="iconBtn"><i class="iconfont icon-search"></i></button>
-							</div>
-							<span class="special-tree-title">组织结构</span>
-							<ul class="special-tree">
+			<div class="viewFramework-main">
+				<!---<<<<  tabs div 左侧边栏    >>>>-->
+				<div class="tabs_sidebar">
+					<span class="special-tree-title">组织结构</span>
+					<div class="tree--search">
+						<input type="text" />
+						<span class="placeholder">输入关键字搜索</span>
+						<button class="iconBtn"><i class="iconfont icon-search"></i></button>
+					</div>
+					<ul class="special-tree">
+						<li>
+							<a>省公司</a>
+							<ul>
 								<li>
-									<a>省公司</a>
-									<ul>
-										<li>
-											<a>广州分公司</a>
-										</li>
-										<li>
-											<a>深圳分公司</a>
-										</li>
-										<li>
-											<a>惠州分公司</a>
-										</li>
-									</ul>
+									<a>广州分公司</a>
 								</li>
-								<div class="tree--btn">
-									<button class="add"><i class="iconfont icon-add"></i>新增</button>
-									<button class="delete"><i class="iconfont icon-delete"></i>删除</button>
-								</div>
+								<li>
+									<a>深圳分公司</a>
+								</li>
+								<li>
+									<a>惠州分公司</a>
+								</li>
 							</ul>
+						</li>
+						<div class="tree--btn">
+							<button class="add"><i class="iconfont icon-add"></i>新增</button>
+							<button class="delete"><i class="iconfont icon-delete"></i>删除</button>
 						</div>
+					</ul>
+				</div>
+				<div class="tabs_body">
+					<!---<<<<  tabs按钮    >>>>-->
+					<ul class="tabs_menu">
+						<li class="current js-tabs-btn1">
+							<a>直属员工</a>
+						</li>
+						<li class="js-tabs-btn2">
+							<a>组织信息</a>
+						</li>
+					</ul>
 
-						<!---<<<<  tabs div 主体   >>>>-->
-						<div class="tabs_body">
+					<!---<<<<  tabs按钮下划线    >>>>-->
+					<hr class="tabs_menu-hr " />
+
+					<!---<<<<  tabs div    >>>>-->
+					<div class="tabs_box">
+						<!---<<<<  tabs div 外层    >>>>-->
+						<div class="tabs-wapper open js-tabs-div1">
 							<div class="tabs_nav">
 								<div class="tabs_nav-div-items">
 									<span>姓名/编号：</span>
@@ -97,7 +94,6 @@
 								<div class="tabs_nav-div-items last-child">
 									<button class="TextBtn">重置</button>
 									<button class="iconTextBtn-import"><i class="iconfont icon-search"></i>查询</button>
-									<button class="iconTextBtn last-child"><i class="iconfont icon-add"></i>添加</button>
 								</div>
 							</div>
 
@@ -289,19 +285,10 @@
 									<tfoot>
 										<tr>
 											<td colspan="9">
-												<div class="dropdown-body">
-													<button class="dropdown-btn">批量操作<div><i class="iconfont icon-expandmore"></i></div></button>
-													<ul class="dropdown-menu">
-														<li>
-															<a>调岗</a>
-														</li>
-														<li>
-															<a>停职</a>
-														</li>
-														<li>
-															<a>删除</a>
-														</li>
-													</ul>
+												<div class="pull-left">
+													<button class="iconTextBtn"><i class="iconfont icon-add"></i>添加</button>
+													<button class="TextBtn">调岗</button>
+													<button class="TextBtn">停职</button>
 												</div>
 
 												<div class="pull-right page-box">
@@ -321,17 +308,15 @@
 								</table>
 							</div>
 						</div>
+						
+						<!---<<<<  tabs div 外层    >>>>-->
+						<div class="tabs-wapper js-tabs-div2">
+						</div>
 					</div>
-
-					<div class="tabs-wapper js-tabs-div2">
-					</div>
-
 				</div>
 			</div>
-
 		</div>
 
-		</div>
 
 		<script type="text/javascript" src="lib/jQuery/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="lib/js/jquery.treemenu.js"></script>

@@ -1,11 +1,4 @@
-$('body').click(function(e) {
-    var _dropdownBody = $('.js-tabs-div1 .dropdown-body '); // 设置目标区域
-    if (!_dropdownBody.is(e.target) && _dropdownBody.has(e.target).length === 0) { 
-   	 	_dropdownBody.removeClass('open');
-    } else {
-    		_dropdownBody.toggleClass('open');
-    }
-    
+$('body').click(function(e) {    
     var _fastNewBuilt = $('.js-tabs-div1 .SpanSelect'); // 设置目标区域
     if (!_fastNewBuilt.is(e.target) && _fastNewBuilt.has(e.target).length === 0) { 
    	 	$('.js-tabs-div1 .SpanSelect').removeClass('open');
