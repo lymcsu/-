@@ -456,13 +456,13 @@ body {
 	margin: 0 auto 30px;
 }
 
-.form-items span {
+/*.form-items .form-left span {
 	width: 70px;
 	float: left;
 	margin-right: 20px;
 	line-height: 32px;
 	text-align: right;
-}
+}*/
 
 .form-items input,
 .form-items textarea {

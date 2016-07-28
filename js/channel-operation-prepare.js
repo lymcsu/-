@@ -37,3 +37,26 @@ $('#SpanSelect2 .select-menu li').click(function() {
 	$('#SpanSelect2 .select-btn p').text(btnMenuChooseText);
 });
 /*  select选中改变btn文本 js end */
+
+//选择渠道应用范围
+$('.special-tree').on('click','.special-tree-btn',function(){
+	$(this).toggleClass('open');
+	$(this).siblings('ul').slideToggle();
+})
+$(".location-input-more-btn").on("click",function(){
+	$(".location-input-tree").toggle();
+})
+$(".location-input-tree").find("a").on("click",function(){
+	var text = $(this).text();
+	$(".LocationInput input").val(text);
+	$(".LocationInput span.placeholder").hide();
+	$(".location-input-tree").hide();
+})
+$(function(){
+    $(".special-tree").treemenu({delay:300}).openActive();
+});
+
+$(".special-tree").on('click','a',function(){
+	$('.special-tree a').removeClass('active');
+	$(this).addClass('active');
+});

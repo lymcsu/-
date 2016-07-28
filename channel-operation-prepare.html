@@ -312,17 +312,75 @@
 								<div class="form-left">
 									<span><i class="iconfont icon-bitian"></i>渠道应用范围：</span>
 								</div>
-								<div class="form-right">
-									<div id="SpanSelect2" class="SpanSelect">
-										<button class="select-btn">
-											<p>全部</p>
-											<div><i class="iconfont icon-expandmore"></i></div>			
-										</button>
-										<ul class="select-menu">
-											<li>全省</li>
-											<li>地市</li>
-										</ul>
+								<div class="LocationInput">
+									<div>
+										<input class="channel-apply-area" type="text" autocomplete="off" />
+										<span class="placeholder">请输入</span>
+										<button class="location-input-more-btn"><i class="iconfont icon-expandmore"></i></button>
 									</div>
+									<ul class="special-tree location-input-tree">
+										<li>
+											<a>Category</a>
+											<ul>
+												<li>
+													<a>jQuery</a>
+													<ul>
+														<li>
+															<a>jQuery</a>
+														</li>
+														<li>
+															<a>jQuery UI</a>
+														</li>
+														<li>
+															<a>jQuery Mobile</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a>JavaScript</a>
+													<ul>
+														<li>
+															<a>AngularJS</a>
+														</li>
+														<li>
+															<a>React</a>
+														</li>
+														<li>
+															<a>Backbone</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a>Golang</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a>About</a>
+											<ul>
+												<li>
+													<a>Contact</a>
+												</li>
+												<li>
+													<a>Blog</a>
+												</li>
+												<li>
+													<a>Jobs</a>
+													<ul>
+														<li>
+															<a>Job 1</a>
+														</li>
+														<li>
+															<a>Job 2</a>
+														</li>
+														<li>
+															<a>Job 3</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</div>
 							</li>
 
@@ -333,7 +391,7 @@
 								<div class="chooseSecond-input">
 									<input type="text" onfocus="WdatePicker({dateFmt:'yyyy.MM.dd  HH:mm:ss',skin:'twoer'})" class="Wdate" />
 								</div>
-								
+
 							</li>
 
 							<li>
@@ -361,6 +419,7 @@
 		<script type="text/javascript" src="js/current.js"></script>
 		<script type="text/javascript" src="js/channel-operation-prepare.js"></script>
 		<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="lib/js/jquery.treemenu.js"></script>
 	</body>
 
 </html>
