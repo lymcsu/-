@@ -467,9 +467,9 @@ body {
 .form-items input,
 .form-items textarea {
 	width: 325px;
-	height: 32px;
+	height: 35px;
 	border: 1px solid #E1E6EB;
-	line-height: 30px;
+	line-height: 33px;
 	color: #9DA2B6;
 	background-color: #FAFAFA;
 	padding: 0 10px;
