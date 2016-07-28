@@ -166,7 +166,7 @@ body {
 /*  右侧弹窗   */
 
 .right-alert {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -174,7 +174,6 @@ body {
 	display: none;
 	margin-top: -50px;
 	margin-right: -883px;
-	overflow: hidden;
 }
 
 .right-alert-boxShadow {
@@ -205,7 +204,7 @@ body {
 	top: 50px;
 	bottom: 0;
 	background-color: #FFF;
-	overflow-y: auto;
+	overflow: auto;
 }
 
 

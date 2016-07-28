@@ -385,7 +385,7 @@
 #store-selector {
 	position: relative;
 	float: left;
-	z-index: 2;
+	z-index: 999;
 }
 
 #store-selector dl,
@@ -534,7 +534,7 @@
 
 #store-selector.hover .content,
 #store-selector.hover .close {
-	display: block
+	display: block;
 }
 
 #JD-stock {
