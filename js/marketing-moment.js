@@ -132,4 +132,5 @@ $('body').on('click', '.right-alert-closebg,.right-alert-closeBtn,.pull-right bu
 	$('.right-alert').animate({
 		marginRight: "-875px",
 	},300).fadeOut();
+	$("body").css("overflow","hidden");
 });

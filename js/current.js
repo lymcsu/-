@@ -86,6 +86,7 @@ $('body').on('click', '.right-alert-closeBg,.right-alert-closeBtn', function() {
 	$('.right-alert').animate({
 		marginRight: "-875px",
 	}, 300).fadeOut();
+	$("body").css("overflow-y","auto");
 });
 
 $(function() {

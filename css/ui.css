@@ -10,26 +10,6 @@
 	text-align: left !important;
 }
 
-.zUIpanelScrollBox,
-.zUIpanelScrollBar {
-	width: 4px;
-	top: 4px;
-	right: 2px;
-	border-radius: 5px;
-}
-
-.zUIpanelScrollBox {
-	background: black;
-	opacity: 0.1;
-	filter: alpha(opacity=10);
-}
-
-.zUIpanelScrollBar {
-	background: #fff;
-	opacity: 0.8;
-	filter: alpha(opacity=80);
-}
-
 .iconBtn {
 	width: 35px;
 	height: 35px;
@@ -238,6 +218,11 @@
 
 .form-LocationInput {
 	width: 100%;
+	
+}
+
+.LocationInput {
+	position: relative;
 }
 
 .SpanSelect span,
@@ -385,6 +370,7 @@
 	line-height: 30px;
 	text-align: left;
 	padding-left: 10px;
+	color: #9DA2B6;
 }
 
 .form-select-btn p {
@@ -417,14 +403,15 @@
 .Select-input {
 	width: 260px;
 	border: 1px solid #E1E6EB;
+	height: 32px;
 }
 
 .Select-input input {
 	width: 198px;
-	height: 33px;
+	height: 30px;
 	padding: 0 10px;
 	background-color: #FAFAFA;
-	line-height: 33px;
+	line-height: 30px;
 }
 
 .select-input-select-btn .select-input-select-btn_icon {
@@ -557,12 +544,17 @@
 #store-selector .close {
 	display: none;
 	position: absolute;
-	z-index: 2;
+	z-index: 99999;
 	cursor: pointer;
 	width: 17px;
 	height: 17px;
-	top: 32px;
-	left: 320px;
+	top: 40px;
+	left: 296px;
+}
+
+
+#store-selector div.close i {
+	line-height: 18px;
 }
 
 #store-selector a:hover {
@@ -618,8 +610,9 @@
 #store-selector .content {
 	display: none;
 	position: absolute;
-	top: 32px;
-	left: -45px;
+	z-index: 99999;
+	top: 34px;
+	left: -65px;
 	border: 1px solid #E1E6EB;
 	width: 390px;
 	padding: 15px;
@@ -1906,8 +1899,8 @@
 	width: 250px;
 	max-width: 250px;
 	min-width: 250px;
-	height: 66px;
-	min-height: 66px;
+	height: 64px;
+	min-height: 64px;
 	outline: none;
 	border: 1px solid #E1E6EB;
 	background-color: #FAFAFA;
@@ -1915,6 +1908,7 @@
 
 .form-items{
 	margin-bottom: 30px;
+	float: left;
 }
 
 .form-right.form-fileInput {
@@ -1926,6 +1920,10 @@
 	height: auto;
 	line-height: 0;
 }
-.form-textarea{
-	height: 66px;
+
+.form-left span i {
+	font-size: 10px;
+	color: #E44E4E;
+	margin-right: 10px;
+	line-height: 32px;
 }

@@ -2,6 +2,7 @@ $('.add-channel').click(function(){
 	$('.right-alert').fadeIn('fast').animate({
 		marginRight: "0px"
 	}, 300);
+	$("body").css("overflow","hidden");
 });
 
 /*  select打开ul js  */

@@ -130,6 +130,7 @@ $('.tabs-wapper').on('click', 'td.name a', function() {
 	$('.right-alert').fadeIn('fast').animate({
 		marginRight: "0px"
 	}, 300);
+	$("body").css("overflow","hidden");
 });
 
 $('.js-tabs-div3,.js-tabs-div1').on('click', '.text-btn', function() {
@@ -187,20 +188,23 @@ $('.three-table').on('click','table tbody tr',function(){
 $('.right-alert-tabs-nav').on('click','.top-operation-btn.nth2',function(){
 	if($(this).hasClass("operation-enable")){
 		$(this).removeClass("operation-enable");
-		$('.btn-div').children('.cancel-btn').fadeOut();
+		$('.right-alert-content-main .btn-div').fadeOut();
 		$('.right-alert-content-main.nth1 .form-items input,.right-alert-content-main.nth1 .form-items textarea').attr("disabled","disabled");
 		$(".right-alert-content-main.nth1 .form-items .SpanSelect").addClass('disabled').removeClass('ture open');
 	}else{
+		$('.right-alert-tabs_menu li').removeClass('current');
+		$('.right-alert-tabs_menu li.nth1').addClass('current');
+		$('.right-alert_content').children().removeClass('current');
+		$('.right-alert_content').children('.right-alert-content-main.nth1').addClass('current');
 		$(this).addClass("operation-enable");
-		$('.right-alert-content-main .btn-div .cancel-btn').fadeIn();
+		$('.right-alert-content-main .btn-div').fadeIn();
 		$('.right-alert-content-main.nth1 .form-items input,.right-alert-content-main.nth1 .form-items textarea').attr("disabled",false);
 		$(".right-alert-content-main.nth1 .form-items .SpanSelect.disabled").removeClass('disabled').addClass('ture');
 	}
 });
 
 $('.right-alert-content-main').on('click','.btn-div .cancel-btn,.btn-div .save-btn',function(){
-	$(this).parent('.btn-div').children('.save-btn').removeClass('save-btn').addClass('operation-btn');
-	$(this).parent('.btn-div').children('.cancel-btn').fadeOut();
+	$('.right-alert-content-main .btn-div').fadeOut();
 	$('.right-alert-content-main.nth1 .form-items input,.right-alert-content-main.nth1 .form-items textarea').attr("disabled","disabled");
 	$(".right-alert-content-main.nth1 .form-items .SpanSelect").addClass('disabled').removeClass('ture open');
 });
