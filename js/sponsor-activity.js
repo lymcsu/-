@@ -190,8 +190,10 @@ $('.three-table').on('click', 'table tbody tr', function() {
 $('.right-alert-tabs-nav').on('click', '.top-operation-btn.nth2', function() {
 	if($(this).hasClass("operation-enable")) {
 		$(".form-left i").css("display","none");
+		$(".form-LocationInput").find("ul").css("display","none");
+		$('.form-select-btn.nth1,.form-select-btn.nth2,.form-select-btn.nth3').parent().removeClass('open');
 		$(this).removeClass("operation-enable");
-		$('.right-alert-content-main .btn-div').fadeOut();
+		$('.right-alert-content-main .form-btn-div').fadeOut();
 		$('.right-alert-content-main.nth1 .form-items input,.right-alert-content-main.nth1 .form-items textarea').attr("disabled", "disabled");
 		$(".right-alert-content-main.nth1 .form-items .SpanSelect").addClass('disabled').removeClass('ture open');
 	} else {
@@ -201,15 +203,17 @@ $('.right-alert-tabs-nav').on('click', '.top-operation-btn.nth2', function() {
 		$('.right-alert_content').children().removeClass('current');
 		$('.right-alert_content').children('.right-alert-content-main.nth1').addClass('current');
 		$(this).addClass("operation-enable");
-		$('.right-alert-content-main .btn-div').fadeIn();
+		$('.right-alert-content-main .form-btn-div').fadeIn();
 		$('.right-alert-content-main.nth1 .form-items input,.right-alert-content-main.nth1 .form-items textarea').not(".disabled").attr("disabled", false);
 		$(".right-alert-content-main.nth1 .form-items .SpanSelect.disabled").removeClass('disabled').addClass('ture');
 	}
 });
 
-$('.right-alert-content-main').on('click', '.btn-div .cancel-btn,.btn-div .save-btn', function() {
+$('.right-alert-content-main').on('click', '.form-btn-div .cancel-btn,.form-btn-div .save-btn', function() {
 	$(".form-left i").css("display","none");
-	$('.right-alert-content-main .btn-div').fadeOut();
+	$(".form-LocationInput").find("ul").css("display","none");
+	$('.form-select-btn.nth1,.form-select-btn.nth2,.form-select-btn.nth3').parent().removeClass('open');
+	$('.right-alert-content-main .form-btn-div').fadeOut();
 	$('.top-operation-btn.nth2').removeClass("operation-enable");
 	$('.right-alert-content-main.nth1 .form-items input,.right-alert-content-main.nth1 .form-items textarea').attr("disabled", "disabled");
 	$(".right-alert-content-main.nth1 .form-items .SpanSelect").addClass('disabled').removeClass('ture open');

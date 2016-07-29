@@ -150,7 +150,7 @@
 	float: left;
 }*/
 
-.right-alert-content-main .btn-div {
+.form-btn-div {
 	width: 100%;
 	height: 32px;
 	text-align: center;
@@ -160,15 +160,15 @@
 	display: none;
 }
 
-/*.right-alert-content-main .btn-div button {
+/*.right-alert-content-main .form-btn-div button {
 	float: right;
 }*/
 
-.right-alert-content-main .btn-div button.cancel-btn {
+.form-btn-div button.cancel-btn {
 	margin-right: 15px;
 }
 
-.right-alert-content-main .btn-div .save-btn:before {
+.form-btn-div .save-btn:before {
 	content: "保存";
 }
 
