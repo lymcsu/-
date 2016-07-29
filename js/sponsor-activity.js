@@ -81,7 +81,11 @@ $('.js-tabs-div5 .pagination').twbsPagination({
 	totalPages: 35,
 	visiblePages: 1
 });
-
+/* 分页 */
+$(".right-alert-content-main.nth2 .pagination").twbsPagination({
+	totalPages: 35,
+	visiblePages: 1
+});
 /* 分页 */
 $('.js-tabs-div6 .pagination').twbsPagination({
 	totalPages: 35,
