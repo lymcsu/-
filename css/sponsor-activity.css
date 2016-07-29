@@ -392,3 +392,6 @@
 .textarea-items .form-right{
 	height: auto;
 }
+.form-left i{
+	display: none;
+}
