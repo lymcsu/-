@@ -1,22 +1,12 @@
 @charset "utf-8";
-.tabs_box {
-	top: 112px;
-}
-.viewFramework-index-tabs hr {
-    border: none;
-    height: 1px;
-    background-color: #E1E6EB;
-    margin-top: -1px;
-}
-
-.viewFramework-index-tabs {
-    margin-top: 15px;
-}
-
 .tabs_nav {
     height: 35px;
     margin: 15px 0;
     position: relative;
+}
+
+.tabs-wapper {
+	padding-top: 0;
 }
 
 .tabs_nav-left {
@@ -102,8 +92,4 @@
 .table1.active,
 .table2.active {
 	display: table;
-}
-
-table tbody tr td:first-child {
-	padding: 8px;
 }
