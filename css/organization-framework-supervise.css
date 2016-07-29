@@ -191,6 +191,14 @@ width: 100%;
 	margin-top: 15px;
 }
 
+.form-hr {
+	float: left;
+	width: 100%;
+	border: none;
+	border-top: 1px dashed #E1E6EB;
+	margin-bottom: 30px;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 1248px) {
 .select-btn {
 	width: 200px;
